@@ -9,11 +9,13 @@
 設定檔只放比例（weight）；實際金額放 portfolio/private.json（不進 git）。
 
 只依賴標準函式庫與 numpy。價格快取在 cache/prices/（不進 git）。
+資料來源：台股與匯率用 FinMind（token 讀環境變數或 .env.local 的 FINMIND_TOKEN），FinMind 沒有的（如 BTC）用 Yahoo Finance。
 """
 
 import argparse
 import datetime as dt
 import json
+import os
 import pathlib
 import time
 import urllib.request
@@ -22,21 +24,39 @@ import numpy as np
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CACHE = ROOT / "cache" / "prices"
-FX_TICKER = "TWD=X"
 YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=5y&interval=1d"
+FINMIND = "https://api.finmindtrade.com/api/v4/data?dataset={ds}&data_id={id}&start_date={start}"
+# USD/TWD 用台銀即期買賣中價
+FX_SOURCE = {"source": "finmind", "dataset": "TaiwanExchangeRate", "data_id": "USD"}
 
 
 # ---------- 價格 ----------
 
-def fetch(ticker, offline=False, max_age_h=12):
+def finmind_token():
+    if os.environ.get("FINMIND_TOKEN"):
+        return os.environ["FINMIND_TOKEN"]
+    env = ROOT / ".env.local"
+    if env.exists():
+        for line in env.read_text().splitlines():
+            k, _, v = line.partition("=")
+            if k.strip() == "FINMIND_TOKEN":
+                return v.strip().strip('"\'')
+    raise RuntimeError("找不到 FINMIND_TOKEN（環境變數或 .env.local）")
+
+
+def _cached(path, url, headers, offline, max_age_h=12):
     CACHE.mkdir(parents=True, exist_ok=True)
-    path = CACHE / f"{ticker}.json"
     fresh = path.exists() and time.time() - path.stat().st_mtime < max_age_h * 3600
     if not offline and not fresh:
-        req = urllib.request.Request(YAHOO.format(t=ticker), headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=30) as r:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=60) as r:
             path.write_bytes(r.read())
-    res = json.loads(path.read_text())["chart"]["result"][0]
+    return json.loads(path.read_text())
+
+
+def _yahoo(ticker, offline):
+    raw = _cached(CACHE / f"{ticker}.json", YAHOO.format(t=ticker), {"User-Agent": "Mozilla/5.0"}, offline)
+    res = raw["chart"]["result"][0]
     ind = res["indicators"]
     closes = ind["adjclose"][0]["adjclose"] if "adjclose" in ind else ind["quote"][0]["close"]
     tz = dt.timedelta(seconds=res["meta"].get("gmtoffset", 0))
@@ -45,6 +65,31 @@ def fetch(ticker, offline=False, max_age_h=12):
         if p is not None:
             out[(dt.datetime.fromtimestamp(ts, dt.timezone.utc) + tz).date()] = p
     return out
+
+
+def _finmind(dataset, data_id, offline):
+    start = dt.date.today() - dt.timedelta(days=365 * 5 + 10)
+    url = FINMIND.format(ds=dataset, id=data_id, start=start)
+    headers = {"Authorization": f"Bearer {finmind_token()}"} if not offline else {}
+    raw = _cached(CACHE / f"finmind_{dataset}_{data_id}.json", url, headers, offline)
+    if raw.get("status") != 200:
+        raise RuntimeError(f"FinMind {dataset} {data_id}: {raw.get('msg')}")
+    out = {}
+    for row in raw["data"]:
+        if "spot_buy" in row:
+            p = (row["spot_buy"] + row["spot_sell"]) / 2 if row["spot_buy"] > 0 and row["spot_sell"] > 0 else None
+        else:
+            p = row["close"] if row["close"] > 0 else None
+        if p is not None:
+            out[dt.date.fromisoformat(row["date"])] = p
+    return out
+
+
+def fetch(src, offline=False):
+    """src 為資產設定：source=finmind（dataset、data_id）或 yahoo（ticker）。"""
+    if src.get("source", "yahoo") == "finmind":
+        return _finmind(src.get("dataset", "TaiwanStockPriceAdj"), src["data_id"], offline)
+    return _yahoo(src["ticker"], offline)
 
 
 def weekly(series):
@@ -109,10 +154,10 @@ def twd(x):
 def build(cfg, offline, total_twd=None):
     assets = cfg["assets"]
     names = [a["name"] for a in assets]
-    fx = fetch(FX_TICKER, offline)
+    fx = fetch(FX_SOURCE, offline)
     series = {}
     for a in assets:
-        s = fetch(a["ticker"], offline)
+        s = fetch(a, offline)
         series[a["name"]] = to_twd(s, fx) if a["currency"] == "USD" else s
     weeklies = [weekly(series[n]) for n in names]
 
@@ -122,7 +167,7 @@ def build(cfg, offline, total_twd=None):
     # 市價對照
     lines += ["## 價格", "", "| 資產 | 設定檔價格 | 最新市價 | 差異 |", "|---|---|---|---|"]
     for a in assets:
-        raw = fetch(a["ticker"], offline=True)
+        raw = fetch(a, offline=True)
         last = raw[max(raw)]
         lines.append(f"| {a['name']} | {a['price']:,} | {last:,.0f}（{max(raw)}） | {pct(last / a['price'] - 1)} |")
     lines.append("")

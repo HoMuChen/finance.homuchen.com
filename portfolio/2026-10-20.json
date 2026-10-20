@@ -12,7 +12,9 @@
   "assets": [
     {
       "name": "TSMC",
-      "ticker": "2330.TW",
+      "source": "finmind",
+      "dataset": "TaiwanStockPriceAdj",
+      "data_id": "2330",
       "currency": "TWD",
       "price": 2405,
       "income_12m": 26,
@@ -47,6 +49,7 @@
     },
     {
       "name": "BTC",
+      "source": "yahoo",
       "ticker": "BTC-USD",
       "currency": "USD",
       "price": 82000,
