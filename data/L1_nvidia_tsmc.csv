@@ -1,0 +1,693 @@
+company,calendar_quarter,fiscal_quarter,metric,value,unit,source_url,source_date,quality
+NVIDIA,2024Q1,FY25Q1,revenue_total,26.044,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,revenue_total,30.04,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,revenue_total,35.082,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,revenue_total,39.331,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,revenue_total,44.062,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,revenue_total,46.743,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,revenue_total,57.006,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,revenue_total,68.127,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,revenue_total,81.615,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,revenue_total,96.221,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,dc_revenue,22.563,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,dc_revenue,26.272,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,dc_revenue,30.771,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,dc_revenue,35.58,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,dc_revenue,39.112,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,dc_revenue,41.096,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,dc_revenue,51.215,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,dc_revenue,62.314,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,dc_revenue,75.246,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,dc_revenue,89.023,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,dc_compute_revenue,19.392,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,dc_compute_revenue,22.604,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,dc_compute_revenue,27.644,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,dc_compute_revenue,32.556,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,dc_compute_revenue,34.155,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,dc_compute_revenue,33.844,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,dc_compute_revenue,43.028,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,dc_compute_revenue,51.334,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,dc_compute_revenue,60.4,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2024Q1,FY25Q1,dc_networking_revenue,3.171,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,dc_networking_revenue,3.668,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,dc_networking_revenue,3.127,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,dc_networking_revenue,3.024,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,dc_networking_revenue,4.957,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,dc_networking_revenue,7.252,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,dc_networking_revenue,8.187,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,dc_networking_revenue,10.98,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,dc_networking_revenue,14.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,dc_compute_networking_split_note,FY27Q2 起 NVIDIA 不再揭露 DC compute/networking 拆分，改報 Hyperscale vs ACIE；FY27Q1 拆分為舊口徑附帶揭露,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q1,FY26Q1,dc_hyperscale_revenue,17.599,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2025Q1,FY26Q1,dc_acie_revenue,21.513,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2025Q2,FY26Q2,dc_hyperscale_revenue,24.168,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q2,FY26Q2,dc_acie_revenue,16.928,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q4,FY26Q4,dc_hyperscale_revenue,33.814,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2025Q4,FY26Q4,dc_acie_revenue,28.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,dc_hyperscale_revenue,43.05,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q1,FY27Q1,dc_acie_revenue,32.196,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q1,FY27Q1,dc_hyperscale_revenue_as_first_reported,37.869,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,dc_acie_revenue_as_first_reported,37.377,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,dc_hyperscale_revenue,48.71,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,dc_acie_revenue,40.313,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,dc_segment_reclass_note,FY27Q2 將一家公司由 ACIE 改列 Hyperscale，FY27Q1/FY26Q2 已重編；FY26Q1、FY26Q4 數字取自 FY27Q1 文件(重編前口徑),text,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2025Q4,FY26Q4,dc_hyperscale_share_note,Hyperscaler 為最大客戶類別，略高於 DC 營收 50%,text,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2024Q1,FY25Q1,gross_margin_gaap,78.4,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,gross_margin_gaap,75.1,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,gross_margin_gaap,74.6,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,gross_margin_gaap,73.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,gross_margin_gaap,60.5,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,gross_margin_gaap,72.4,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,gross_margin_gaap,73.4,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,gross_margin_gaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,gross_margin_gaap,74.9,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,gross_margin_gaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,gross_margin_nongaap,78.9,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,gross_margin_nongaap,75.7,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,gross_margin_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,gross_margin_nongaap,73.5,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,gross_margin_nongaap,61.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,gross_margin_nongaap,72.7,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,gross_margin_nongaap,73.6,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,gross_margin_nongaap,75.2,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,gross_margin_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,gross_margin_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q1,FY27Q1,nongaap_definition_note,FY27Q1 起 non-GAAP 不再排除 SBC；FY26Q4 重編後 non-GAAP GM 為 75.1%(原 75.2%),text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2025Q1,FY26Q1,h20_inventory_charge,4.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q1,FY26Q1,gross_margin_nongaap_ex_h20,71.3,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2024Q1,FY25Q1,operating_income_gaap,16.909,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,operating_income_gaap,18.642,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,operating_income_gaap,21.869,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,operating_income_gaap,24.034,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,operating_income_gaap,21.638,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,operating_income_gaap,28.44,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,operating_income_gaap,36.01,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,operating_income_gaap,44.299,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,operating_income_gaap,53.536,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,operating_income_gaap,63.734,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,cfo,15.345,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,cfo,14.489,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,cfo,17.629,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,cfo,16.628,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,cfo,27.414,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,cfo,15.365,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,cfo,23.75,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,cfo,36.19,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,cfo,50.344,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,cfo,24.077,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,capex,0.369,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,capex,0.977,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,capex,0.813,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,capex,1.077,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,capex,1.227,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,capex,1.894,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,capex,1.637,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,capex,1.284,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,capex,1.757,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,capex,2.677,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,fcf,14.936,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,fcf,13.483,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,fcf,16.787,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,fcf,15.519,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,fcf,26.135,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,fcf,13.45,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,fcf,22.089,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,fcf,34.902,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,fcf,48.554,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,fcf,21.341,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,inventory,5.9,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,inventory,6.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,inventory,7.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,inventory,10.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,inventory,11.3,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,inventory,15.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,inventory,19.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,inventory,21.4,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,inventory,25.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,inventory,31.6,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,accounts_receivable,12.4,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,accounts_receivable,14.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,accounts_receivable,17.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,accounts_receivable,23.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,accounts_receivable,22.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,accounts_receivable,27.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,accounts_receivable,33.4,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,accounts_receivable,38.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,accounts_receivable,40.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,accounts_receivable,63.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,dso,43,days,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,dso,43,days,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,dso,46,days,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,dso,53,days,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,dso,46,days,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,dso,54,days,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,dso,53,days,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,dso,51,days,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,dso,45,days,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,dso,60,days,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,dso_note,DSO 由 45 升至 60 天，公司稱因與部分投資級客戶的大型多季合約延長付款條件,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,supply_purchase_obligations,18.8,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,supply_purchase_obligations,27.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,supply_purchase_obligations,28.9,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,supply_purchase_obligations,30.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,supply_purchase_obligations,29.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q3,FY26Q3,supply_purchase_obligations,50.3,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,supply_purchase_obligations,95.2,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,supply_purchase_obligations,119.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,supply_purchase_obligations,279.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q2,FY26Q2,total_purchase_commitments_incl_noninventory,45.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2026Q2,FY27Q2,supply_obligations_note,FY25-FY26Q1 為 inventory+manufacturing capacity 口徑；FY26Q3 起為 total supply-related commitments；FY27Q2 由 119B 增至 279B 主因記憶體採購；年度分布 FY27餘 92/FY28 87/FY29 88/FY30 6/FY31 5/之後 1(USD bn),text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,prepaid_supply_agreements,5.6,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,prepaid_supply_agreements,4.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,prepaid_supply_agreements,5.2,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,prepaid_supply_agreements,5.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,prepaid_supply_agreements,4.2,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2024Q1,FY25Q1,multiyear_cloud_service_agreements,8.8,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,multiyear_cloud_service_agreements,9.8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,multiyear_cloud_service_agreements,11.3,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,multiyear_cloud_service_agreements,10.9,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,multiyear_cloud_service_agreements,10.6,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,multiyear_cloud_service_agreements,12.6,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,multiyear_cloud_service_agreements,26.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,multiyear_cloud_service_agreements,27.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,multiyear_cloud_service_agreements,30.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,multiyear_cloud_service_agreements,29.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q2,FY25Q2,other_noninventory_purchase_obligations,12.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,other_noninventory_purchase_obligations,13.2,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,other_noninventory_purchase_obligations,14.3,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,other_noninventory_purchase_obligations,13.7,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2026Q2,FY27Q2,commitments_total,366,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,commitments_dc_leases_not_commenced,25,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,commitments_equity_investments,25,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,commitments_capex,8,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,additional_ai_cloud_agreements,36,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,additional_dc_leases_for_third_party,20,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,guarantees_max_exposure_total,108.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,guarantee_sb_energy_openai,105.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,guarantee_note,2026/8 為 SB Energy 俄亥俄 PORTS 園區約 4.25GW(租給 OpenAI 20 年)提供土地/電力/廠房信用擔保 上限 105B；另 AI cloud 夥伴擔保 3.5B；每代基礎設施約 150 萬 GPU 或 150-200B NVIDIA 營收,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,ai_cloud_revenue_share_model_note,FY27Q2 推出與 AI cloud 夥伴新模式：前期銷售基礎設施，達條件後分享 AI cloud 對第三方客戶營收,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,senior_notes_issued,25.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2024Q1,FY25Q1,next_q_revenue_guidance,28.0,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q1,FY25Q1,next_q_gm_guidance_gaap,74.8,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q1,FY25Q1,next_q_gm_guidance_nongaap,75.5,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25cfocommentary.htm,2024-05-22,官方
+NVIDIA,2024Q2,FY25Q2,next_q_revenue_guidance,32.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,next_q_gm_guidance_gaap,74.4,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,next_q_gm_guidance_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q225/Q2FY25-CFO-Commentary.pdf,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,next_q_revenue_guidance,37.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q3,FY25Q3,next_q_gm_guidance_gaap,73.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q3,FY25Q3,next_q_gm_guidance_nongaap,73.5,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q325/Q3FY25-CFO-Commentary.pdf,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,next_q_revenue_guidance,43.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2024Q4,FY25Q4,next_q_gm_guidance_gaap,70.6,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2024Q4,FY25Q4,next_q_gm_guidance_nongaap,71.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2025/Q425/Q4FY25-CFO-Commentary.pdf,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,next_q_revenue_guidance,45.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q1,FY26Q1,next_q_gm_guidance_gaap,71.8,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q1,FY26Q1,next_q_gm_guidance_nongaap,72.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,next_q_revenue_guidance,54.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q2,FY26Q2,next_q_gm_guidance_gaap,73.3,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q2,FY26Q2,next_q_gm_guidance_nongaap,73.5,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,next_q_revenue_guidance,65.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,next_q_gm_guidance_gaap,74.8,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,next_q_gm_guidance_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,next_q_revenue_guidance,78.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2025Q4,FY26Q4,next_q_gm_guidance_gaap,74.9,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2025Q4,FY26Q4,next_q_gm_guidance_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,next_q_revenue_guidance,91.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,next_q_gm_guidance_gaap,74.9,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,next_q_gm_guidance_nongaap,75.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,next_q_revenue_guidance,108.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,next_q_gm_guidance_gaap,74.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,next_q_gm_guidance_nongaap,74.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q1,FY26Q1,guidance_note,FY26Q2 指引反映 H20 出口管制約 8.0B 營收損失,text,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf,2025-05-28,官方
+NVIDIA,2025Q4,FY26Q4,guidance_note,FY26Q4 起指引不假設任何中國 DC compute 營收,text,https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf,2026-02-25,官方
+NVIDIA,2024Q1,FY25Q1,direct_customer_A_pct_of_revenue,13,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm,2024-05-29,官方
+NVIDIA,2024Q1,FY25Q1,direct_customer_B_pct_of_revenue,11,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm,2024-05-29,官方
+NVIDIA,2024Q2,FY25Q2,direct_customer_A_pct_of_revenue,14,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,direct_customer_B_pct_of_revenue,11,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,direct_customer_C_pct_of_revenue,11,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm,2024-08-28,官方
+NVIDIA,2024Q2,FY25Q2,direct_customer_D_pct_of_revenue,10,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,direct_customer_A_pct_of_revenue,12,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm,2024-11-20,官方
+NVIDIA,2024Q3,FY25Q3,direct_customer_B_pct_of_revenue,12,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm,2024-11-20,官方
+NVIDIA,2024Q3,FY25Q3,direct_customer_C_pct_of_revenue,12,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm,2024-11-20,官方
+NVIDIA,2025Q1,FY26Q1,direct_customer_A_pct_of_revenue,16,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm,2025-05-28,官方
+NVIDIA,2025Q1,FY26Q1,direct_customer_B_pct_of_revenue,14,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,direct_customer_A_pct_of_revenue,23,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm,2025-08-27,官方
+NVIDIA,2025Q2,FY26Q2,direct_customer_B_pct_of_revenue,16,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm,2025-08-27,官方
+NVIDIA,2025Q3,FY26Q3,direct_customer_A_pct_of_revenue,22,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,direct_customer_B_pct_of_revenue,15,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,direct_customer_C_pct_of_revenue,13,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,direct_customer_D_pct_of_revenue,11,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2026Q1,FY27Q1,direct_customer_A_pct_of_revenue,21,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,direct_customer_B_pct_of_revenue,17,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm,2026-05-20,官方
+NVIDIA,2026Q1,FY27Q1,direct_customer_C_pct_of_revenue,16,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,direct_customer_A_pct_of_revenue,16,pct,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2024Q4,FY25Q4,direct_customer_concentration_fy_note,10-K 僅揭露全年：FY25 三家直接客戶 12%/11%/11%,text,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm,2025-02-26,官方
+NVIDIA,2025Q4,FY26Q4,direct_customer_concentration_fy_note,10-K 僅揭露全年：FY26 兩家直接客戶 22%/14%；單季 FY26Q4 未揭露,text,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm,2026-02-25,官方
+NVIDIA,2026Q2,FY27Q2,direct_customer_concentration_note,FY27Q2 單季僅一家 >10%(16%)；上半年三家 16%/15%/13%,text,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2025Q2,FY26Q2,indirect_customer_note,兩家間接客戶各 >10%；估計一家 AI research and deployment company 透過多個直接/間接客戶貢獻 meaningful 營收,text,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm,2025-08-27,官方
+NVIDIA,2024Q1,FY25Q1,nonmarketable_equity_securities,1.463,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm,2024-05-29,官方
+NVIDIA,2024Q2,FY25Q2,nonmarketable_equity_securities,1.819,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm,2024-08-28,官方
+NVIDIA,2024Q3,FY25Q3,nonmarketable_equity_securities,2.237,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm,2024-11-20,官方
+NVIDIA,2024Q4,FY25Q4,nonmarketable_equity_securities,3.387,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm,2025-02-26,官方
+NVIDIA,2025Q1,FY26Q1,nonmarketable_equity_securities,3.24,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm,2025-05-28,官方
+NVIDIA,2025Q2,FY26Q2,nonmarketable_equity_securities,3.799,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm,2025-08-27,官方
+NVIDIA,2025Q4,FY26Q4,nonmarketable_equity_securities,22.251,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,nonmarketable_equity_securities,42.336,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,nonmarketable_equity_securities,51.157,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2025Q3,FY26Q3,nonmarketable_equity_securities,8.187,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方/計算
+NVIDIA,2025Q4,FY26Q4,marketable_equity_securities,12.886,USD_bn,https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,marketable_equity_securities,42.783,USD_bn,https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,equity_investments_total,99,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2025Q3,FY26Q3,investment_commitments,6.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,investment_commitments,11.4,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm,2026-02-25,官方
+NVIDIA,2026Q1,FY27Q1,investment_commitments,27,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,investment_commitments,25,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm,2026-08-26,官方
+NVIDIA,2026Q1,FY27Q1,equity_securities_gains_net,15.936,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+NVIDIA,2026Q2,FY27Q2,equity_securities_gains_net,7.771,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2025Q3,FY26Q3,investment_intel,5.0,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,investment_anthropic_commitment_up_to,10.0,USD_bn,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q3,FY26Q3,investment_openai_note,2025/9 宣布 LOI 最多投資 100B(隨 GW 部署分批)；FY26Q3 10-Q 僅列為 letter of intent,text,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm,2025-11-19,官方
+NVIDIA,2025Q4,FY26Q4,investment_openai,30.0,USD_bn,https://news.bloomberglaw.com/tech-and-telecom-law/openai-valued-at-852-billion-after-closing-122-billion-round,2026-04-01,報導
+NVIDIA,2025Q4,FY26Q4,investment_openai_note,2026/2 改以 30B 參與 OpenAI 122B 融資(估值 852B)取代 100B 架構；The Information 報導 2026/9-10 已付清餘款,text,https://news.bloomberglaw.com/tech-and-telecom-law/openai-valued-at-852-billion-after-closing-122-billion-round,2026-04-01,報導
+NVIDIA,2025Q4,FY26Q4,investment_coreweave,2.0,USD_bn,https://www.computing.co.uk/news/2026/nvidia-invests-2-billion-in-coreweave,2026-01-26,報導
+NVIDIA,2025Q3,FY26Q3,coreweave_capacity_purchase_commitment,6.3,USD_bn,https://www.datacenterdynamics.com/en/news/nvidia-invests-another-2bn-in-coreweave/,2026-01-26,報導
+NVIDIA,2025Q3,FY26Q3,investment_xai_note,NVIDIA 參與 xAI 融資(現為 SpaceX 旗下)；金額未查證,text,https://www.webull.com/news/15478789308105728,2025-11-19,報導
+NVIDIA,2025Q3,FY26Q3,blackwell_rubin_visibility,500,USD_bn,https://fortune.com/2025/10/29/nvidia-first-5-trillion-company-ceo-jensen-huang-500-billion-revenue-blackwell-rubin-gpus-china,2025-10-29,官方
+NVIDIA,2025Q3,FY26Q3,blackwell_rubin_visibility_note,GTC DC(2025/10/28) 黃仁勳：Blackwell+Rubin 至 CY2026 底約 500B 能見度(不含中國)；已出貨 600 萬顆 Blackwell，未來五季再 1400 萬顆。非正式財測,text,https://fortune.com/2025/10/29/nvidia-first-5-trillion-company-ceo-jensen-huang-500-billion-revenue-blackwell-rubin-gpus-china,2025-10-29,官方
+NVIDIA,2025Q4,FY26Q4,blackwell_rubin_visibility,1000,USD_bn,https://longportapp.cn/news/279501059,2026-03-17,報導
+NVIDIA,2025Q4,FY26Q4,blackwell_rubin_visibility_note,GTC 2026(2026/3/16) 據報黃仁勳稱 Blackwell+Rubin 至 CY2027 累計約 1 兆美元能見度；未取得官方逐字稿,text,https://longportapp.cn/news/279501059,2026-03-17,報導
+NVIDIA,2026Q2,FY27Q2,fy28_growth_outlook_note,法說會 Kress 初步表示 FY28 營收成長約 70%(非正式指引)，供給受限,text,https://www.cfodive.com/news/nvidia-cfo-predicts-70-percent-revenue-jump-fiscal-2028-ai/828989/,2026-08-27,報導
+NVIDIA,2026Q2,FY27Q2,rubin_status_note,Vera Rubin 已全面量產，預定 FY27Q3 推出；Blackwell 仍占營收絕大多數,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf,2026-08-26,官方
+NVIDIA,2026Q2,FY27Q2,third_party_capital_note,與 Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR 合作，擬動員超過 500B 第三方資本投入 AI 基礎設施(待正式協議),text,https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx,2026-08-26,官方
+NVIDIA,2026Q1,FY27Q1,china_note,FY27Q1 無 DC Hopper 出貨中國(FY26Q1 為 4.6B)；FY27Q2 <1% DC 營收,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf,2026-05-20,官方
+TSMC,2024Q1,2024Q1,revenue_ntd,592.64,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,revenue_ntd,673.51,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,revenue_ntd,759.69,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,revenue_ntd,868.46,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,revenue_ntd,839.25,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,revenue_ntd,933.79,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,revenue_ntd,989.92,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,revenue_ntd,1046.09,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,revenue_ntd,1134.1,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,revenue_ntd,1270.38,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,revenue_ntd,1494.24,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,revenue_usd,18.87,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,revenue_usd,20.82,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,revenue_usd,23.5,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,revenue_usd,26.88,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,revenue_usd,25.53,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,revenue_usd,30.07,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,revenue_usd,33.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,revenue_usd,33.73,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,revenue_usd,35.9,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,revenue_usd,40.2,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,revenue_usd,46.72,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,gross_margin,53.1,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,gross_margin,53.2,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,gross_margin,57.8,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,gross_margin,59.0,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,gross_margin,58.8,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,gross_margin,58.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,gross_margin,59.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,gross_margin,62.3,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,gross_margin,66.2,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,gross_margin,67.7,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,gross_margin,66.4,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,operating_margin,42.0,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,operating_margin,42.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,operating_margin,47.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,operating_margin,49.0,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,operating_margin,48.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,operating_margin,49.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,operating_margin,50.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,operating_margin,54.0,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,operating_margin,58.1,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,operating_margin,60.3,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,operating_margin,58.7,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,operating_income_ntd,249.02,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,operating_income_ntd,286.56,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,operating_income_ntd,360.77,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,operating_income_ntd,425.71,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,operating_income_ntd,407.08,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,operating_income_ntd,463.42,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,operating_income_ntd,500.69,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,operating_income_ntd,564.9,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,operating_income_ntd,658.97,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,operating_income_ntd,766.6,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,operating_income_ntd,876.45,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,net_income_ntd,225.49,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,net_income_ntd,247.85,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,net_income_ntd,325.26,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,net_income_ntd,374.68,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,net_income_ntd,361.56,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,net_income_ntd,398.27,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,net_income_ntd,452.3,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,net_income_ntd,505.74,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,net_income_ntd,572.48,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,net_income_ntd,706.56,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,net_income_ntd,763.06,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,node_3nm_share,9,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,node_3nm_share,15,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,node_3nm_share,20,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,node_3nm_share,26,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,node_3nm_share,22,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,node_3nm_share,24,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,node_3nm_share,23,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,node_3nm_share,28,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,node_3nm_share,25,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,node_3nm_share,30,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,node_3nm_share,33,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,node_5nm_share,37,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,node_5nm_share,35,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,node_5nm_share,32,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,node_5nm_share,34,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,node_5nm_share,36,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,node_5nm_share,36,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,node_5nm_share,37,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,node_5nm_share,35,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,node_5nm_share,36,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,node_5nm_share,33,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,node_5nm_share,28,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,node_7nm_share,19,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,node_7nm_share,17,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,node_7nm_share,17,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,node_7nm_share,14,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,node_7nm_share,15,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,node_7nm_share,14,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,node_7nm_share,14,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,node_7nm_share,14,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,node_7nm_share,13,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,node_7nm_share,11,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,node_7nm_share,10,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2026Q2,2026Q2,node_2nm_share,3,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,node_2nm_share,8,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,advanced_7nm_below_share,65,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,advanced_7nm_below_share,67,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,advanced_7nm_below_share,69,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,advanced_7nm_below_share,74,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,advanced_7nm_below_share,73,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,advanced_7nm_below_share,74,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,advanced_7nm_below_share,74,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,advanced_7nm_below_share,77,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,advanced_7nm_below_share,74,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,advanced_7nm_below_share,77,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,advanced_7nm_below_share,79,pct_of_wafer_rev,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,hpc_share,46,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,hpc_share,52,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,hpc_share,51,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,hpc_share,53,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,hpc_share,59,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,hpc_share,60,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,hpc_share,57,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,hpc_share,55,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,hpc_share,61,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,hpc_share,66,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,hpc_share,68,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,hpc_qoq_growth,3,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,hpc_qoq_growth,28,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,hpc_qoq_growth,11,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,hpc_qoq_growth,19,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,hpc_qoq_growth,7,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,hpc_qoq_growth,14,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,hpc_qoq_growth,0,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,hpc_qoq_growth,4,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,hpc_qoq_growth,20,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,hpc_qoq_growth,20,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,hpc_qoq_growth,22,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,smartphone_share,38,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,smartphone_share,33,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,smartphone_share,34,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,smartphone_share,35,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,smartphone_share,28,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,smartphone_share,27,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,smartphone_share,30,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,smartphone_share,32,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,smartphone_share,26,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,smartphone_share,22,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,smartphone_share,21,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,cfo_ntd,436.31,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,cfo_ntd,377.67,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,cfo_ntd,391.99,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,cfo_ntd,620.21,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,cfo_ntd,625.57,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,cfo_ntd,497.07,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,cfo_ntd,426.83,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,cfo_ntd,725.51,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,cfo_ntd,698.97,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,cfo_ntd,783.36,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,cfo_ntd,919.77,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,capex_ntd,181.3,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,capex_ntd,205.68,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,capex_ntd,207.08,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,capex_ntd,361.95,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,capex_ntd,330.83,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,capex_ntd,297.22,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,capex_ntd,287.45,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,capex_ntd,356.91,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,capex_ntd,350.76,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,capex_ntd,496.0,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,capex_ntd,443.21,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,fcf_ntd,255.01,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,fcf_ntd,171.99,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,fcf_ntd,184.91,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,fcf_ntd,258.26,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,fcf_ntd,294.74,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,fcf_ntd,199.85,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,fcf_ntd,139.38,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,fcf_ntd,368.6,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,fcf_ntd,348.21,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,fcf_ntd,287.36,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,fcf_ntd,476.56,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,next_q_revenue_guidance_usd,19.6-20.4,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,next_q_revenue_guidance_usd,22.4-23.2,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,next_q_revenue_guidance_usd,26.1-26.9,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,next_q_revenue_guidance_usd,25.0-25.8,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,next_q_revenue_guidance_usd,28.4-29.2,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,next_q_revenue_guidance_usd,31.8-33.0,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,next_q_revenue_guidance_usd,32.2-33.4,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,next_q_revenue_guidance_usd,34.6-35.8,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,next_q_revenue_guidance_usd,39.0-40.2,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,next_q_revenue_guidance_usd,44.6-45.8,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,next_q_revenue_guidance_usd,52.3-54.3,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,next_q_gm_guidance,51-53%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,next_q_gm_guidance,53.5-55.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,next_q_gm_guidance,57-59%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,next_q_gm_guidance,57-59%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,next_q_gm_guidance,57-59%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,next_q_gm_guidance,55.5-57.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,next_q_gm_guidance,59-61%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,next_q_gm_guidance,63-65%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,next_q_gm_guidance,65.5-67.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,next_q_gm_guidance,65-67%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,next_q_gm_guidance,65-67%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,next_q_om_guidance,40-42%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,next_q_om_guidance,42.5-44.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,next_q_om_guidance,46.5-48.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,next_q_om_guidance,46.5-48.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,next_q_om_guidance,47-49%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,next_q_om_guidance,45.5-47.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,next_q_om_guidance,49-51%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,next_q_om_guidance,54-56%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,next_q_om_guidance,56.5-58.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,next_q_om_guidance,56-58%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,next_q_om_guidance,56.5-58.5%,text,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,next_q_fx_assumption_usdntd,32.3,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24e_withguidancexfinal.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,next_q_fx_assumption_usdntd,32.5,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24e_withguidancexfinal.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,next_q_fx_assumption_usdntd,32.0,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24e_withguidancexfinal.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,next_q_fx_assumption_usdntd,32.8,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,next_q_fx_assumption_usdntd,32.5,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25e_withguidancexfinal.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,next_q_fx_assumption_usdntd,29.0,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25e_withguidancexfinal.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,next_q_fx_assumption_usdntd,30.6,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25e_withguidancexfinal.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,next_q_fx_assumption_usdntd,31.6,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,next_q_fx_assumption_usdntd,31.7,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,next_q_fx_assumption_usdntd,32.0,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,next_q_fx_assumption_usdntd,31.8,TWD_per_USD,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,官方
+TSMC,2024Q1,2024Q1,capex_usd,5.77,USD_bn,https://www.fool.com/earnings/call-transcripts/2024/04/18/taiwan-semiconductor-manufacturing-tsm-q1-2024-ear,2024-04-18,官方
+TSMC,2024Q2,2024Q2,capex_usd,6.36,USD_bn,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,capex_usd,6.4,USD_bn,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,capex_usd,11.2,USD_bn,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q1,2025Q1,capex_usd,10.06,USD_bn,https://www.roic.ai/quote/TSM/transcripts/2025-year/1-quarter,2025-04-17,官方
+TSMC,2025Q2,2025Q2,capex_usd,9.6,USD_bn,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC+2Q25+Transcript.pdf,2025-07-17,官方
+TSMC,2025Q3,2025Q3,capex_usd,9.7,USD_bn,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2025Q4,2025Q4,capex_usd,11.5,USD_bn,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2026Q1,2026Q1,capex_usd,11.1,USD_bn,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf,2026-04-16,官方
+TSMC,2026Q2,2026Q2,capex_usd,15.7,USD_bn,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf,2026-07-16,官方
+TSMC,2026Q3,2026Q3,capex_usd,13.8,USD_bn,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q1,2024Q1,full_year_capex_guidance,2024 capex US$28-32B,text,https://www.fool.com/earnings/call-transcripts/2024/04/18/taiwan-semiconductor-manufacturing-tsm-q1-2024-ear,2024-04-18,官方
+TSMC,2024Q2,2024Q2,full_year_capex_guidance,2024 capex narrowed to US$30-32B,text,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,full_year_capex_guidance,2024 capex slightly higher than US$30B,text,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,full_year_capex_guidance,2025 capital budget US$38-42B; 2024 actual capex about US$29.8B,text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q1,2025Q1,full_year_capex_guidance,2025 capital budget maintained at US$38-42B,text,https://www.roic.ai/quote/TSM/transcripts/2025-year/1-quarter,2025-04-17,官方
+TSMC,2025Q2,2025Q2,full_year_capex_guidance,2025 capital budget maintained at US$38-42B,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC+2Q25+Transcript.pdf,2025-07-17,官方
+TSMC,2025Q3,2025Q3,full_year_capex_guidance,2025 capex narrowed to US$40-42B (from 38-42B); ~70% advanced process / 10-20% specialty / 10-20% advanced packaging-test-mask-other,text,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2025Q4,2025Q4,full_year_capex_guidance,2026 capital budget US$52-56B (70-80% advanced process); 2025 actual capex US$40.9B; 2025 FCF about NT$1 trillion,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2026Q1,2026Q1,full_year_capex_guidance,2026 capex towards high end of US$52-56B,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf,2026-04-16,官方
+TSMC,2026Q2,2026Q2,full_year_capex_guidance,2026 capex raised to US$60-64B,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf,2026-07-16,官方
+TSMC,2026Q3,2026Q3,full_year_capex_guidance,2026 capex reiterated US$60-64B; 2026-2028 capex to be even more significantly higher than past three years,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q1,2024Q1,full_year_revenue_growth_guidance,2024 revenue growth low-to-mid 20s% in USD,text,https://www.fool.com/earnings/call-transcripts/2024/04/18/taiwan-semiconductor-manufacturing-tsm-q1-2024-ear,2024-04-18,官方
+TSMC,2024Q2,2024Q2,full_year_revenue_growth_guidance,2024 revenue growth slightly above mid-20s% in USD,text,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,full_year_revenue_growth_guidance,2024 revenue growth close to 30% in USD,text,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,full_year_revenue_growth_guidance,2025 revenue growth close to mid-20s% in USD; 2024-2029 revenue CAGR approaching 20%; long-term GM 53% and higher,text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q1,2025Q1,full_year_revenue_growth_guidance,2025 revenue growth close to mid-20s% in USD (maintained),text,https://www.roic.ai/quote/TSM/transcripts/2025-year/1-quarter,2025-04-17,官方
+TSMC,2025Q2,2025Q2,full_year_revenue_growth_guidance,2025 revenue growth around 30% in USD,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC+2Q25+Transcript.pdf,2025-07-17,官方
+TSMC,2025Q3,2025Q3,full_year_revenue_growth_guidance,2025 revenue growth close to mid-30s% in USD,text,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2025Q4,2025Q4,full_year_revenue_growth_guidance,2026 revenue growth close to 30% in USD; 2024-2029 revenue CAGR approaching 25%; long-term GM 56% and higher; ROE high-20s%,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2026Q1,2026Q1,full_year_revenue_growth_guidance,2026 revenue growth above 30% in USD,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf,2026-04-16,官方
+TSMC,2026Q2,2026Q2,full_year_revenue_growth_guidance,2026 revenue growth slightly above 40% in USD,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf,2026-07-16,官方
+TSMC,2026Q3,2026Q3,full_year_revenue_growth_guidance,2026 revenue growth around 44% in USD; 4Q26 guide midpoint +58% YoY; prudent on 2027 for consumer/price-sensitive segments,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q1,2024Q1,ai_accelerator_statement,AI processor revenue to more than double in 2024; low-teens % of 2024 revenue; ~50% CAGR next five years; >20% of revenue by 2028,text,https://www.fool.com/earnings/call-transcripts/2024/04/18/taiwan-semiconductor-manufacturing-tsm-q1-2024-ear,2024-04-18,官方
+TSMC,2024Q2,2024Q2,ai_accelerator_statement,AI accelerator supply tight; hope to reach supply-demand balance in 2025 or 2026,text,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,ai_accelerator_statement,AI processor revenue to more than triple in 2024; mid-teens % of 2024 revenue,text,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,ai_accelerator_statement,2024 AI accelerators more than tripled to close to mid-teens % of revenue; to double in 2025; mid-40s% CAGR 2024-2029,text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q1,2025Q1,ai_accelerator_statement,Reaffirmed AI accelerator revenue to double in 2025; mid-40s% CAGR five years from 2024,text,https://www.roic.ai/quote/TSM/transcripts/2025-year/1-quarter,2025-04-17,官方
+TSMC,2025Q3,2025Q3,ai_accelerator_statement,CEO: prior mid-40s CAGR now a little bit better; numbers are insane; update early next year,text,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2025Q4,2025Q4,ai_accelerator_statement,AI accelerators were high-teens % of 2025 revenue; 2024-2029 AI accelerator CAGR raised to mid-to-high 50s%,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2026Q1,2026Q1,ai_accelerator_statement,AI accelerator CAGR toward higher 50s% observed,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf,2026-04-16,官方
+TSMC,2026Q2,2026Q2,ai_accelerator_statement,No new number; AI demand stronger and stronger; agentic AI CPUs/networking add silicon demand outside narrow AI accelerator definition,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf,2026-07-16,官方
+TSMC,2026Q3,2026Q3,ai_accelerator_statement,"Prior guide mid-to-high 50s% CAGR 2024-2029; CEO: no sign of slowdown, probably will be higher; definition narrow and excludes CPUs",text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q2,2024Q2,overseas_fab_gm_dilution_guidance,Overseas fabs to dilute GM by 2-3 ppt starting 2025,text,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,overseas_fab_gm_dilution_guidance,2-3 ppt per year for next three to five years,text,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,overseas_fab_gm_dilution_guidance,2-3 ppt per year over next five years,text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q2,2025Q2,overseas_fab_gm_dilution_guidance,2-3 ppt per year in early stages widening to 3-4 ppt in latter stages (five years from 2025),text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC+2Q25+Transcript.pdf,2025-07-17,官方
+TSMC,2025Q3,2025Q3,overseas_fab_gm_dilution_guidance,2H25 closer to 2 ppt; FY2025 1-2 ppt (vs 2-3 ppt prior); next several years 2-3 ppt early widening to 3-4 ppt,text,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2025Q4,2025Q4,overseas_fab_gm_dilution_guidance,2-3 ppt early stages widening to 3-4 ppt; plus N2 ramp dilution 2-3 ppt for FY2026,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2026Q1,2026Q1,overseas_fab_gm_dilution_guidance,2-3 ppt early stages widening to 3-4 ppt; Middle East chemical/gas cost risk,text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf,2026-04-16,官方
+TSMC,2026Q2,2026Q2,overseas_fab_gm_dilution_guidance,2-3 ppt early widening to 3-4 ppt; N2 steep ramp to dilute GM 3-4 ppt in 2H26,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf,2026-07-16,官方
+TSMC,2026Q3,2026Q3,overseas_fab_gm_dilution_guidance,FY2026 overseas dilution closer to 2 ppt; to widen to 3-4 ppt in next few years as more US fabs ramp,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q1,2024Q1,cowos_official_statement,"CoWoS capacity more than double in 2024 vs 2023, still not enough",text,https://www.fool.com/earnings/call-transcripts/2024/04/18/taiwan-semiconductor-manufacturing-tsm-q1-2024-ear,2024-04-18,官方
+TSMC,2024Q2,2024Q2,cowos_official_statement,"After more than doubling in 2024, want to double or more than double again in 2025",text,https://www.fool.com/earnings/call-transcripts/2024/07/18/taiwan-semiconductor-manufacturing-tsm-q2-2024-ear,2024-07-18,官方
+TSMC,2024Q3,2024Q3,cowos_official_statement,"More than 2x in 2024 and probably double again in 2025, still not enough",text,https://www.fool.com/earnings/call-transcripts/2024/10/17/taiwan-semiconductor-manufacturing-tsm-q3-2024-ear,2024-10-17,官方
+TSMC,2024Q4,2024Q4,advanced_packaging_revenue_share,"Advanced packaging over 8% of 2024 revenue, expected above 10% in 2025, margin below corporate average",text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q2,2025Q2,cowos_official_statement,AI and CoWoS demand very strong; building many new backend facilities; trying to narrow the gap,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-07/1f4f86c935f1de837672a6973154e64b26bdae57/TSMC+2Q25+Transcript.pdf,2025-07-17,官方
+TSMC,2025Q3,2025Q3,cowos_official_statement,Working very hard to narrow CoWoS supply-demand gap; still increasing capacity in 2026,text,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2025-10/6860312f04fd291d0f26b46c1234f84e6332717e/TSMC%203Q25%20Transcript.pdf,2025-10-16,官方
+TSMC,2026Q3,2026Q3,cowos_official_statement,In production at 5x reticle CoWoS; developing 9x and 14x; CoPoS for cost; CoWoS still number one choice,text,https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf,2026-10-15,官方
+TSMC,2024Q4,2024Q4,capex_budget_next_year,38-42,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24e_withguidancexfinal.htm,2025-01-16,官方
+TSMC,2025Q4,2025Q4,capex_budget_next_year,52-56,USD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm,2026-01-15,官方
+TSMC,2025Q4,2025Q4,ai_accelerator_rev_share_fy2025,high-teens,pct_text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2024Q4,2024Q4,ai_accelerator_rev_share_fy2024,close to mid-teens,pct_text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q4,2025Q4,ai_accelerator_cagr_2024_2029,mid-to-high 50s,pct_text,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2024Q4,2024Q4,ai_accelerator_cagr_2024_2029,mid-40s,pct_text,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2025Q4,FY2025,fy_capex_actual_usd,40.9,USD_bn,https://investor.tsmc.com/japanese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf,2026-01-15,官方
+TSMC,2024Q4,FY2024,fy_capex_actual_usd,29.8,USD_bn,https://www.fool.com/earnings/call-transcripts/2025/01/16/taiwan-semiconductor-manufacturing-tsm-q4-2024-ear,2025-01-16,官方
+TSMC,2024Q4,2024Q4,cowos_capacity_wpm_eoy2024_est,35000-40000,wpm,https://www.trendforce.com/news/2024/10/21/news-cowos-capacity-doubles-for-two-years-still-insufficient-positive-outlook-for-suppliers/,2024-10-21,報導
+TSMC,2025Q4,2025Q4,cowos_capacity_wpm_eoy2025_est,75000-80000,wpm,https://www.trendforce.com/news/2025/12/08/news-tsmcs-cowos-l-s-reportedly-fully-booked-osat-partners-step-up-with-ases-cowop-in-focus,2025-12-08,報導
+TSMC,2025Q4,2025Q4,cowos_capacity_wpm_eoy2026_est,120000-130000 (TrendForce citing industry),wpm,https://www.trendforce.com/news/2025/12/08/news-tsmcs-cowos-l-s-reportedly-fully-booked-osat-partners-step-up-with-ases-cowop-in-focus,2025-12-08,估計
+TSMC,2025Q4,2025Q4,cowos_capacity_wpm_eoy2026_est,125000 (Bernstein),wpm,https://www.fool.com/investing/2025/12/18/prediction-this-will-be-tsmcs-stock-price-in-2026/,2025-12-18,估計
+TSMC,2025Q2,2025Q2,cowos_capacity_wpm_eoy2026_est,88000 (DIGITIMES Research),wpm,https://www.digitimes.com/news/a20250628RS401.html?chid=2,2025-06-28,估計
+TSMC,2025Q4,2025Q4,cowos_capacity_wpm_eoy2026_est,120000; end-2027 140000 (Fubon Research),wpm,https://www.ctee.com.tw/news/20251203701542-430704,2025-12-03,估計
+TSMC,2026Q3,2026Q3,cowos_capacity_wpm_eoy2026_est,about 130000 300mm-equiv; plan 260000 by 2028 (supply-chain projection),wpm,https://semiwiki.com/?p=373574,2026-09,估計
+TSMC,2026Q3,2026Q3,cowos_capacity_wpm_eoy2027_est,TSMC CoW 180000; global CoWoS 270000 (UBS; global end-2026 160000),wpm,https://money.udn.com/money/story/5607/9773857,2026-09-23,估計
+TSMC,2026-01,,monthly_revenue_ntd,401.26,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000015/tsm-revenue20260210.htm,2026-02-10,官方
+TSMC,2026-01,,monthly_revenue_yoy,36.8,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000015/tsm-revenue20260210.htm,2026-02-10,官方
+TSMC,2026-01,,monthly_revenue_mom,19.8,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000015/tsm-revenue20260210.htm,2026-02-10,官方
+TSMC,2026-02,,monthly_revenue_ntd,317.66,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000031/tsm-revenue20260310.htm,2026-03-10,官方
+TSMC,2026-02,,monthly_revenue_yoy,22.2,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000031/tsm-revenue20260310.htm,2026-03-10,官方
+TSMC,2026-02,,monthly_revenue_mom,-20.8,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000031/tsm-revenue20260310.htm,2026-03-10,官方
+TSMC,2026-03,,monthly_revenue_ntd,415.19,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm,2026-04-10,官方
+TSMC,2026-03,,monthly_revenue_yoy,45.2,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm,2026-04-10,官方
+TSMC,2026-03,,monthly_revenue_mom,30.7,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm,2026-04-10,官方
+TSMC,2026-04,,monthly_revenue_ntd,410.73,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000213/tsm-revenue20260508.htm,2026-05-08,官方
+TSMC,2026-04,,monthly_revenue_yoy,17.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000213/tsm-revenue20260508.htm,2026-05-08,官方
+TSMC,2026-04,,monthly_revenue_mom,-1.1,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000213/tsm-revenue20260508.htm,2026-05-08,官方
+TSMC,2026-05,,monthly_revenue_ntd,416.98,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm,2026-06-10,官方
+TSMC,2026-05,,monthly_revenue_yoy,30.1,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm,2026-06-10,官方
+TSMC,2026-05,,monthly_revenue_mom,1.5,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000367/tsm-revenue20260610.htm,2026-06-10,官方
+TSMC,2026-06,,monthly_revenue_ntd,442.68,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000447/tsm-revenue20260713.htm,2026-07-13,官方
+TSMC,2026-06,,monthly_revenue_yoy,67.9,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000447/tsm-revenue20260713.htm,2026-07-13,官方
+TSMC,2026-06,,monthly_revenue_mom,6.2,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000447/tsm-revenue20260713.htm,2026-07-13,官方
+TSMC,2026-07,,monthly_revenue_ntd,467.58,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000471/tsm-revenue20260810.htm,2026-08-10,官方
+TSMC,2026-07,,monthly_revenue_yoy,44.7,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000471/tsm-revenue20260810.htm,2026-08-10,官方
+TSMC,2026-07,,monthly_revenue_mom,5.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000471/tsm-revenue20260810.htm,2026-08-10,官方
+TSMC,2026-08,,monthly_revenue_ntd,514.81,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm,2026-09-10,官方
+TSMC,2026-08,,monthly_revenue_yoy,53.3,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm,2026-09-10,官方
+TSMC,2026-08,,monthly_revenue_mom,10.1,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm,2026-09-10,官方
+TSMC,2026-09,,monthly_revenue_ntd,511.86,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
+TSMC,2026-09,,monthly_revenue_yoy,54.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
+TSMC,2026-09,,monthly_revenue_mom,-0.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
+AMD,2024Q1,2024Q1,datacenter_revenue,2.337,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-04-30,官方(憑記憶未逐一回查原文)
+AMD,2024Q2,2024Q2,datacenter_revenue,2.834,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-07-30,官方(憑記憶未逐一回查原文)
+AMD,2024Q3,2024Q3,datacenter_revenue,3.549,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-10-29,官方(憑記憶未逐一回查原文)
+AMD,2024Q4,2024Q4,datacenter_revenue,3.859,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2025-02-04,官方(憑記憶;與Q4'25 YoY+39%吻合)
+AMD,2024FY,FY2024,instinct_gpu_revenue_comment,2024年 Instinct GPU 營收超過50億美元(Q4'24法說),text,https://ir.amd.com/financial-information/quarterly-results,2025-02-04,官方(憑記憶未回查)
+AMD,2025Q1,2025Q1,datacenter_revenue,3.674,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2025Q1,2025Q1,datacenter_operating_income,0.932,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2025Q2,2025Q2,datacenter_revenue,3.240,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2025Q2,2025Q2,datacenter_operating_income,-0.155,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方(含MI308出口管制約8億美元庫存費用)
+AMD,2025Q3,2025Q3,datacenter_revenue,4.341,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2025-11-04,官方(憑記憶;FY25合計16.6吻合)
+AMD,2025Q4,2025Q4,datacenter_revenue,5.380,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方(新聞稿稱$5.4B YoY+39%)
+AMD,2025Q4,2025Q4,mi308_china_sales,0.39,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方
+AMD,2025FY,FY2025,datacenter_revenue,16.6,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方
+AMD,2026Q1,2026Q1,datacenter_revenue,5.775,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2026Q1,2026Q1,datacenter_operating_income,1.599,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2026Q1,2026Q1,total_revenue,10.253,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2026Q2,2026Q2,datacenter_revenue,6.718,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2026Q2,2026Q2,datacenter_operating_income,2.103,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2026Q2,2026Q2,total_revenue,11.536,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2026Q2,2026Q2,datacenter_share_of_revenue,58,pct,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2026Q3,2026Q3,next_q_revenue_guidance,13.0,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方(±0.3B;CFO稱下半年資料中心加速)
+AMD,2025Q4,2025Q4,deal_openai,"2025-10-06 與 OpenAI 簽 6GW 多年期 GPU 協議;首1GW MI450 於2026下半年;OpenAI 獲最多1.6億股AMD認股權證(行使價0.01美元,依部署量與股價目標分批歸屬)",text,https://www.storagenewsletter.com/2025/10/09/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus/,2025-10-06,官方(新聞稿轉載)
+AMD,2026Q1,2026Q1,deal_meta,Meta 與 AMD 計畫部署最多6GW Instinct GPU;首1GW為客製 MI450,text,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
+AMD,2026Q2,2026Q2,deal_anthropic,與 Anthropic 合作部署最多2GW MI450 系列(Helios 機櫃);Helios 客戶含 Anthropic/Meta/Microsoft/OpenAI/Oracle 等,text,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+Broadcom,2023Q4,FY24Q1,ai_semiconductor_revenue,2.3,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2024-03-07,官方/計算(由FY25Q1 4.1B YoY+77%回推;未取得原文)
+Broadcom,2024Q1,FY24Q2,ai_semiconductor_revenue,3.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm,2024-06-12,官方/計算(憑記憶;與FY24合計12.2B吻合)
+Broadcom,2024Q2,FY24Q3,ai_semiconductor_revenue,3.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm,2024-09-05,官方/計算(由FY25Q3 5.2B YoY+63%回推約3.2B;未取得原文)
+Broadcom,2024Q3,FY24Q4,ai_semiconductor_revenue,3.7,USD_bn,https://www.fool.com/earnings/call-transcripts/2024/12/12/broadcom-avgo-q4-2024-earnings-call-transcript/,2024-12-12,官方(法說逐字稿)
+Broadcom,2024FY,FY2024,ai_semiconductor_revenue,12.2,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm,2024-12-12,官方
+Broadcom,2024Q4,FY25Q1,ai_semiconductor_revenue,4.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2025-03-06,官方/計算(FY26Q1 8.4B YoY+106%回推4.08B)
+Broadcom,2025Q1,FY25Q2,ai_semiconductor_revenue,4.4,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm,2025-06-05,官方/計算(FY26Q2 10.8B YoY+143%回推4.44B)
+Broadcom,2025Q2,FY25Q3,ai_semiconductor_revenue,5.2,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2025-09-04,官方/計算(FY26Q3 16.7B YoY+221%回推5.20B)
+Broadcom,2025Q3,FY25Q4,ai_semiconductor_revenue,6.5,USD_bn,https://www.marketbeat.com/earnings/reports/2025-12-11-broadcom-inc-stock/,2025-12-11,官方(法說;YoY+74%)
+Broadcom,2025FY,FY2025,ai_semiconductor_revenue,20.2,USD_bn,https://www.marketbeat.com/earnings/reports/2025-12-11-broadcom-inc-stock/,2025-12-11,官方(法說稱約20B；YoY+65%)
+Broadcom,2025Q3,FY25Q4,ai_backlog,73,USD_bn,https://www.marketbeat.com/earnings/reports/2025-12-11-broadcom-inc-stock/,2025-12-11,官方(法說;約18個月內出貨;占總backlog 162B近半)
+Broadcom,2025Q3,FY25Q4,customer_orders_comment,Q4 另獲 Anthropic 110億美元訂單(先前已有100億美元);第五家 XPU 客戶10億美元訂單,text,https://vectorshift.ai/research/companies/broadcom/earnings/2025-q4,2025-12-11,報導(法說摘要轉述)
+Broadcom,2025Q3,FY25Q4,deal_openai,"2025-10-13 與 OpenAI 合作部署10GW OpenAI自研加速器,2026下半年開始至2029年底完成;已簽 term sheet,未揭露金額",text,https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/,2025-10-13,官方
+Broadcom,2025Q4,FY26Q1,next_q_ai_revenue_guidance,8.2,USD_bn,https://www.marketbeat.com/earnings/reports/2025-12-11-broadcom-inc-stock/,2025-12-11,官方
+Broadcom,2025Q4,FY26Q1,ai_semiconductor_revenue,8.4,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2026-03-04,官方
+Broadcom,2025Q4,FY26Q1,total_revenue,19.311,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2026-03-04,官方
+Broadcom,2026Q1,FY26Q2,next_q_ai_revenue_guidance,10.7,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2026-03-04,官方
+Broadcom,2026Q1,FY26Q2,ai_semiconductor_revenue,10.8,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm,2026-06-03,官方
+Broadcom,2026Q1,FY26Q2,total_revenue,22.2,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm,2026-06-03,官方
+Broadcom,2026Q1,FY26Q2,ai_bookings_comment,季內 AI 訂單超過300億美元(出貨10.8B);FY26 AI 營收目標約560億美元;重申FY27 AI營收超過1000億美元,text,https://www.nasdaq.com/articles/broadcom-q2-earnings-call-highlights,2026-06-03,報導(法說摘要)
+Broadcom,2026Q2,FY26Q3,next_q_ai_revenue_guidance,16.0,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm,2026-06-03,官方
+Broadcom,2026Q2,FY26Q3,ai_semiconductor_revenue,16.7,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,官方(YoY+221% QoQ+54%;季度截至2026-08-02；約對應日曆2026Q2-Q3)
+Broadcom,2026Q2,FY26Q3,total_revenue,29.6,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,官方
+Broadcom,2026Q2,FY26Q3,fcf,13.7,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,官方
+Broadcom,2026Q3,FY26Q4,next_q_ai_revenue_guidance,21.7,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,官方(YoY+236%)
+Broadcom,2026Q3,FY26Q4,next_q_revenue_guidance,34.8,USD_bn,https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,官方
+Broadcom,2026Q2,FY26Q3,openai_comment,"OpenAI 晶片2027年計畫部署1.3GW,並有逾5GW 能見度(Jalapeño 及後續世代XPU)",text,https://pro.edgex.exchange/en-US/news/article/broadcom-ai-chip-revenue-q3,2026-09-02,報導
+SK hynix,2024Q1,2024Q1,revenue,12.43,KRW_tn,https://news.skhynix.com/,2024-04-25,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q1,2024Q1,operating_profit,2.89,KRW_tn,https://news.skhynix.com/,2024-04-25,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q2,2024Q2,revenue,16.42,KRW_tn,https://news.skhynix.com/,2024-07-25,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q2,2024Q2,operating_profit,5.47,KRW_tn,https://news.skhynix.com/,2024-07-25,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q3,2024Q3,revenue,17.57,KRW_tn,https://news.skhynix.com/,2024-10-24,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q3,2024Q3,operating_profit,7.03,KRW_tn,https://news.skhynix.com/,2024-10-24,官方(憑記憶未逐一回查原文)
+SK hynix,2024Q4,2024Q4,revenue,19.77,KRW_tn,https://news.skhynix.com/,2025-01-23,官方(憑記憶;Q4'25 YoY+66%吻合)
+SK hynix,2024Q4,2024Q4,operating_profit,8.08,KRW_tn,https://news.skhynix.com/,2025-01-23,官方(憑記憶;Q4'25 YoY+137%吻合)
+SK hynix,2024Q4,2024Q4,hbm_share_of_dram_revenue,40,pct,https://news.skhynix.com/,2025-01-23,官方(憑記憶:Q4'24 HBM占DRAM營收逾40%;未回查)
+SK hynix,2025Q1,2025Q1,revenue,17.64,KRW_tn,https://www.barchart.com/story/news/1462801/sk-hynix-announces-1q26-financial-results,2025-04-24,官方/計算(由1Q26 YoY+198.1%回推)
+SK hynix,2025Q1,2025Q1,operating_profit,7.44,KRW_tn,https://www.barchart.com/story/news/1462801/sk-hynix-announces-1q26-financial-results,2025-04-24,官方/計算(由1Q26 YoY+405.5%回推)
+SK hynix,2025Q2,2025Q2,revenue,22.232,KRW_tn,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2025-07-24,官方
+SK hynix,2025Q2,2025Q2,operating_profit,9.2129,KRW_tn,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2025-07-24,官方
+SK hynix,2025Q2,2025Q2,hbm_market_share_shipments,62,pct,https://www.itiger.com/news/1152437497,2025-08-01,估計(研究機構)
+SK hynix,2025Q3,2025Q3,revenue,24.45,KRW_tn,https://news.skhynix.com/,2025-10-29,官方(憑記憶;Q4'25 QoQ+34%吻合)
+SK hynix,2025Q3,2025Q3,operating_profit,11.38,KRW_tn,https://news.skhynix.com/,2025-10-29,官方(憑記憶;Q4'25 QoQ+68%吻合)
+SK hynix,2025Q3,2025Q3,hbm_sold_out_comment,2025Q3法說:2026年 HBM、DRAM、NAND 產能已全數售罄,text,https://www.techspot.com/community/topics/sk-hynix-sells-out-dram-nand-and-hbm-capacity-into-2026-amid-ai-frenzy.295247/,2025-10-29,報導(引述法說)
+SK hynix,2025Q4,2025Q4,revenue,32.83,KRW_tn,https://www.storagenewsletter.com/2026/02/10/sk-hynix-fiscal-4q25-and-fy25-financial-results/,2026-01-28,官方
+SK hynix,2025Q4,2025Q4,operating_profit,19.17,KRW_tn,https://www.storagenewsletter.com/2026/02/10/sk-hynix-fiscal-4q25-and-fy25-financial-results/,2026-01-28,官方
+SK hynix,2025FY,FY2025,revenue,97.1467,KRW_tn,https://www.storagenewsletter.com/2026/02/10/sk-hynix-fiscal-4q25-and-fy25-financial-results/,2026-01-28,官方
+SK hynix,2025FY,FY2025,operating_profit,47.2063,KRW_tn,https://www.storagenewsletter.com/2026/02/10/sk-hynix-fiscal-4q25-and-fy25-financial-results/,2026-01-28,官方(HBM營收全年翻倍以上)
+SK hynix,2026Q1,2026Q1,revenue,52.5763,KRW_tn,https://www.barchart.com/story/news/1462801/sk-hynix-announces-1q26-financial-results,2026-04-23,官方
+SK hynix,2026Q1,2026Q1,operating_profit,37.6103,KRW_tn,https://www.barchart.com/story/news/1462801/sk-hynix-announces-1q26-financial-results,2026-04-23,官方(營益率72%)
+SK hynix,2026Q1,2026Q1,hbm_sold_out_comment,"2026年2月 Goldman Sachs 會議:2026年 HBM 產能已售罄,配置已定;認為有利2027年 HBM 條件",text,https://www.itiger.com/news/1152437497,2026-02-15,報導
+SK hynix,2026Q2,2026Q2,revenue,79.3187,KRW_tn,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2026-07-29,官方(YoY+257%)
+SK hynix,2026Q2,2026Q2,operating_profit,60.5426,KRW_tn,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2026-07-29,官方(營益率76%)
+SK hynix,2026Q2,2026Q2,hbm_comment,2Q26 開始 HBM4 量產出貨、下半年放量;HBM4E 完成送樣;已與約10家客戶簽長期協議(LTA);未揭露HBM占DRAM比重,text,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2026-07-29,官方
+SK hynix,2026FY,FY2026,capex_guidance_comment,2026年 CapEx 指引上修至40兆韓元高段,text,https://pulse2.com/sk-hynix-reports-record-q2-2026-revenue-of-79-3-trillion-won-about-55-2-billion/,2026-07-29,報導
+SK hynix,2026Q3,2026Q3,revenue,,KRW_tn,,,待公布(預計2026年10月底)
+Micron,2025Q3,FY25Q4,revenue,11.32,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2025-09-23,官方(季度截至2025-08底)
+Micron,2026Q2,FY26Q3,revenue,41.46,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2026-06-25,官方(季度約3-5月)
+Micron,2026Q3,FY26Q4,revenue,54.23,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2026-09-30,官方(季度截至2026-09-03；約6-8月)
+Micron,2026Q3,FY26Q4,core_datacenter_unit_revenue,18.00,USD_bn,https://biz.heraldcorp.com/article/10889696,2026-09-30,報導
+Micron,2026Q3,FY26Q4,cloud_memory_unit_revenue,16.28,USD_bn,https://www.nextplatform.com/store/2026/10/02/microns-numbers%20show-why-hbm4-memory-is-worth-15x-its-weight-in-gold/5300701,2026-10-02,報導
+Micron,2026Q3,FY26Q4,hbm_revenue,,USD_bn,,,未揭露(Micron不再單獨揭露HBM營收;NextPlatform估約14.3B為作者估計)
+Micron,2026FY,FY2026,revenue,133.19,USD_bn,https://pulse2.com/micron-reports-record-fiscal-q4-revenue-of-54-23-billion-and-fy2026-revenue-of-133-19-billion/,2026-09-30,官方(新聞稿轉載)
+Micron,2026Q4,FY27Q1,next_q_revenue_guidance,61.5,USD_bn,https://pulse2.com/micron-reports-record-fiscal-q4-revenue-of-54-23-billion-and-fy2026-revenue-of-133-19-billion/,2026-09-30,官方(±1.5B)
