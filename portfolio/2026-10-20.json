@@ -1,0 +1,83 @@
+{
+  "as_of": "2026-10-20",
+  "risk_free": 0.017,
+  "kelly_fraction": 0.5,
+  "stress_rho": 0.4,
+  "vol_window_years": 5,
+  "vol_method": "max",
+  "vol_method_note": "max = 日與週波動取大者；5 年含 2022 熊市，較保守。可用 vol_override 手動指定，例如 {\"TSMC\": 0.32}",
+  "rho_window_years": 2,
+  "cash_like_weight": 0.2078,
+  "cash_like_note": "現金 + 期貨權益數（空手）",
+  "assets": [
+    {
+      "name": "TSMC",
+      "ticker": "2330.TW",
+      "currency": "TWD",
+      "price": 2405,
+      "income_12m": 26,
+      "income_note": "未來 12 個月股利假設：季配約 6.5 元",
+      "scenarios": [
+        {
+          "name": "樂觀：N2 放量、漲價落實",
+          "price": 3500,
+          "prob": 0.2,
+          "basis": "2028 EPS 175 x 20 倍"
+        },
+        {
+          "name": "基本（使用者目標）",
+          "price": 3000,
+          "prob": 0.45,
+          "basis": "2028 EPS 160 x 18.75 倍"
+        },
+        {
+          "name": "降溫：CapEx 成長放緩",
+          "price": 2320,
+          "prob": 0.2,
+          "basis": "2028 EPS 145 x 16 倍"
+        },
+        {
+          "name": "空頭：AI 循環見頂",
+          "price": 1690,
+          "prob": 0.15,
+          "basis": "2028 EPS 125 x 13.5 倍"
+        }
+      ],
+      "weight": 0.5398
+    },
+    {
+      "name": "BTC",
+      "ticker": "BTC-USD",
+      "currency": "USD",
+      "price": 82000,
+      "income_12m": 0,
+      "scenarios": [
+        {
+          "name": "樂觀",
+          "price": 150000,
+          "prob": 0.2,
+          "basis": "突破前高 ~12.6 萬"
+        },
+        {
+          "name": "基本（使用者目標）",
+          "price": 120000,
+          "prob": 0.4,
+          "basis": "使用者判斷"
+        },
+        {
+          "name": "盤整",
+          "price": 82000,
+          "prob": 0.2,
+          "basis": "持平"
+        },
+        {
+          "name": "空頭",
+          "price": 50000,
+          "prob": 0.2,
+          "basis": "約 -39%；歷史熊市常見 -60~-77%，此情境可能偏樂觀"
+        }
+      ],
+      "weight": 0.2524
+    }
+  ]
+}
