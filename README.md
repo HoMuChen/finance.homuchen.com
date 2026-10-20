@@ -34,7 +34,11 @@
 
 ## 凱利工具
 
-依賴：Python 3 與 numpy。
+依賴：Python 3 與 numpy。FinMind token 放在 `.env.local`（不進版控）：
+
+```
+FINMIND_TOKEN=<your token>
+```
 
 ```bash
 python3 tools/kelly.py portfolio/2026-10-20.json                         # 輸出到終端
@@ -45,7 +49,7 @@ python3 tools/kelly.py portfolio/2026-10-20.json --amounts portfolio/private.jso
 
 計算流程：
 
-1. 從 Yahoo Finance 抓 5 年日價格，快取在 `cache/prices/`。USD 資產換算成台幣。
+1. 抓 5 年日價格，快取在 `cache/prices/`：台股（還原股價）與 USD/TWD 匯率用 FinMind，FinMind 沒有的資產（如 BTC）用 Yahoo Finance。USD 資產換算成台幣。
 2. 計算年化波動（日、週波動取較大者）與週報酬相關係數。
 3. 依設定檔的情境（目標價 × 機率）計算一年期加權預期報酬。
 4. 計算多資產分數凱利 f = k · Σ⁻¹(μ − r)，分別用實測相關與壓力相關，並和目前比例比較。
