@@ -3,3 +3,4 @@ __pycache__/
 .DS_Store
 portfolio/private*.json
 reports/*.private.md
+.env.local
