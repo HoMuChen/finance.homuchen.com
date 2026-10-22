@@ -214,10 +214,11 @@
 
 | 項目 | 數字 | 標記 | 來源 |
 |---|---|---|---|
-| 2026 CapEx 指引 | $130–145B（Q2 財報 2026-07-29；另有 $135–145B 說法；S&P 稱 $165–169B 疑為總費用誤植） | [官方:Meta Q2 2026，經次級轉述] | https://www.investing.com/news/earnings/meta-stock-slips-more-than-6-after-hours-on-raised-capital-expenditure-guidance-4646698 ；https://transcripts.platformaeronaut.com/summaries/META-2Q26-AI-Summary |
-| Q2 2026 CapEx（含融資租賃本金） | $31.1B | [官方] | 同上 |
-| Q2 2026 FCF | $784M（大幅下滑） | [官方] | 同上 |
-| 2026 總費用指引 | $165–169B | [官方] | 同上 |
+| 2026 CapEx 指引 | **$135–145B**（Q3 2026 財報 2026-10-21，前次 $130–145B） | [官方] | https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx |
+| Q3 2026 CapEx（含融資租賃本金） | $34.9B | [官方] | 同上 |
+| Q3 2026 FCF | −$2.12B | [官方] | 同上 |
+| Q4 2026 營收指引 | $73–76B | [官方] | 同上 |
+| 2026 總費用指引 | $175–179B（納入 Q3 $9.89B 法律和解費用） | [官方] | 同上 |
 | AI 營收 | 查不到（Meta 不單獨揭露） | — | — |
 
 ### 6.3 Google / Alphabet（DeepMind 不單獨揭露）

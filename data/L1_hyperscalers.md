@@ -1,9 +1,9 @@
 # L1｜五大雲端 / AI 基礎設施業者：CapEx、雲端營收、現金流、RPO
 
-> 更新日期：2026-10-19
+> 更新日期：2026-10-22
 > 對象：Microsoft（MSFT）、Amazon（AMZN）、Alphabet（GOOGL）、Meta（META）、Oracle（ORCL）
-> 期間：2024Q1 至最新已公布季度（日曆季度）。MSFT / AMZN / GOOGL / META 最新為 **2026Q2**（Q3 財報預計 10 月下旬公布）；ORCL 最新為 **FY27Q1（2026 年 6–8 月，標 2026Q3）**，2026-09-10 公布。
-> 原始資料：`data/L1_hyperscalers.csv`（686 列長格式，每列附 source_url / source_date / quality）。
+> 期間：2024Q1 至最新已公布季度（日曆季度）。META 已公布 **2026Q3**（2026-10-21）；MSFT / AMZN / GOOGL 最新為 **2026Q2**；ORCL 最新為 **FY27Q1（2026 年 6–8 月，標 2026Q3）**，2026-09-10 公布。下方跨公司比較仍截至 2026Q2，避免混用不同期間。
+> 原始資料：`data/L1_hyperscalers.csv`（695 筆長格式資料，每列附 source_url / source_date / quality）。
 > 單位：USD 十億（bn），百分比另註。
 
 ---
@@ -33,7 +33,7 @@
 
 ---
 
-## 1. 最新一季摘要（2026Q2；ORCL 另列 2026Q3）
+## 1. 最新一季摘要（跨公司截至 2026Q2；META 與 ORCL 另列 2026Q3）
 
 | 指標 | MSFT | AMZN | GOOGL | META | ORCL（FY26Q4 / FY27Q1） |
 |---|---|---|---|---|---|
@@ -48,6 +48,10 @@
 | FCF（CFO − 現金 CapEx） | 19.6 | −8.8 | −5.9 | 1.7 | −1.9 / −5.4 |
 | D&A | 11.0 | 20.0 | 7.1 | 6.4 | 2.8 / 3.4 |
 | RPO / backlog | 678（commercial RPO） | 496（AWS backlog） | 519.5（其中 Cloud 513.9） | — | 638 / 664 |
+
+**META 2026Q3（2026-10-21）**：營收 $64.6bn（+26% YoY）、GAAP 營業利益 $13.0bn（−37%）、CFO $32.8bn、現金 CapEx $33.9bn、含租賃 CapEx $34.9bn、公司口徑 FCF −$2.1bn。營業利益含 $9.89bn 青少年心理健康訴訟和解費用；剔除此費用約為 $22.9bn。2026 CapEx 指引收窄至 $135–145bn（前次 $130–145bn），Q4 營收指引 $73–76bn；2027 預期持續積極投資，尚未提供金額。來源：[Meta Q3 2026 官方財報](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx)。
+
+META TTM（2025Q4–2026Q3）：現金 CapEx $104.4bn、含租賃 $108.0bn、CFO $133.1bn、現金口徑 FCF $28.7bn；現金 CapEx/CFO 為 78%。
 
 ---
 
@@ -233,7 +237,7 @@ AMZN 用自己的口徑計算，2026Q2 TTM FCF 為 −$7.6bn。
 | MSFT | FY26（2025/07–2026/06）現金 $115.9bn；含租賃約 $145bn | CY2026 原本約 **$190bn**，其中約 $25bn 來自零組件漲價。部分租賃由融資租賃改列營業租賃後，帳面約 **$175bn**，公司稱計畫本身不變。FY27Q1 單季 > $50bn。 | FY27（2026/07–2027/06）會年增，沒有給金額 | official |
 | AMZN | 2025 約 $131.8bn | 年初約 **$200bn**；2026Q2 上調至約 **$220bn**，理由是記憶體成本與產能需求 | 沒有給數字；Jassy 稱產能短缺會延續到 2027，計畫 2027 年底電力容量比 2025 年翻倍 | official（$200bn）/ reported（$220bn） |
 | GOOGL | 2025 約 $91.4bn | $175–185bn → $180–190bn → **$195–205bn** | 會「顯著增加」，沒有給金額 | official（首次）/ reported（兩次上調） |
-| META | 2025 為 $72.2bn（含租賃） | $115–135bn → $125–145bn → **$130–145bn** | 沒有給數字；CFO 稱 2026、2027 都在投資，2027 會評估投資級債、合資等融資方式 | official |
+| META | 2025 為 $72.2bn（含租賃） | $115–135bn → $125–145bn → $130–145bn → **$135–145bn** | 沒有給數字；2026Q3 稱將持續積極投資，未提供 2027 金額 | official |
 | ORCL | FY26（2025/06–2026/05）實際 $55.7bn，高於 $50bn 指引 | FY27（2026/06–2027/05）：自有約 **$70bn**，另有 $20–25bn 預期由客戶償付，合計約 **$90–95bn** | — | reported |
 
 - **2026 年五家指引合計約 $790–840bn。** 這是混合口徑：MSFT 含租賃、AMZN 為現金、ORCL 用 FY27。相較 2025 年約 $410–460bn，再增加 75–85%。
@@ -274,7 +278,7 @@ AMZN 用自己的口徑計算，2026Q2 TTM FCF 為 −$7.6bn。
 
 | 項目 | 缺口 |
 |---|---|
-| 2026Q3 財報 | MSFT（FY27Q1）、AMZN、GOOGL、META 預計 2026-10 下旬公布，公布後需補入 |
+| 2026Q3 財報 | META 已於 2026-10-21 公布並已補入；MSFT（FY27Q1）、AMZN、GOOGL 公布後補入 |
 | MSFT 融資租賃金額 | 2024Q1–2025Q1（FY24Q3–FY25Q3）缺 |
 | MSFT D&A 口徑 | 現金流量表項目含「other」，不是純折舊；未從 10-Q 附註拆出純 PP&E 折舊 |
 | MSFT 日期 | FY26Q3、FY26Q4 的 source_date 為推定 |
