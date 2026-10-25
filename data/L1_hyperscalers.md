@@ -3,7 +3,7 @@
 > 更新日期：2026-10-22
 > 對象：Microsoft（MSFT）、Amazon（AMZN）、Alphabet（GOOGL）、Meta（META）、Oracle（ORCL）
 > 期間：2024Q1 至最新已公布季度（日曆季度）。META 已公布 **2026Q3**（2026-10-21）；MSFT / AMZN / GOOGL 最新為 **2026Q2**；ORCL 最新為 **FY27Q1（2026 年 6–8 月，標 2026Q3）**，2026-09-10 公布。下方跨公司比較仍截至 2026Q2，避免混用不同期間。
-> 原始資料：`data/L1_hyperscalers.csv`（695 筆長格式資料，每列附 source_url / source_date / quality）。
+> 原始資料：`data/L1_hyperscalers.csv`（698 筆長格式資料，每列附 source_url / source_date / quality）。
 > 單位：USD 十億（bn），百分比另註。
 
 ---
@@ -52,6 +52,13 @@
 **META 2026Q3（2026-10-21）**：營收 $64.6bn（+26% YoY）、GAAP 營業利益 $13.0bn（−37%）、CFO $32.8bn、現金 CapEx $33.9bn、含租賃 CapEx $34.9bn、公司口徑 FCF −$2.1bn。營業利益含 $9.89bn 青少年心理健康訴訟和解費用；剔除此費用約為 $22.9bn。2026 CapEx 指引收窄至 $135–145bn（前次 $130–145bn），Q4 營收指引 $73–76bn；2027 預期持續積極投資，尚未提供金額。來源：[Meta Q3 2026 官方財報](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx)。
 
 META TTM（2025Q4–2026Q3）：現金 CapEx $104.4bn、含租賃 $108.0bn、CFO $133.1bn、現金口徑 FCF $28.7bn；現金 CapEx/CFO 為 78%。
+
+META 2026Q3 補充（[10-Q](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm)，2026-10-22）：
+- **Q4 隱含 CapEx**：前三季含租賃 CapEx $85.8bn，全年指引 $135–145bn → Q4 需 **$49–59bn**（Q3 為 $34.9bn）。全年總費用 $175–179bn 含 $9.9bn 法律費用，剔除後 $165–169bn 與前次相同。
+- **資產負債**：帳面負債 $83.7bn（長期 $80.9bn＋一年內到期 $2.7bn），現金＋有價證券 $82.45bn（不含受限現金 $13.1bn），**已轉為淨負債約 $1.2bn**。Q3 沒有買回庫藏股（2025 前三季 $26.2bn），股利 $1.36bn。
+- **和解結構**：協議最高約 $18.59bn。確定支付約 $13.3bn（$12.7bn 分 10 年＋約 $0.5bn 相關州和解＋$75m 費用），本季認列 $9.89bn。另約 $5.3bn 須 YouTube、TikTok 等同業負擔同等義務才需支付，尚未認列。款項分年付，CFO 尚未反映。
+- **表外承諾（季增幅很大）**：不可取消承諾 $454.5bn（Q2 $349.3bn，+$105bn），其中 2027 到期 $121.4bn（Q2 $81.7bn）；尚未起租租賃 $355.7bn（Q2 $279.0bn）；或有雲端產能購買義務最高 $14.7bn；$10.8bn 貨幣基金轉為採購合約 escrow 的受限現金（2028–2030 釋出）。
+- **合資暴險**：Louisiana＋Texas 兩個合資（各持股 20%，不併表）最大損失暴險 $68.4bn（2025 底 $46.0bn），其中殘值保證上限 $41.5bn（2025 底 $28.1bn）。
 
 ---
 
@@ -243,7 +250,7 @@ AMZN 用自己的口徑計算，2026Q2 TTM FCF 為 −$7.6bn。
 - **2026 年五家指引合計約 $790–840bn。** 這是混合口徑：MSFT 含租賃、AMZN 為現金、ORCL 用 FY27。相較 2025 年約 $410–460bn，再增加 75–85%。
 - 2026 年內的指引調整全部是上調，沒有一家下修。MSFT、AMZN、META 都提到記憶體與零組件漲價推高 CapEx，也就是一部分增幅是價格，不是新增算力。
 - 表外與融資補充：
-  - **META**：Louisiana Hyperion 合資總開發成本約 $27bn，不併表，殘值保證上限約 $28bn，最大損失暴險 $46bn。El Paso 與 BlackRock 合資約 $14bn（報導）。不可取消承諾 $349bn。尚未起租的租賃約 $279bn。2026-05 發行 $25bn 公司債。
+  - **META**（2026Q3 10-Q）：Louisiana（Hyperion，約 $27bn，2029 起租）與 Texas（El Paso／BlackRock，約 $14bn，2028 起租）兩個合資都不併表，合計殘值保證上限 $41.5bn，最大損失暴險 $68.4bn（2025 底 $46.0bn）。不可取消承諾 $455bn（Q2 $349bn）。尚未起租的租賃約 $356bn（Q2 $279bn）。2026-05 發行 $25bn 公司債，帳面負債 $83.7bn，已轉為淨負債約 $1.2bn。
   - **ORCL**：FY26 發債 $43bn、股權 $5bn。FY27Q1 透過 ATM 出售約 $20bn 普通股。期末借款約 $125bn。尚未起租的資料中心租賃承諾 $288bn。
 
 ---
@@ -278,7 +285,8 @@ AMZN 用自己的口徑計算，2026Q2 TTM FCF 為 −$7.6bn。
 
 | 項目 | 缺口 |
 |---|---|
-| 2026Q3 財報 | META 已於 2026-10-21 公布並已補入；MSFT（FY27Q1）、AMZN、GOOGL 公布後補入 |
+| 2026Q3 財報 | META 已於 2026-10-21 公布，新聞稿與 10-Q 已補入；MSFT（FY27Q1）、AMZN、GOOGL 公布後補入 |
+| META 2026Q3 法說會 | 逐字稿尚未取得，`capacity_constrained` 與 2027 CapEx 口頭說法待補 |
 | MSFT 融資租賃金額 | 2024Q1–2025Q1（FY24Q3–FY25Q3）缺 |
 | MSFT D&A 口徑 | 現金流量表項目含「other」，不是純折舊；未從 10-Q 附註拆出純 PP&E 折舊 |
 | MSFT 日期 | FY26Q3、FY26Q4 的 source_date 為推定 |
