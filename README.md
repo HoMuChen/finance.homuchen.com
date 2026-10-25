@@ -31,6 +31,8 @@
 | `portfolio/<日期>.json` | 凱利工具的輸入：配置比例、決策價格、情境與機率 |
 | `reports/<日期>.md` | 凱利工具的輸出 |
 | `tools/kelly.py` | 凱利配置重算工具 |
+| `tools/margin_signal.py` | 大盤融資維持率低檔加碼輔助訊號 |
+| `reports/margin-<日期>.md` | 融資維持率訊號的輸出 |
 
 ## 凱利工具
 
@@ -60,6 +62,18 @@ python3 tools/kelly.py portfolio/2026-10-20.json --amounts portfolio/private.jso
 ```json
 {"total_twd": 1000000}
 ```
+
+## 融資維持率訊號
+
+低檔加碼的輔助判斷，只輔助 `02_配置決策紀錄.md` 的 U6 加碼價，不放進凱利。規則與歷史表現見 `01_總結儀表板.md`。
+
+```bash
+python3 tools/margin_signal.py                                   # 輸出到終端
+python3 tools/margin_signal.py --out reports/margin-2026-10-25.md
+python3 tools/margin_signal.py --cycle-top                       # 見頂檢查清單已出現 2–3 項時，只認維持率 < 140
+```
+
+資料用 FinMind 2015 年起的大盤融資維持率、融資餘額、加權指數與報酬指數、台積電還原股價，快取在 `cache/prices/`。輸出包括目前燈號（< 150／145／140 三階）、粗估的觸發位置，以及歷史上每次首次跌破後的 20–250 日報酬。
 
 ## 每季更新流程
 
