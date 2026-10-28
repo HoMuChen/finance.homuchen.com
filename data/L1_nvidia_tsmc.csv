@@ -603,6 +603,43 @@ TSMC,2026-08,,monthly_revenue_mom,10.1,pct,https://www.sec.gov/Archives/edgar/da
 TSMC,2026-09,,monthly_revenue_ntd,511.86,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
 TSMC,2026-09,,monthly_revenue_yoy,54.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
 TSMC,2026-09,,monthly_revenue_mom,-0.6,pct,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000680/tsm-revenue20261008.htm,2026-10-08,官方
+TSMC,2022Q1,2022Q1,wafer_shipments_12in_equiv,3778,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000162828023012121/a1q23presentatione.htm,2023-04-20,官方
+TSMC,2022Q2,2022Q2,wafer_shipments_12in_equiv,3799,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000162828023025146/a2q23presentatione.htm,2023-07-20,官方
+TSMC,2022Q3,2022Q3,wafer_shipments_12in_equiv,3974,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617923000014/a3q23presentatione.htm,2023-10-19,官方
+TSMC,2022Q4,2022Q4,wafer_shipments_12in_equiv,3702,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000005/a4q23presentatione.htm,2024-01-18,官方
+TSMC,2023Q1,2023Q1,wafer_shipments_12in_equiv,3227,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000162828023012121/a1q23presentatione.htm,2023-04-20,官方
+TSMC,2023Q2,2023Q2,wafer_shipments_12in_equiv,2916,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000162828023025146/a2q23presentatione.htm,2023-07-20,官方
+TSMC,2023Q3,2023Q3,wafer_shipments_12in_equiv,2902,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617923000014/a3q23presentatione.htm,2023-10-19,官方
+TSMC,2023Q4,2023Q4,wafer_shipments_12in_equiv,2957,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000005/a4q23presentatione.htm,2024-01-18,官方
+TSMC,2024Q1,2024Q1,wafer_shipments_12in_equiv,3030,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000046/a1q24presentatione_x.htm,2024-04-18,官方
+TSMC,2024Q2,2024Q2,wafer_shipments_12in_equiv,3125,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000083/a2q24presentatione.htm,2024-07-18,官方
+TSMC,2024Q3,2024Q3,wafer_shipments_12in_equiv,3338,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000116/a3q24presentatione.htm,2024-10-17,官方
+TSMC,2024Q4,2024Q4,wafer_shipments_12in_equiv,3418,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000004/a4q24presentatione.htm,2025-01-16,官方
+TSMC,2025Q1,2025Q1,wafer_shipments_12in_equiv,3259,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000035/a1q25presentatione_for6k.htm,2025-04-17,官方
+TSMC,2025Q2,2025Q2,wafer_shipments_12in_equiv,3718,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000082/a2q25presentatione_6kxwm.htm,2025-07-17,官方
+TSMC,2025Q3,2025Q3,wafer_shipments_12in_equiv,4085,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000116/a3q25presentatione.htm,2025-10-16,官方
+TSMC,2025Q4,2025Q4,wafer_shipments_12in_equiv,3961,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm,2026-01-15,官方
+TSMC,2026Q1,2026Q1,wafer_shipments_12in_equiv,4174,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm,2026-04-16,官方
+TSMC,2026Q2,2026Q2,wafer_shipments_12in_equiv,4336,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26presentatione.htm,2026-07-16,官方
+TSMC,2026Q3,2026Q3,wafer_shipments_12in_equiv,4476,kpcs,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm,2026-10-15,官方
+TSMC,2022Q1,2022Q1,wafer_revenue_ntd,438.64,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000162828023029161/tsmc2023q2consolidatedfina.htm,2023-08-14,官方/計算(2023Q2財報上半年914.42減Q2 475.78)
+TSMC,2022Q2,2022Q2,wafer_revenue_ntd,475.78,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000162828023029161/tsmc2023q2consolidatedfina.htm,2023-08-14,官方
+TSMC,2022Q3,2022Q3,wafer_revenue_ntd,540.21,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617923000023/tsmc2023q3consolidatdfinan.htm,2023-11-14,官方
+TSMC,2022Q4,2022Q4,wafer_revenue_ntd,537.23,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000020/a-workivaxtsmc2023q4consol.htm,2024-02-29,官方/計算(全年1991.86減前三季1454.63)
+TSMC,2023Q1,2023Q1,wafer_revenue_ntd,448.38,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000162828023029161/tsmc2023q2consolidatedfina.htm,2023-08-14,官方/計算(上半年869.42減Q2 421.04)
+TSMC,2023Q2,2023Q2,wafer_revenue_ntd,421.04,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000162828023029161/tsmc2023q2consolidatedfina.htm,2023-08-14,官方
+TSMC,2023Q3,2023Q3,wafer_revenue_ntd,473.04,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617923000023/tsmc2023q3consolidatdfinan.htm,2023-11-14,官方
+TSMC,2023Q4,2023Q4,wafer_revenue_ntd,540.06,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000020/a-workivaxtsmc2023q4consol.htm,2024-02-29,官方/計算(全年1882.52減前三季1342.46)
+TSMC,2024Q1,2024Q1,wafer_revenue_ntd,521.9,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000097/tsmc2025q2consolidatedfina.htm,2025-08-14,官方/計算(上半年1118.14減Q2 596.24)
+TSMC,2024Q2,2024Q2,wafer_revenue_ntd,596.24,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000097/tsmc2025q2consolidatedfina.htm,2025-08-14,官方
+TSMC,2024Q3,2024Q3,wafer_revenue_ntd,645.12,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617924000126/tsmc2024q3consolidatedfina.htm,2024-11-14,官方
+TSMC,2024Q4,2024Q4,wafer_revenue_ntd,751.2,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000019/tsmc2024q4consolidatedfina.htm,2025-02-27,官方/計算(全年2514.46減前三季1763.26)
+TSMC,2025Q1,2025Q1,wafer_revenue_ntd,714.03,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000278/a2026q1consolidatedreport-.htm,2026-05-15,官方
+TSMC,2025Q2,2025Q2,wafer_revenue_ntd,795.43,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000097/tsmc2025q2consolidatedfina.htm,2025-08-14,官方
+TSMC,2025Q3,2025Q3,wafer_revenue_ntd,860.96,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617925000128/a2025q3consolidatedreport-.htm,2025-11-14,官方
+TSMC,2025Q4,2025Q4,wafer_revenue_ntd,902.13,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000024/a2025q4consolidatedreport-.htm,2026-02-26,官方/計算(全年3272.55減前三季2370.43)
+TSMC,2026Q1,2026Q1,wafer_revenue_ntd,968.11,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000278/a2026q1consolidatedreport-.htm,2026-05-15,官方
+TSMC,2026Q2,2026Q2,wafer_revenue_ntd,1073.71,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000541/a2026q2consolidatedreport-.htm,2026-08-14,官方
 AMD,2024Q1,2024Q1,datacenter_revenue,2.337,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-04-30,官方(憑記憶未逐一回查原文)
 AMD,2024Q2,2024Q2,datacenter_revenue,2.834,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-07-30,官方(憑記憶未逐一回查原文)
 AMD,2024Q3,2024Q3,datacenter_revenue,3.549,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-10-29,官方(憑記憶未逐一回查原文)
