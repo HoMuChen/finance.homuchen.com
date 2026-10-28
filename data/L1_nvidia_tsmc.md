@@ -238,3 +238,53 @@ HPC 營收的推算方式是「美元營收 × HPC 占比」，屬於 /計算，
 | AMD 2024 全年與 2025Q3、SK hynix 2024 年與 2025Q3 | 憑記憶填入、未回查，使用前必須核對 |
 | Broadcom FY24Q1–Q3、FY25Q1–Q3 部分數字 | 由年增率反推（/計算） |
 | 五大雲資本支出 | 不在本檔，請見 `L1_hyperscalers.csv` |
+| 晶圓代工市佔 | 只有 TrendForce、Counterpoint 的估計，兩家數字不同（Samsung 5.9% 對 7%）；每季 TrendForce 排名約在季後 2–3 個月發布 |
+| Intel 14A／18A 外部客戶 | 包括 Tesla 在內，都沒有 Intel 正式文件確認；Intel 2026Q3 財報與電話會議內容尚未查證 |
+| 台積電先進封裝營收占比 | 未查證，下次法說確認 |
+
+## 7. 台積電競爭地位（2026-10-28 新增）
+
+CapEx 決定市場有多大，這一節追蹤台積電能分到多少。ASIC 取代 GPU 對台積電影響不大，因為兩者大多在台積電生產；真正的威脅是**運算晶粒或封裝訂單移到別家**。每季 TrendForce 排名出來後更新。
+
+### 7.1 晶圓代工整體市佔
+
+| 季度 | 台積電 | Samsung | SMIC | UMC | GlobalFoundries | 標記 | 來源 |
+|---|---|---|---|---|---|---|---|
+| 2026Q1 | — | 6.5% | 5.1% | — | — | [估計:TrendForce] | 同下（2Q26 新聞稿中的前季數字） |
+| 2026Q2 | **72.5%**（$40.2B，季增 12.1%，歷史新高） | 5.9%（$3.26B，季增 1.8%） | 5.4%（>$3B，季增 20%） | 3.9% | 3.2% | [估計:TrendForce] | https://www.trendforce.com/presscenter/news/20260909-13225.html |
+| 2026Q2（對照） | 73% | 7% | 5% | — | — | [估計:Counterpoint] | 經搜尋摘要轉引 |
+
+- TrendForce：AI GPU 與 XPU 需求讓台積電 5/4nm、3nm 產能全滿；2nm 首次貢獻營收。
+- SMIC 沒有 EUV，成長主要來自中國消費性電子拉貨，搶的是中國本土需求，不是台積電的 AI 客戶。
+
+### 7.2 先進製程對手
+
+| 對手／製程 | 狀態 | 標記 | 來源 |
+|---|---|---|---|
+| Intel 14A | 官方：客戶預計 2026 下半年到 2027 上半年做決定；簽約後才蓋 14A 外部產能 | [官方:Intel 年報] | https://www.sec.gov/Archives/edgar/data/50863/000005086326000060/intc014890-arsa.pdf |
+| Intel 14A：Tesla | 2026-08 報導稱 Tesla 是唯一公開確認的 14A 外部客戶，連結 Terafab 計畫；2026-10-18 一篇文章稱「Intel 表示 Tesla 同意採用 14A」，但沒有引述來源、金額或時程 | [報導]／[二手] | https://finance.yahoo.com/technology/articles/intel-intc-lands-major-customer-151209880.html |
+| Intel 18A／14A：Apple、NVIDIA | 多篇報導說在評估，製程與範圍互相矛盾（Apple 有 14A 與 18A-P 兩種說法；NVIDIA 傳評估 14A 用於 2028 Feynman 部分晶片，核心 GPU 仍在台積電）。有報導估計量產可能要到 2029 年。**都未經 Intel 確認** | [報導] | https://finance.yahoo.com/news/intel-foundry-talks-nvidia-apple-171229595.html ；https://tech-insider.org/intel-14a-node-apple-nvidia-evaluation-2026/ |
+| Samsung SF2（2nm） | 良率約 55%（TrendForce，2026-04）→ 約 60%（2026 年報導）；計入後段的有效良率可能只有約 40%（未證實）。Exynos 2600 2025 年底量產；晶圓代工獲利目標 2028 年 | [報導] | https://www.trendforce.com/news/2026/04/14/news-samsung-2nm-yields-reportedly-at-55-below-mass-production-threshold-qualcomm-may-opt-for-tsmc/ ；https://www.techtimes.com/articles/328228/20260930/samsung-foundry-2nm-yield-hits-60-chips-still-drain-more-power-than-snapdragon.htm |
+| Samsung SF2：Tesla AI5／AI6 | AI5 2026-07 在德州 Taylor 廠完成 tape-out，2026Q4 出工程樣品；AI6 量產最快 2027Q4（另有 2027 年的說法） | [報導] | https://electrek.co/2026/07/13/samsung-taylor-fab-tesla-ai5-chip-2nm/ |
+| 台積電 N2 | 2026 下半年放量；報導目標 2026 年底月產 10 萬片；Apple 傳包下 2026 年過半初期產能 | [報導] | https://www.tweaktown.com/news/112989/tsmc-is-ramping-up-2nm-production-100k-monthly-wafers-by-the-end-of-2026/ |
+
+### 7.3 先進封裝
+
+| 項目 | 內容 | 標記 | 來源 |
+|---|---|---|---|
+| 台積電 CoWoS 產能 | 官方不揭露。2026 年底估 10.5 萬片／月（JPM，2025-11）到 13–14 萬片；2027 年 14.1 萬到 20–22 萬；2028 年約 26 萬 | [估計:各機構] | https://rcrtech.com/semiconductor-news/tsmc-double-cowos-capacity-by-2028/ |
+| 客戶集中 | NVIDIA 傳包下 2026 年 CoWoS 產能 50–60% 以上 | [報導] | https://eu.36kr.com/en/p/3580962946874242 |
+| 外包給封測廠 | JPM：2026 年起 CoWoS-L 後段約 70% 外包給日月光／矽品；傳前段 CoW 也擴大外包。2026-06 台積電與 Amkor 簽 10 年亞利桑那封裝協議。這是台積電主動分流，不算市佔流失 | [估計:JPM]／[報導] | https://www.trendforce.com/news/2026/08/05/news-tsmc-reportedly-expands-outsourcing-of-key-cowos-front-end-step-to-osats-amid-rising-nvidia-asic-demand/ |
+| Intel EMIB-T | 2027 年量產；Intel 宣稱封裝成本最多低 50%（視架構而定）。傳評估或採用者：Google TPU v9（2027 試用）、MediaTek（推論版本用 EMIB、訓練版本用 CoWoS）、Meta、Broadcom、Amazon、NVIDIA Feynman。**Intel 未正式確認任何客戶** | [報導] | https://www.techpowerup.com/351274/intels-emib-t-to-rival-tsmcs-cowos-with-50-cost-advantage-volume-production-in-2027 ；https://www.tomshardware.com/tech-industry/semiconductors/intels-emib-t-heads-for-fab-rollout-this-year |
+| 台積電的回應 | 傳與景碩合作開發「類 EMIB」封裝，避免客戶轉向 Intel | [報導:TrendForce] | https://www.trendforce.com/news/2026/07/31/news-tsmc-reportedly-develops-emib-like-packaging-with-kinsus-to-prevent-potential-customer-shift-to-intel/ |
+
+### 7.4 判讀
+
+1. **目前沒有市佔流失**：2026Q2 市佔 72.5% 創新高，Samsung 反而從 6.5% 掉到 5.9%。對手的先進製程離大量出貨還有 1–3 年：Intel 14A 客戶 2027 上半年前才決定、量產可能 2028–29 年；Samsung 2nm 良率約 55–60%。
+2. **近期最實際的威脅在封裝，不在晶圓**：EMIB-T 2027 年量產，Google TPU、MediaTek 推論晶片傳出試用。就算封裝移走，運算晶粒大多仍在台積電做，營收影響有限；但 CoWoS 是目前最緊的瓶頸，也是台積電議價力的來源之一。
+3. **第二序影響是價格，不是市佔**：美國政策推動第二供應商（Intel、Tesla Terafab、Samsung 德州廠），客戶多了籌碼，可能壓低台積電的漲價幅度。這會先反映在毛利率（見頂檢查清單第 4 項），比市佔變化更早。
+4. **要盯的觸發條件**（任何一項出現，視為檢查清單第 4 項出現）：
+   - 前五大 AI 客戶（NVIDIA、Apple、Broadcom／Google、AMD、Qualcomm）**正式確認**把運算晶粒放到 Intel 14A 或 Samsung SF2，而且有量產時程。
+   - TrendForce 的台積電市佔連續兩季下滑，累計超過 2 個百分點。
+   - EMIB-T 在 2027 年用於主流 AI 加速器並大量出貨（例如 TPU 正式量產，不是試用）。
+   - 台積電撤回或縮小已宣布的漲價。
