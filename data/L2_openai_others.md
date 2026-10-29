@@ -225,12 +225,13 @@
 
 | 項目 | 數字 | 標記 | 來源 |
 |---|---|---|---|
-| 2026 CapEx 指引 | $195–205B（上調自 $180–190B） | [官方:Q2 2026, 2026-07-22] | https://www.marketbeat.com/instant-alerts/alphabet-q2-earnings-call-highlights-2026-07-22/ |
-| Q2 2026 CapEx | $44.9B | [官方] | https://aiweekly.co/alerts/alphabet-q2-cloud-jumps-82-to-248b-capex-hits-449b |
-| Google Cloud Q2 營收 | $24.8B（+82%），營業利益率 35.6% | [官方] | 同上 |
-| Cloud backlog | $514B（約 50% 於 24 個月內認列） | [官方] | https://startupfortune.com/google-cloud-grew-82-in-q2-2026-and-the-514-billion-backlog-tells-you-everything-about-who-is-winning-the-ai-race/ |
-| Gemini App MAU | 950M | [官方] | 同上 |
-| Q2 淨利 | $112.1B（大量來自 Anthropic、SpaceX 持股評價利得） | [官方/報導] | 同上 |
+| 2026 CapEx 指引 | **$195–205B**（Q3 2026 維持；Q2 時由 $180–190B 上調）；2027「顯著增加」，Q4 法說給細節 | [官方:Q3 2026 法說, 2026-10-28] | https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037 |
+| Q3 2026 CapEx | $51.4B（Q2 $44.9B） | [官方] | https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm |
+| Q3 2026 FCF | −$9.1B（連兩季為負；TTM $19.7B） | [官方] | 同上 |
+| Google Cloud Q3 營收 | $30.7B（+103%，含 TPU 系統銷售），營業利益率 36.2% | [官方] | 同上 |
+| Cloud backlog | $561B（Q2 $514B；略多於 55% 於 24 個月內認列） | [官方:法說] | https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-q3-2026-profit-miss-sparks-10-afterhours-drop-93CH-4981037 |
+| Gemini App 使用者 | 10 億（Q2 MAU 950M）；第一方模型 API 每分鐘約 320 億 token | [官方] | https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm |
+| Q3 淨利 | $26.5B（−24%）；股權證券評價損失 $8.7B，Q2 淨利 $112.1B 的評價利得部分反轉 | [官方] | https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm |
 | DeepMind 支出/營收 | 查不到 | — | — |
 
 ### 6.4 Anthropic
