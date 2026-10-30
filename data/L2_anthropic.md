@@ -1,38 +1,45 @@
 # L2｜Anthropic 財務與營運數據
 
-> 資料截至：2026-10-19
+> 資料截至：2026-10-30（依公開 S-1 改寫）
 > 層級：第二層（模型公司）
 > 標記：**[官方]** 公司正式揭露／SEC 申報｜**[報導:媒體]** 媒體引述內部文件或知情人士｜**[估計:機構]** 分析師或研究機構估算｜**[推算]** 本檔依已知數字自行計算
 >
-> **重要前提**：Anthropic 於 2026-06-01 向 SEC **秘密遞交** S-1 草案，截至 2026-10-13 EDGAR 上**仍無公開 S-1／S-1/A／424(b)**（[decodethefuture, 2026-10-13 更新](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/)）。下文所有「S-1」數字都來自 Reuters／FT 審閱外流草案的報導，**不是官方揭露**，正式公開版可能修訂。
+> **重要前提**：Anthropic 於 2026-06-01 秘密遞交 S-1 草案（之後 5 次 DRS/A），**2026-10-26 公開遞交 S-1**（[EDGAR，CIK 2130357，accession 0001628280-26-067168](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.htm)）。本檔標 **[官方:S-1]** 的數字都出自這份文件。
+>
+> **S-1 的時間範圍**：財報只到 **2026-06-30**（年度經審計、半年度未審計）。Q3 營收、9/30 現金、10/31 run-rate、承諾付款時程表、發行價與股數在 S-1 中都是**空白**，要等 S-1/A 補上。所以 **2026 Q3 數字目前仍是 [報導]**。客戶數、集中度等營運指標則已更新到 2026-09-30。
 
 ---
 
 ## 1. 營收
 
-### 1.1 年度實際營收（GAAP 口徑，依外流 S-1 草案）
+### 1.1 年度營收（GAAP）
 
-| 期間 | 數字 | 標記 | 來源 / 日期 | 備註 |
-|---|---|---|---|---|
-| 2023 | **查不到** | — | — | 只知道雲端市集管道占營收 11%（見 2.2） |
-| 2024 | 約 $386M～$400M | [報導:Reuters 經轉載] | [SiliconANGLE 2026-09-29](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/)（$400M）；[Crypto Briefing 2026-09-29](https://cryptobriefing.com/anthropic-ipo-amazon-google-revenue/)（約 $400M）；$386M 見於搜尋摘要的二手轉述 | **兩個數字並存**：$400M 可能是四捨五入；Reuters 原文只寫「約 12 倍成長」，換算約 $380–390M |
-| 2025 | **$4.59B**（約 $4.6B，年增約 12 倍） | [報導:Reuters] | [TechCrunch 2026-09-28](https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/)；[Yahoo Finance 2026-09-30](https://finance.yahoo.com/technology/ai/articles/anthropic-1-518-billion-commitment-165731037.html)（$4.59B） | 營收以**總額法（gross）**認列雲端市集銷售，見 2.2 |
-| 2025（另一說） | 約 $10B | [報導:CNBC，經轉述] | 見 [Exploding Topics 彙整](https://explodingtopics.com/blog/anthropic-revenue) | **與 S-1 數字矛盾**，疑為把 run-rate 與營收混用，以 $4.59B 為準 |
+| 期間 | 數字 | 標記 | 備註 |
+|---|---|---|---|
+| 2023 | **$41M** | [官方:S-1] | 經審計 |
+| 2024 | **$386M** | [官方:S-1] | 經審計；外流報導的 $400M 是四捨五入 |
+| 2025 | **$4,585M** | [官方:S-1] | 經審計；年增約 11.9 倍。雲端市集銷售以**總額法（gross）**認列，見 2.2 |
+| 2025 上半年 | $1,163M | [官方:S-1] | 未審計 |
+| 2026 上半年 | **$16,286M** | [官方:S-1] | 未審計；年增 14.0 倍 |
+
+> 舊報導中「2025 年約 $10B」（CNBC 經轉述）確定是把 run-rate 當營收，不採用。
 
 ### 1.2 季度營收
 
-| 季度 | 數字 | 標記 | 來源 / 日期 | 備註 |
-|---|---|---|---|---|
-| 2025 Q2 | $787M | [報導:Bloomberg] | [CNBC 2026-08-15](https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html)（轉述 Bloomberg） | 作為 2026 Q2 的年比基期 |
-| 2026 Q1 | **$4.73B** | [報導:Bloomberg] | 同上；[Fortune 2026-09-29](https://fortune.com/2026/09/29/anthropic-ipo-s-1-prospectus-income-statement/) | WSJ／FT／PYMNTS 寫「約 $4.8B」；Reuters 寫「約 $4.7B」 |
-| 2026 Q2 | **>$11.5B**（初步數） | [報導:Bloomberg、FT] | [Bloomberg 2026-08-14](https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter)；[The Decoder 2026-09-29](https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/) | Reuters 寫約 $11.6B；年增約 14 倍 |
-| 2026 Q2（事前預測） | $10.9B | [報導:WSJ] | [WSJ 2026-05-20，經 letsdatascience 彙整](https://letsdatascience.com/blog/anthropic-first-operating-profit-q2-2026-559-million) | 公司給投資人的季前預測，實際數高於預測 |
-| 2026 Q3 | **$16.8B**（季增約 45%） | [報導:FT、Bloomberg、Reuters] | [Bloomberg 2026-10-14](https://www.bloomberg.com/news/articles/2026-10-14/anthropic-revenue-jumps-to-16-8-billion-in-quarter-before-ipo)；[TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo) | 10/14 舊金山投資人說明會上提出；部分媒體寫「近 50%」、OfficeChai 標題寫 $16.7B |
-| 2026 年初至今（Q1–Q3） | 約 $33.0B～$33.2B | [推算] | 加總上列 | — |
+| 季度 | 數字 | 標記 | 備註 |
+|---|---|---|---|
+| 2025 Q1 | $376M | [官方:S-1] | 季度損益表，未審計 |
+| 2025 Q2 | $787M | [官方:S-1] | |
+| 2025 Q3 | $1,382M | [官方:S-1] | |
+| 2025 Q4 | $2,040M | [官方:S-1] | |
+| 2026 Q1 | **$4,731M** | [官方:S-1] | 季增 132% |
+| 2026 Q2 | **$11,555M** | [官方:S-1] | 季增 144%、年增 14.7 倍；WSJ 報導的季前預測是 $10.9B |
+| 2026 Q3 | **$16.8B**（季增約 45%） | [報導:FT、Bloomberg、Reuters] | **S-1 留空**。來源：[Bloomberg 2026-10-14](https://www.bloomberg.com/news/articles/2026-10-14/anthropic-revenue-jumps-to-16-8-billion-in-quarter-before-ipo)、[TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo)；10/14 投資人說明會數字 |
+| 2026 Q1–Q3 | 約 $33.1B | [推算] | 官方 Q1+Q2 $16.3B ＋ 報導 Q3 $16.8B |
 
 ### 1.3 Run-rate／ARR 演進（年化快照，**不是營收**）
 
-Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https://simonwillison.net/2026/May/29/anthropic/)）。Anthropic 對雲端市集銷售採總額認列，OpenAI 據報採淨額，**兩家的 run-rate 不能直接比**（[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/)；[Forbes 2026-03-25](https://www.forbes.com/sites/josipamajic/2026/03/25/openai-and-anthropic-count-revenue-differently-and-investors-are-looking-into-it/)）。據 FT，Anthropic 在 2026-10 的投資人溝通中已不再強調 run-rate（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。
+**S-1 官方定義** [官方:S-1]：Run-Rate Revenue ＝ 最近 28 天的用量計費 ×13 ＋ 當下月訂閱費 ×12。S-1 寫 10/31 的 run-rate 但金額留空，並提醒 run-rate 包含之後被判定違反使用政策、不會再續的客戶營收（見 2.3）。過去的通俗說法是「最近一個月 ×12」（[Simon Willison 2026-05-29](https://simonwillison.net/2026/May/29/anthropic/)）。Anthropic 對雲端市集銷售採總額認列，OpenAI 據報採淨額，**兩家的 run-rate 不能直接比**（[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/)；[Forbes 2026-03-25](https://www.forbes.com/sites/josipamajic/2026/03/25/openai-and-anthropic-count-revenue-differently-and-investors-are-looking-into-it/)）。據 FT，Anthropic 在 2026-10 的投資人溝通中已不再強調 run-rate（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。
 
 | 時點 | Run-rate | 標記 | 來源 / 日期 |
 |---|---|---|---|
@@ -48,7 +55,7 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 | 2026-10 | 約 $74B | [估計:SemiAnalysis，經 FT] | [PYMNTS 2026-10-15](https://www.pymnts.com/news/investment-tracker/ipo/2026/anthropic-quarterly-revenue-jumps-45-before-planned-ipo/) |
 | 2026 年底（預期） | $100B～$120B；WSJ 稱投資人預期約 $110B | [估計:投資人／WSJ] | 同上；[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/) | 
 
-**觀察**：7 月底 run-rate $65B，但 Q3 實際營收 $16.8B（年化約 $67B），代表 8–9 月營收大致持平於 7 月水準，成長明顯放緩。FT 也說 Q3 成長「低於部分支持者預期」（[CNBC/FT 2026-10-15](https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html)）。FT 另報導，**蒸餾（distillation）用途占營收 5–7%**，Q3 已「大幅」縮減（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。
+**觀察**：7 月底 run-rate $65B，但 Q3 實際營收 $16.8B（年化約 $67B），代表 8–9 月營收大致持平於 7 月水準，成長明顯放緩。FT 也說 Q3 成長「低於部分支持者預期」（[CNBC/FT 2026-10-15](https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html)）。FT 另報導，**蒸餾（distillation）用途占營收 5–7%**，Q3 已「大幅」縮減（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。S-1 的官方說法是「違反使用政策或商業條款的客戶」占 2026 前三季營收約 5%～7% [官方:S-1]，沒有直接說是蒸餾。
 
 ---
 
@@ -67,8 +74,9 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 
 | 項目 | 數字 | 標記 | 來源 / 日期 |
 |---|---|---|---|
-| 2025 經 Amazon、Google 雲端市集的營收 | 約 **$2.16B（47%）** | [報導:Reuters] | [Seoul Economic Daily 2026-10-01](https://en.sedaily.com/international/2026/10/01/anthropic-draws-nearly-half-its-revenue-through-amazon)；[TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262193114-anthropic-ipo-filing-reveals-revenue-breakdown-amazon-google-tradingkey) |
-| 雲端市集占比趨勢 | 2023：11% → 2024：32% → 2025：47% | [報導:Reuters] | 同上 |
+| 2025 經 Amazon、Google 雲端市集的營收 | 約 **$2.16B（47%）** | [報導:Reuters]；比率經 S-1 證實 | [Seoul Economic Daily 2026-10-01](https://en.sedaily.com/international/2026/10/01/anthropic-draws-nearly-half-its-revenue-through-amazon)；[TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262193114-anthropic-ipo-filing-reveals-revenue-breakdown-amazon-google-tradingkey) |
+| 雲端市集（CSP marketplace）占營收 | 2023：11% → 2024：32% → 2025：47% → **2026 上半年：48%** | [官方:S-1] | 風險因子章節 |
+| 雲端市集占應收帳款淨額 | 2024 底 42% → 2025 底 60% → 2026-06-30 58% | [官方:S-1] | 雲端業者代收款再扣費後轉付 |
 | 付給雲端平台的通路費 | 約 $351M（每 $1 市集營收約 $0.16），列入「銷售、行銷與合作」費用 | [報導:Reuters] | 同上 |
 | 會計處理 | 市集銷售以**總額**認列為營收，平台抽成列費用（非從營收扣除） | [報導:Reuters] | 同上 |
 | 透過 Bedrock 使用 Claude 的客戶數 | >100,000 | [官方:Amazon 公告，經 The Decoder] | [The Decoder 2026-04-21](https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/) |
@@ -82,7 +90,11 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 | 大客戶合約 | 許多大客戶沒有長約，可隨時減少或停止採購 | [報導:Reuters] | 同上 | S-1 風險因子 |
 | Cursor + GitHub Copilot（2025 年中） | 約 $1.4B，占 API run-rate $3.1B 的近一半、總營收約 28% | [報導:VentureBeat] | [VentureBeat 2025](https://venturebeat.com/ai/anthropic-revenue-tied-to-two-customers-as-ai-pricing-war-threatens-margins) | 2025 年 run-rate 口徑；另一說約 $1.2B／$5B run-rate |
 | 前 1% 客戶占企業營收 | 約 80% | [估計:Ramp 數據] | [PYMNTS 2026](https://www.pymnts.com/news/artificial-intelligence/2026/openai-and-anthropic-get-80percent-of-revenue-from-1percent-of-customers/) | OpenAI 與 Anthropic 合併觀察 |
-| 2026 年集中度 | **查不到**；評論指 Cursor 轉向自家／Grok 模型、Copilot 可路由到 Microsoft MAI，占比應下降 | [估計:評論] | — | 需等公開 S-1 |
+| 2026 年集中度 | 沒有單一客戶超過 10%；**前五大占 2026 前三季營收約 25%** | [官方:S-1] | 風險因子 | 客戶仍未具名 |
+| 前五大以外的營收占比 | 2026 Q1 約 64% → **Q3 約 79%**（前五大約 36% → 約 21%）；但 Q3 前五大各自營收都創新高 | [官方:S-1] | MD&A | 集中度快速下降 |
+| 大客戶合約彈性 | 許多大客戶沒有長約或合約即將到期，可隨時減少支出 | [官方:S-1] | 風險因子 | 與草案報導一致 |
+| 違反使用政策的客戶營收 | 2026 前三季約 5%～7% | [官方:S-1] | MD&A | 預期比率會下降，見 1.3 |
+| 新模型依賴度 | 近 6 個月推出的模型版本占 Q3 營收 80% 以上 | [官方:S-1] | MD&A | 營收高度依賴持續推出新模型 |
 
 ### 2.4 客戶數與 Claude Code
 
@@ -100,51 +112,75 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 | Claude Code run-rate | 2026-02-12 | >$2.5B；企業占 Claude Code 營收過半 | [官方] | [Series G](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) |
 | Claude Code run-rate | 2026-05 | 約 $8B | [估計:營收追蹤者，經 FutureSearch] | [Presenc 彙整](https://presenc.ai/research/claude-code-usage-statistics-2026) |
 | Claude Code run-rate | 2026-08 | 約 $15B | [估計:同上] | 同上 |
+| TTM 營收 ≥$100K 客戶 | 2025-09-30 → 2026-09-30 | **>950 → >11,900** | [官方:S-1] | S-1 招股摘要、MD&A |
+| TTM 營收 ≥$1M 客戶 | 2026-09-30 | **>1,900** | [官方:S-1] | 同上 |
+| TTM 營收 ≥$10M 客戶 | 2026-09-30 | 約 250 | [官方:S-1] | 同上 |
+| 淨營收留存率（NRR） | 2026-09-30 | **約 900%** | [官方:S-1] | Business 章節 |
+| Fortune 10／500／Global 2000 | 2026-09-30 | Fortune 10 全部、Fortune 500 超過 50%、Global 2000 超過 30% 是 ≥$100K 客戶 | [官方:S-1] | 同上 |
+| Claude Code 用量差異 | 2026 Q3 | 沒用 Claude Code 的 Enterprise 用戶平均每月 <$75；有用 Claude Code 的前 5% 用戶約為 20 倍以上 | [官方:S-1] | Claude Code 營收金額 S-1 未揭露 |
+| 員工生產力 | 一年內 | 人數增加約 170%，TTM 每人營收由 $1.4M 增至 >$6.6M | [官方:S-1] | MD&A |
 
 ---
 
 ## 3. 運算成本與毛利率
 
-### 3.1 運算支出與損益
+### 3.1 損益表（GAAP，單位：百萬美元）[官方:S-1]
 
-| 項目 | 期間 | 數字 | 標記 | 來源 / 日期 |
-|---|---|---|---|---|
-| 運算與基礎設施支出 | 2025 | **$7.33B**（約 2024 年的 3 倍；占營業費用 58%；營收的 1.6 倍） | [報導:Reuters] | [TokenPost 2026-09-30](https://www.tokenpost.com/news/business/25717)；[The Decoder](https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/) |
-| 運算與基礎設施支出 | 2024 | 約 $2.4B | [推算] | 以「2025 約為 2024 的 3 倍」反推，**無直接報導** |
-| 營業費用合計 | 2025 | $12.65B（部分媒體寫「近 $13B」） | [報導:Reuters] | [TokenPost](https://www.tokenpost.com/news/business/25717)；[INDmoney](https://www.indmoney.com/blog/us-stocks/anthropic-ipo-42-billion-loss-explained) |
-| 非運算營業費用（研發人力、S&M、G&A 等） | 2025 | 約 $5.32B | [推算] | $12.65B − $7.33B；細項（R&D／S&M／G&A／SBC）**查不到** |
-| 營業虧損 | 2024 | $2.98B | [報導:Reuters] | [The Decoder](https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/) |
-| 營業虧損 | 2025 | **$8.06B** | [報導:Reuters] | 同上；驗算：$4.59B − $12.65B ≈ −$8.06B ✓ |
-| 淨損 | 2025 | 約 $42B，其中約 $34B 是可轉換融資工具公允價值重估的**非現金**費用 | [報導:Reuters] | [TokenPost](https://www.tokenpost.com/news/business/25717) |
-| 營業利益率 | 2025 | −175% | [估計:New Constructs] | [TNW 2026-10-16](https://thenextweb.com/news/anthropic-ipo-valuation-new-constructs-144bn) |
+S-1 的損益表是**依費用性質**列示（運算、人事、行銷、其他），**沒有銷貨成本與毛利**這兩行。
 
-**矛盾註記**：SiliconANGLE 寫「運算成本占營業虧損 91% 以上」（[2026-09-29](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/)），$7.33B ÷ $8.06B = 91%，數學上成立，但這是把費用和虧損直接相除，不代表虧損的「組成」，引用時要小心。
+| 項目 | 2023 | 2024 | 2025 | 2025 上半年 | 2026 上半年 |
+|---|---|---|---|---|---|
+| 營收 | 41 | 386 | 4,585 | 1,163 | 16,286 |
+| 運算與基礎設施 | 433 | 2,522 | 7,326 | 2,334 | 8,945 |
+| 人事（含股權報酬 SBC） | 95 | 454 | 1,839 | 538 | 3,152 |
+| ── 其中 SBC | 29 | 192 | 約 1,200 | 286 | 約 2,200 |
+| Bartz 著作權和解 | — | — | 1,500 | — | — |
+| 銷售、行銷與合作（含雲端通路費） | 2 | 43 | 568 | 120 | 3,168 |
+| 其他營業與管理 | 62 | 347 | 1,412 | 306 | 1,714 |
+| 營業費用合計 | 592 | 3,366 | 12,645 | 3,298 | 16,979 |
+| **營業損益** | (551) | (2,980) | **(8,060)** | (2,135) | **(693)** |
+| 利息收入 | 69 | 106 | 431 | 115 | 1,111 |
+| 可轉債、衍生負債、SAFE 公允價值變動 | (1,045) | (5,434) | (34,308) | (10,942) | **(72,388)** |
+| 其他收支淨額 | (2) | — | (8) | — | (8,757) |
+| **淨損** | (1,531) | (8,309) | **(41,965)** | (12,969) | **(80,748)** |
 
-### 3.2 每 $1 營收的運算成本（季度）
+- 公允價值變動是**非現金**項目：估值上升，可轉債的公允價值就跟著上升。
+- 2026 上半年「其他收支」−$8.8B，主要是**可轉債認購協議（NPA）**相關資產與負債的初始認列和公允價值變動（見 4.4），同樣是非現金。
+- 運算費用的定義 [官方:S-1]：付給雲端業者的運算費（承諾與隨需）、儲存與網路、經合作通路服務客戶的基礎設施成本、機房託管、設備租賃與電力承諾。涵蓋**研究、模型開發、服務客戶、內部使用**，也就是**訓練和推論合計，沒有拆分**。
 
-| 季度 | 運算成本 ÷ 營收 | 營收 ÷ 運算成本 | 標記 | 來源 |
-|---|---|---|---|---|
-| 2025 全年 | $1.60 | $0.63 | [推算] | 依 S-1 草案數字 |
-| 2026 Q1（實際，未經審計） | $0.71 | $1.41 | [報導:WSJ] | [WSJ 2026-05-20，經 letsdatascience](https://letsdatascience.com/blog/anthropic-first-operating-profit-q2-2026-559-million) |
-| 2026 Q2（季前**預測**） | $0.56 | $1.79 | [報導:WSJ] | 同上 |
-| 2026 Q3（實際） | 約 $0.59 | **$1.70** | [報導:FT] | [Simon Willison 2026-10-15 引 FT](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)；[OfficeChai 2026-10-15](https://officechai.com/ai/anthropic-tells-investors-third-quarter-revenue-has-risen-50-to-16-7-billion-is-profitable/) |
+### 3.2 季度損益與指標 A（單位：百萬美元）[官方:S-1]
+
+| 季度 | 營收 | 運算與基礎設施 | 營收 ÷ 運算 | 運算 ÷ 營收 | 營業損益 |
+|---|---|---|---|---|---|
+| 2025 Q1 | 376 | 944 | 0.40 | 251% | (935) |
+| 2025 Q2 | 787 | 1,390 | 0.57 | 177% | (1,200) |
+| 2025 Q3 | 1,382 | 2,047 | 0.68 | 148% | (3,089)（含 Bartz $1.5B） |
+| 2025 Q4 | 2,040 | 2,945 | 0.69 | 144% | (2,836) |
+| 2026 Q1 | 4,731 | 3,387 | 1.40 | 72% | (1,667) |
+| **2026 Q2** | **11,555** | **5,558** | **2.08** | **48%** | **+974** |
+| 2026 Q3 | 約 16,800 [報導] | 約 9,900 [推算：營收 ÷ 1.70] | 約 1.70 [報導:FT] | 約 59% | 未揭露 |
+
+- **Q2 首次 GAAP 營業獲利 $974M**。WSJ 先前報導的季前預測是 $559M，實際數字更好。
+- **Q2 → Q3 指標 A 由 2.08 退到約 1.70**（FT 數字）。換算 Q3 運算成本約季增 78%，營收季增 45%。這符合 2026 下半年新算力開始計費的推測（SpaceX 月費 12 月滿載約 $3.1B，見 5.2）。
+- 舊報導對照：WSJ 的 Q1 比率 $0.71（1.41x）與官方 72%（1.40x）一致；Q2 季前預測 56% 比實際 48% 保守。
 
 ### 3.3 毛利率（只含推論與產品銷售相關成本，不含訓練）
+
+> S-1 依費用性質列示，**沒有毛利率**。下表仍是 The Information 的報導與預測值，未經官方證實。
 
 | 期間 | 毛利率 | 標記 | 來源 / 日期 |
 |---|---|---|---|
 | 2024 | 約 −94% | [報導:The Information] | [Tiger Brokers 轉述](https://www.itiger.com/news/1154519858)；[TechCrunch 2025-11-04](https://techcrunch.com/2025/11/04/anthropic-expects-b2b-demand-to-boost-revenue-to-70b-in-2028-report/) |
 | 2025（原預測） | 50% | [報導:The Information] | [The Information 2025-11](https://www.theinformation.com/articles/anthropic-projects-70-billion-revenue-17-billion-cash-flow-2028) |
 | 2025（下修預測） | 40%；計入免費用戶推論成本約 38% | [報導:The Information] | [The Information X 貼文 2026-01](https://x.com/theinformation/status/2014386357909516337)；推論成本比預期高約 23%，主要是在 Google、Amazon 伺服器上服務付費客戶 |
-| 2025（實際，S-1） | **查不到**（報導未揭露銷貨成本／毛利） | — | — |
-| 2026 | **查不到** | — | — |
+| 2025、2026（實際） | **S-1 未揭露**（損益表沒有銷貨成本這一行） | [官方:S-1] | — |
 | 2028（目標） | 77% | [報導:The Information] | [TechCrunch 2025-11-04](https://techcrunch.com/2025/11/04/anthropic-expects-b2b-demand-to-boost-revenue-to-70b-in-2028-report/) |
 
 ### 3.4 推論 vs 訓練
 
 | 項目 | 數字 | 標記 | 來源 | 備註 |
 |---|---|---|---|---|
-| 2025 推論／訓練拆分 | **查不到** | — | — | S-1 報導只給「運算與基礎設施」合計 |
+| 2025 推論／訓練拆分 | **S-1 未拆分** | [官方:S-1] | — | 「運算與基礎設施」一行涵蓋研究、模型開發、服務客戶、內部使用 |
 | 2026 訓練（預測） | 約 $12B | [報導:The Information（二手）] | [Reddit 快照](https://reddit.sentinel-team.org/posts/1qx0wr3/snapshots/2026-02-06T12%3A16%3A33.17189Z)；[AgentMarketCap 2026-07-26](https://agentmarketcap.ai/blog/2026/07/26/anthropic-gross-margin-compression-ipo-prep-diligence) | **未能追溯到 The Information 原文**，可信度低 |
 | 2026 付費用戶推論（預測） | 約 $7B | 同上 | 同上 | 同上；且 2026 營收遠超當初預測，實際推論成本必然大幅高於此 |
 
@@ -152,9 +188,10 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 
 | 項目 | 數字 | 標記 | 來源 / 日期 |
 |---|---|---|---|
-| 2026 Q1 營業損益 | 接近損益兩平 | [報導:WSJ] | [letsdatascience 彙整](https://letsdatascience.com/blog/anthropic-first-operating-profit-q2-2026-559-million) |
-| 2026 Q2 營業利益（預測） | $559M（首個獲利季） | [報導:WSJ，季前預測] | 同上 |
-| 2026 Q2 營業利益（實際） | 「調整後」營業利益為正，金額未揭露 | [報導:Bloomberg] | [CNBC 2026-08-15](https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html) |
+| 2026 Q1 營業損益 | **−$1,667M** | [官方:S-1] | WSJ 曾報導「接近損益兩平」，應是調整後口徑 |
+| 2026 Q2 營業利益 | **+$974M**（首個 GAAP 獲利季） | [官方:S-1] | WSJ 季前預測 $559M |
+| 調整後營業損益（排除 SBC、非現金捐贈、Bartz 和解） | 2023：−$522M；2024：−$2,788M；2025：−$4,854M（−106%）；2025 上半年：−$1,849M；**2026 上半年：+$1,618M（10%）** | [官方:S-1] | Non-GAAP 調節表 |
+| 調整後淨利 | 2025：−$4,448M；**2026 上半年：+$2,671M** | [官方:S-1] | 同上 |
 | 2026 Q3 調整後營業利益率 | **11%**（排除股權報酬 SBC）→ 推算約 $1.85B | [報導:FT]；金額為 [推算] | [Simon Willison 引 FT](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/) |
 | 2026 Q3 現金流 | 現金流為正（金額未揭露） | [報導:FT] | [TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo) |
 | 原規劃：現金流轉正 | 最快 2027（2027 FCF 約 $3B） | [報導:The Information 2025-11] | [The Information X](https://x.com/theinformation/status/1986067248327340337)；[TipRanks](https://www.tipranks.com/news/anthropic-raises-its-2028-revenue-and-cash-flow-guidance-to-staggering-amounts) |
@@ -175,9 +212,22 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 | 項目 | 數字 | 標記 | 來源 / 日期 |
 |---|---|---|---|
 | 現金、約當現金與短期投資（2025-12-31） | **$20.28B** | [報導:Reuters] | [INDmoney](https://www.indmoney.com/blog/us-stocks/anthropic-ipo-42-billion-loss-explained)；[IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[Fortune](https://fortune.com/2026/09/29/anthropic-ipo-s-1-prospectus-income-statement/) |
-| 2025 營業現金流（CFO）／FCF | **查不到** | — | — |
-| 2025 燒錢 | 約 $3B（單一二手來源）；另有社群估計約 $5.2B | [估計:二手，未驗證] | [valueaddvc](https://valueaddvc.com/blog/is-anthropic-profitable-2026-losses-burn-rate-and-the-path-to-breakeven) | 兩說矛盾，都不可靠 |
-| 2026 Q3 | 現金流為正（FT） | [報導:FT] | 見 3.5 |
+| 現金、約當現金與短期投資（2026-06-30） | **$131.65B**（現金 $112.4B + 短期投資 $19.3B）；另有受限現金 $2.5B | [官方:S-1] | 半年增加約 $111B，主要來自 Series H 與策略投資 |
+| 2026-06-30 資產負債 | 總資產 $147.4B、總負債 $117.5B、可贖回可轉換特別股 $157.5B、股東權益 −$127.6B | [官方:S-1] | 特別股 IPO 時轉為普通股，權益赤字會消失 |
+| 2026-09-30 現金餘額 | **S-1 留空** | — | 等 S-1/A |
+
+**現金流量表（百萬美元）** [官方:S-1]
+
+| 項目 | 2023 | 2024 | 2025 | 2025 上半年 | 2026 上半年 |
+|---|---|---|---|---|---|
+| 營業活動（CFO） | (1,627) | (5,692) | **(2,637)** | (1,513) | **+3,929** |
+| 投資活動 | (2) | (22) | (3,077) | (49) | (17,181) |
+| ── 其中購置不動產廠房設備（CapEx） | (2) | (15) | (131) | (18) | (482) |
+| 籌資活動 | 2,320 | 7,248 | 19,960 | 4,749 | **110,774** |
+
+- **2026 上半年 CFO 轉正 +$3.9B**。2025 全年燒錢 $2.6B，二手來源的 $3B／$5.2B 都不準。
+- 自有 CapEx 很小（上半年 $482M），因為算力幾乎都是**租用或託管**（雲端合約加融資租賃），不列在投資活動。投資活動 −$17.2B 主要應是把現金轉成短期投資，加上 $2.5B 託管保證金。
+- 2026 Q3「現金流為正」仍是 FT 報導（見 3.5），金額未揭露。
 
 ### 4.2 融資輪次（股權）
 
@@ -202,8 +252,11 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 
 | 項目 | 內容 | 標記 | 來源 / 日期 |
 |---|---|---|---|
-| 秘密遞件 | 2026-06-01 遞交 S-1 草案（261 頁，約 80 頁風險因子） | [官方宣布遞件]；頁數為 [報導] | [Crypto Briefing](https://cryptobriefing.com/anthropic-ipo-amazon-google-revenue/)；[Yahoo Finance 2026-09-30](https://finance.yahoo.com/technology/ai/articles/anthropic-1-518-billion-commitment-165731037.html) |
-| 承銷商 | Goldman Sachs、JPMorgan、Morgan Stanley | [報導] | 同上 |
+| 秘密遞件 | 2026-06-01 遞交 S-1 草案（DRS），之後 7/13、8/10、9/4、10/1、10/9 共 5 次 DRS/A | [官方:EDGAR] | [EDGAR 申報清單](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002130357) |
+| **公開 S-1** | **2026-10-26**；Nasdaq Global Select，代號 **ANT**，發行 Class A 普通股；股數與價格區間留空 | [官方:S-1] | [Anthropic 公告](https://www.anthropic.com/news/s1-sec) |
+| 承銷商 | 招股書列 Goldman Sachs、Morgan Stanley（報導另列 JPMorgan） | [官方:S-1]；JPMorgan 為 [報導] | 同上 |
+| 股權結構 | Class A（公開發行）、Class F（共同創辦人高投票權）、Class N（無投票權，策略投資人可轉債轉換用）、Class T、Class E（員工） | [官方:S-1] | 持股比例表的百分比欄留空 |
+| Google 同步私募選擇權 | Google 可用 IPO 價格同步私募 Class N 股；若行使，Google NPA 額度最多減少 $10B | [官方:S-1] | 見 4.4 |
 | 時程 | 最快 11/9 那週開始正式路演，感恩節（11/26）前在 Nasdaq 掛牌；Bloomberg 稱日期仍不確定；有報導指 11/24 定價 | [報導:Bloomberg、Reuters、Yahoo] | [TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo)；[valueaddvc](https://valueaddvc.com/blog/anthropic-2-trillion-ipo-october-2026-largest-ever-spacex) |
 | 估值傳聞 | $1.5T～$2T 以上；部分潛在投資人認為合理價值 $1.8T～$2T | [報導:Reuters、FT] | [The Decoder](https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/)；[FinanceFeeds（$1.5T 說）](https://financefeeds.com/anthropic-ipo-valuation-1-5-trillion-not-2-trillion/) |
 | 募資規模 | 最高約 $100B | [報導] | [SiliconANGLE](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/) |
@@ -212,40 +265,64 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 | 估值看空 | New Constructs：最低情境 $144B，中間情境 $1.1T | [估計:New Constructs 2026-10-06] | [TNW 2026-10-16](https://thenextweb.com/news/anthropic-ipo-valuation-new-constructs-144bn) |
 | 倍數 | $2T ≈ 2025 營收 435 倍、Q2 年化營收不到 44 倍、7 月 run-rate 不到 31 倍 | [估計:PitchBook 2026-10-05] | 同上 |
 
+### 4.4 策略夥伴融資額度與信用額度（2026-06-30）[官方:S-1]
+
+| 項目 | 額度 | 已動用 | 條件 |
+|---|---|---|---|
+| **Google 2026 NPA**（可轉債認購協議） | $20.0B | $0 | 動用期至 2030-12；Google 若行使同步私募，最多減 $10B |
+| **Amazon 2026 NPA** | $15.0B | $0 | 每達成一個**算力容量里程碑**開放 $5B；以 30 日 VWAP 發行 Class N 股結算；IPO 後 30 個月內有效 |
+| **Broadcom（Infrastructure Partner 2026 NPA）** | **$42.0B** | $0 | 年利 **9%**；**只能用來支付 Broadcom TPU 設備租金**；Broadcom 可轉讓給指定金融夥伴 |
+| 合計 NPA 額度 | **$77.0B** | — | — |
+| Amazon 既有可轉債（展期票據） | — | **$6.2B** 未償（2023 NPA $2.19B、2024 NPA $4.02B） | 無息；Amazon 持股上限 12%，超過的部分展期 |
+| A&R 循環信用額度 | **$15B**（2026-09 由 $3.25B 擴大） | 6/30 未動用 | 有擔保；2031-09 到期 |
+
+**解讀**：Broadcom 借錢給 Anthropic 付 Broadcom 的租金（9% 利率），Amazon 的資金按 AWS 算力上線進度撥付。這是**供應商融資**，S-1 原文也承認「部分算力建置由雲端業者與晶片夥伴提供或促成資金或信用支援」，並說降低這種依賴要靠「以自身信用向獨立來源融資」。供 `X_circular_financing.md` 引用。
+
 ---
 
 ## 5. 算力承諾
 
-### 5.1 S-1 草案揭露的總承諾
+### 5.1 總承諾 [官方:S-1]
 
-| 項目 | 數字 | 標記 | 來源 |
+| 項目 | 數字 | 標記 | 備註 |
 |---|---|---|---|
-| 未來雲端、運算與基礎設施承諾總額 | **至少 $518B**，約十年期 | [報導:Reuters] | [IBTimes 2026-09-29](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730) |
-| 其中不可取消或不論用量都要付款 | 約 80%（約 $414B，[推算]） | [報導:Reuters] | 同上 |
-| 2025-12-31 不可取消的託管與運算承諾 | $54.6B | [報導:Reuters，經 TradingKey] | [TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262193114-anthropic-ipo-filing-reveals-revenue-breakdown-amazon-google-tradingkey) |
-| 承諾 ÷ 2025 營收 | 每 $1 營收對應約 $113 未來承諾 | [推算:Yahoo Finance] | [Yahoo Finance 2026-09-30](https://finance.yahoo.com/technology/ai/articles/anthropic-1-518-billion-commitment-165731037.html) |
-| 逐年付款時程（2026、2027…） | **查不到** | — | — |
+| 2025-12-31 後新簽或修訂的最低付款承諾 | **約 $417B** | [官方:S-1] | 財報附註（期後事項）；主要是算力設備與資料中心租賃、雲端採購承諾；2026–2027 起算，期限不到 1 年到 20 年 |
+| 2028–2031 交付的額外 TPU 算力（條款未定） | **估 $125B～$150B** | [官方:S-1] | **不在承諾表內**；向 Google 等 TPU 供應商採購 |
+| 2025-12-31 不可取消的託管與運算承諾 | $54.6B | [報導:Reuters，經 TradingKey] | 期後事項之前的存量 |
+| 下表列名合約加總 | **約 $657B**（含額外 TPU 約 $780B～$810B） | [推算] | 部分是「最高」金額，也有可取消的部分，見 5.2 |
+| 合約付款時程表（2026、2027…逐年） | **S-1 表格留空** | — | 等 S-1/A；只說「約 $X 在 2030 年底前發生，其餘大多在 2031–2045」 |
+| 外流草案報導的總額 | 至少 $518B，約 80% 不可取消 | [報導:Reuters] | [IBTimes 2026-09-29](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；口徑與時點和正式版不同，不再使用 |
 
-**口徑註記**：$54.6B 是 2025 年底的不可取消承諾，$518B 顯然已包含 2026 上半年新簽的 Amazon（$100B+）、Google（5GW）、Broadcom 等合約（草案 6 月遞交、後續有更新）。兩數時點不同，不矛盾。
+其他期後承諾 [官方:S-1]：2026-03 為一家資料中心業者的購電合約提供最高 $500M 擔保；2026-04 存入 $2.5B 託管保證金（算力與基礎設施租約）。
 
-### 5.2 依供應商拆分
+**Anthropic Direct** [官方:S-1]：公司正從「只租雲端」轉向混合模式，直接租用晶片、放在代管機房運轉。先鎖定交期長但占總成本小的資料中心容量，晚一點再決定加速器採購。承諾總額中很大一部分屬於這一塊。
 
-| 供應商 | 合約金額 | 規模／硬體 | 期間 | 標記 | 來源 |
+### 5.2 依供應商拆分 [官方:S-1]
+
+| 供應商 | 金額 | 期間 | 能不能取消 | 硬體 | 外流版本 |
 |---|---|---|---|---|---|
-| **Broadcom**（TPU 設備租賃） | **$161.2B**，大部分不可取消 | Google TPU（與 Google、Broadcom 2026-04 簽的多 GW TPU 協議相關） | — | [報導:Reuters] | [IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[SiliconANGLE](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/) |
-| **Google Cloud** | **至少 $111.1B**；用量低於合約最低額時須補差額 | 2025-10：最多 100 萬顆 TPU、2026 年上線「遠超過 1GW」、價值「數百億美元」[官方]；2026-04：Google+Broadcom 多 GW 新一代 TPU，2027 起上線 [官方]；Series H 稱 5GW [官方] | 2026-04 ～ 2033-07 | [報導:Reuters]；規模為 [官方] | [IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[Google Cloud 新聞稿 2025-10-23](https://www.nasdaq.com/press-release/anthropic-expand-use-google-cloud-tpus-and-services-2025-10-23)；[Anthropic 2026-04-06](https://www.anthropic.com/news/google-broadcom-partnership-compute) |
-| **Amazon AWS** | **$110B**（「10 年超過 $100B」） | 最多 5GW；Trainium2～Trainium4 + Graviton；2026 年底前 Trainium2+3 合計接近 1GW；Project Rainier（印第安納州）啟用時約 50 萬顆 Trainium2，目標 2025 年底 100 萬顆（未確認是否達成） | 2026-05 ～ 2036-04 | [報導:Reuters]；[官方:Amazon/Anthropic 公告] | [IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[The Decoder 2026-04-21](https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/)；[Technology Magazine](https://technologymagazine.com/news/aws-how-500-000-trainium2-chips-power-project-rainier) |
-| **Microsoft Azure** | **$31.4B**（2025-11 公告為 $30B） | 最多 1GW 額外容量；NVIDIA Grace Blackwell／Vera Rubin | 至 2033-05 | [報導:Reuters]；公告為 [官方] | [IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[Constellation Research](https://www.constellationr.com/insights/news/anthropic-microsoft-azure-nvidia-ink-30-billion-compute-pact) |
-| **SpaceX／xAI**（Colossus 1、2） | 每月約 $1.25B 至 2029-05（約 $40B～$45B）；Reuters 引草案稱最高 $84.5B NVIDIA 算力至 2029 | 傳 22 萬顆以上 NVIDIA GPU（二手） | 至 2029；**雙方 90 天通知可取消** | [官方:SpaceX S-1]；$84.5B 為 [報導:Reuters] | [TechCrunch 2026-05-28](https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/)；[IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730) |
-| **AMD** | 算力 >$20B | 最多 2GW Instinct MI450 + Helios 機櫃；第一個 GW 預計 2027 上半年 | — | [報導:Reuters、Bloomberg] | [IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730)；[Bloomberg Gov](https://news.bgov.com/artificial-intelligence/amd-to-invest-up-to-5-billion-in-anthropic-deploy-chips) |
-| **Fluidstack**（自建資料中心） | $50B（美國 AI 基礎設施投資） | 德州、紐約首批，2026 年陸續上線；約 800 個常設職位 | 2025-11 宣布 | [官方公告，經媒體] | [Constellation Research](https://www.constellationr.com/insights/news/anthropic-spend-50-billion-ai-infrastructure-fluidstack-partnership)；[TechInformed](https://techinformed.com/anthropic-commits-50-billion-to-u-s-data-centers-with-fluidstack/) |
-| **Nscale** | **金額查不到** | — | 2026 | [報導:FT] | [TechCrunch 2026-09-28](https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/) |
-| 記憶體夥伴（Micron、Samsung、SK hynix） | **金額查不到** | Series H 列為策略基礎設施夥伴 | — | [官方] | [Anthropic Series H](https://www.anthropic.com/news/series-h) |
+| **Broadcom**（5 年主設備租賃，融資租賃） | 租金約 **$161.2B**（不含利息） | 部分 2026 年上線，更多 2027 年起 | **不可**（違約除外）；有交叉違約條款；由兩家特殊目的子公司簽約、母公司保證、以設備擔保 | **Google TPU**，放在代管資料中心 | 相同 |
+| **Google Cloud** | **至少 $114.5B**；用量不足要補差額 | 2026-04 ～ 2033-07 | **不可** | TPU 為主 | $111.1B |
+| **額外 TPU**（Google 等） | 估 $125B～$150B | 2028 ～ 2031 交付 | 依交付容量計費 | TPU | 無 |
+| **Amazon AWS** | **至少 $110.0B**；用量不足要補差額 | 2026-05 ～ 2036-04 | **不可** | Trainium 為主 | 相同 |
+| **SpaceX.AI**（原 xAI） | **最高 $120.5B**；全部上線後每月約 **$3.1B**，預計 **2026-12** 滿載 | 延伸到 2029 | 2027-01／2027-03 起，雙方 **90 天通知可取消** | NVIDIA GPU | 最高 $84.5B；每月 $1.25B |
+| **Microsoft Azure** | **至少 $44.9B**（2026-02、2026-10 兩次修約加碼） | 2026-11 ～ 2033-05 | **不可**（未交付的分批例外） | NVIDIA GPU | $31.4B |
+| **Nscale** | **最高約 $44.6B**；交付並驗收後才計費 | 延伸到 2033 | 原則不可；Nscale 須盡力取得 GPU 與機房融資 | NVIDIA GPU | 金額查不到 |
+| **Lambda** | **約 $41.3B**；交付並驗收後才計費 | 延伸到 2034 | 8 月合約（$34.9B）若 Lambda 未及時取得機房租約，雙方可解約 | NVIDIA GPU | 無 |
+| **AMD** | 無固定金額；買滿首批容量預計 **>$20B**，另有最多同等規模的追加選擇權 | 首批 2027 年 | 對 Anthropic **不可** | Helios 機櫃（MI450） | >$20B |
+| **Fluidstack** | 機房開發與營運服務（託管合約） | — | — | 自建機房 | $50B 為 2025-11 官方公告金額 |
+| 記憶體廠（Micron、Samsung、SK hynix） | S-1 未列金額 | — | — | — | 查不到 |
 
-**矛盾註記**：
-- Microsoft：公告 $30B vs 草案 $31.4B，可能是後續追加或計價差異。
-- SpaceX：SpaceX S-1 寫每月 $1.25B 至 2029-05；Musk 在 X 上稱只是「180 天租約，之後雙方 90 天通知可取消」；Reuters 引 Anthropic 草案稱「最高 $84.5B、大致 90 天可取消」。三種說法並存。
-- 已知各家加總（Broadcom 161.2 + Google 111.1 + Amazon 110 + Microsoft 31.4 + xAI 84.5 + AMD 20+）約 $518B，與總額大致吻合 [推算]。
+**依晶片陣營加總** [推算]：
+- **TPU**：Broadcom $161.2B ＋ Google $114.5B ＋ 額外 $125–150B ≈ **$400B～$426B**，大部分不可取消，最晚延伸到 2033 年。Google Cloud 合約裡可能也有部分 GPU。
+- **NVIDIA GPU**：SpaceX $120.5B ＋ Microsoft $44.9B ＋ Nscale $44.6B ＋ Lambda $41.3B ≈ **$251B**。其中 SpaceX 可 90 天取消，Nscale 和 Lambda 交付才計費，**彈性最大**。
+- **Trainium**：Amazon $110B。
+- **AMD**：>$20B。
+
+**解讀**：
+1. **不可取消的部分集中在 TPU 和 Trainium（ASIC）**，可退出的部分集中在 NVIDIA GPU 租約。需求如果轉弱，Anthropic 最先砍的會是 SpaceX、neocloud 的 GPU 租用。
+2. **SpaceX 月費 $3.1B ≈ 年化 $37B**，2026-12 滿載。這是 2026 Q3–Q4 運算成本跳升的主因之一（見 3.2）。
+3. 外流版本低估了 Microsoft（+$13.5B）、SpaceX（+$36B），也漏掉 Nscale、Lambda 和額外 TPU。
 
 ---
 
@@ -253,17 +330,18 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 
 | 公司 | 對 Anthropic 投資 | 持股 | Anthropic 對其算力承諾 | 其他角色 | 來源 |
 |---|---|---|---|---|---|
-| **Amazon** | 2023–2024 共 $8B；2026-04 再 $5B + 最高 $20B（累計最高約 $33B） | 未揭露；Fortune 估「十幾 %（mid-to-high teens）」；Crypto Briefing 稱約 21%（單一來源） | $110B（至 2036），最多 5GW | 雲端市集通路（Bedrock）、主要訓練夥伴、競爭者（Nova 模型）；帳上持有 Anthropic 約 $74.2B（$42.2B 可轉債 + $32B 無投票權特別股）；2026 Q1 認列 $16.8B 稅前利益（含 $12.3B 重估） | [Fortune 2026-06-04](https://www.fortune.com/2026/06/04/amazon-google-billions-anthropic-ipo/)；[Crypto Briefing](https://cryptobriefing.com/anthropic-ipo-amazon-google-revenue/) |
-| **Google** | 累計約 $3.3B（至 2025-01）；2026-04 再 $10B + 最高 $30B | 約 14%，合約上限 15%，無投票權、無董事席次 | ≥$111.1B（至 2033），須補足最低用量差額；另 Broadcom TPU 租賃 $161.2B | 雲端市集通路（Vertex）、TPU 供應商、競爭者（Gemini） | [Fortune 2026-06-04](https://www.fortune.com/2026/06/04/amazon-google-billions-anthropic-ipo/)；[Computing 2025](https://computing.co.uk/news/2025/ai/google-revealed-to-hold-14-stake-in-anthropic) |
-| **Microsoft** | 最高 $5B（2025-11） | 查不到 | $31.4B Azure（至 2033） | Foundry 通路、GitHub Copilot（可能是前兩大客戶之一）、競爭者（MAI） | [PureAI](https://pureai.com/Articles/2025/11/18/Microsoft-and-Nvidia-deepen-ties-with-Anthropic.aspx)；[IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730) |
+| **Amazon** | 2023–2024 共 $8B；2026-04 再 $5B + 最高 $20B（累計最高約 $33B） | 未揭露；Fortune 估「十幾 %（mid-to-high teens）」；Crypto Briefing 稱約 21%（單一來源） | ≥$110B（2026-05 ～ 2036-04），最多 5GW [官方:S-1]；Amazon 2026 NPA $15B 依算力里程碑撥付；既有展期可轉債 $6.2B，持股上限 12% | 雲端市集通路（Bedrock）、主要訓練夥伴、競爭者（Nova 模型）；帳上持有 Anthropic 約 $74.2B（$42.2B 可轉債 + $32B 無投票權特別股）；2026 Q1 認列 $16.8B 稅前利益（含 $12.3B 重估） | [Fortune 2026-06-04](https://www.fortune.com/2026/06/04/amazon-google-billions-anthropic-ipo/)；[Crypto Briefing](https://cryptobriefing.com/anthropic-ipo-amazon-google-revenue/) |
+| **Google** | 累計約 $3.3B（至 2025-01）；2026-04 再 $10B + 最高 $30B | 約 14%，合約上限 15%，無投票權、無董事席次 | ≥$114.5B（至 2033-07），須補足最低用量差額；另 Broadcom TPU 租賃 $161.2B、2028–2031 額外 TPU $125–150B [官方:S-1]；Google 2026 NPA 可轉債額度 $20B | 雲端市集通路（Vertex）、TPU 供應商、競爭者（Gemini） | [Fortune 2026-06-04](https://www.fortune.com/2026/06/04/amazon-google-billions-anthropic-ipo/)；[Computing 2025](https://computing.co.uk/news/2025/ai/google-revealed-to-hold-14-stake-in-anthropic) |
+| **Microsoft** | 最高 $5B（2025-11） | 查不到 | ≥$44.9B Azure（2026-11 ～ 2033-05）[官方:S-1] | Foundry 通路、GitHub Copilot（可能是前兩大客戶之一）、競爭者（MAI） | [PureAI](https://pureai.com/Articles/2025/11/18/Microsoft-and-Nvidia-deepen-ties-with-Anthropic.aspx)；[IBTimes](https://www.ibtimes.co.uk/anthropic-518bn-infrastructure-commitments-ipo-1822730) |
 | **NVIDIA** | 最高 $10B（2025-11）；傳 IPO 基石約 $10B | 查不到 | 間接：Azure、xAI 的 GPU 算力 | GPU 供應商 | 同上；[SiliconANGLE](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/) |
 | **AMD** | 最高 $5B（2026-07） | 查不到 | >$20B，最多 2GW MI450 | GPU 供應商 | [Bloomberg Gov](https://news.bgov.com/artificial-intelligence/amd-to-invest-up-to-5-billion-in-anthropic-deploy-chips) |
 
 **循環交易觀察**（供 `X_circular_financing.md` 引用）：
 - Amazon：最高投資約 $33B，對應 Anthropic 回頭承諾 AWS $110B → **每 $1 投資換約 $3.3 回流採購**［推算］。
-- Google：最高投資約 $43B（$3.3B + $40B），對應 Google Cloud $111.1B + Broadcom TPU $161.2B（部分付給 Broadcom，Google 間接受益）［推算］。
-- Microsoft $5B 投資對 $31.4B Azure；NVIDIA $10B 投資對其 GPU 經由 Azure／xAI 的間接銷售。
-- Amazon、Google 又是 47% 營收的通路（2025 年 $2.16B），並收取約 $351M 通路費。同一家公司同時是股東、供應商、通路、可能的大客戶與競爭者。
+- Google：最高投資約 $43B（$3.3B + $40B），對應 Google Cloud $114.5B + Broadcom TPU $161.2B + 額外 TPU $125–150B（部分付給 Broadcom，Google 間接受益）［推算］。
+- Broadcom：$42B 可轉債額度（年利 9%）專門用來付 Broadcom 的 TPU 租金 [官方:S-1]，是最直接的供應商融資。
+- Microsoft $5B 投資對 $44.9B Azure；NVIDIA $10B 投資對其 GPU 經由 Azure／xAI 的間接銷售。
+- Amazon、Google 又是 47%～48% 營收的通路（2025 年 $2.16B；2026 上半年 48% [官方:S-1]），並收取約 $351M 通路費。同一家公司同時是股東、供應商、通路、可能的大客戶與競爭者。
 
 ---
 
@@ -271,38 +349,38 @@ Run-rate 一般是「最近一個月 ×12」（[Simon Willison 2026-05-29](https
 
 | 期間 | 營收 | 運算成本 | 營收 ÷ 運算成本 | 運算成本率（運算 ÷ 營收） | 依據 |
 |---|---|---|---|---|---|
-| 2024 | 約 $0.39B | 約 $2.4B（反推） | 約 0.16 | 約 620% | [推算]，運算成本無直接報導 |
-| **2025** | $4.59B | $7.33B | **0.63** | **160%** | [報導:Reuters] 原始數字 |
-| 2025（營收扣通路費） | $4.24B（$4.59B − $351M） | $7.33B | 0.58 | 173% | [推算]，近似淨額口徑 |
-| 2026 Q1 | $4.73B | 約 $3.36B（$0.71 × 營收） | 1.41 | 71% | [報導:WSJ] 比率 |
-| 2026 Q2 | $11.5B | 約 $6.44B（$0.56 × 營收，**用季前預測比率**） | 約 1.79 | 約 56% | 比率為預測，非實際 |
-| **2026 Q3** | $16.8B | 約 $9.88B（$16.8B ÷ 1.70） | **1.70** | **約 59%** | [報導:FT] 比率 |
-| 2026 Q1–Q3 合計 | 約 $33.0B | 約 $19.7B | 約 1.68 | 約 60% | [推算] |
+| 2023 | $0.04B | $0.43B | 0.09 | 約 1,060% | [官方:S-1] |
+| 2024 | $0.39B | $2.52B | 0.15 | 約 650% | [官方:S-1] |
+| **2025** | $4.59B | $7.33B | **0.63** | **160%** | [官方:S-1] |
+| 2025（營收扣通路費） | $4.24B（$4.59B − $351M） | $7.33B | 0.58 | 173% | [推算]，通路費為 [報導:Reuters]，近似淨額口徑 |
+| 2026 Q1 | $4.73B | $3.39B | 1.40 | 72% | [官方:S-1] |
+| **2026 Q2** | $11.56B | $5.56B | **2.08** | **48%** | [官方:S-1] |
+| 2026 上半年 | $16.29B | $8.95B | 1.82 | 55% | [官方:S-1] |
+| 2026 Q3 | 約 $16.8B | 約 $9.9B（$16.8B ÷ 1.70） | **約 1.70** | **約 59%** | [報導:FT] 比率，S-1 留空 |
+| 2026 Q1–Q3 | 約 $33.1B | 約 $18.8B | 約 1.76 | 約 57% | [推算]，官方 Q1–Q2 ＋ 報導 Q3 |
 
-**解讀**：運算成本率從 2025 年的 160% 降到 2026 Q3 的約 59%，主要是營收成長（約 14 倍年增）遠快於運算支出成長。但 Q3（59%）比 Q2 預測（56%）略差，代表規模效益可能開始趨緩，或新算力（2026 下半年上線的 Google TPU、AWS Trainium、SpaceX GPU）已開始計費。
+**解讀**：
+- 運算成本率從 2025 年的 160% 降到 **2026 Q2 的 48%**，比外流報導（Q2 季前預測 56%）更好。
+- 但 **Q3 退回約 59%**：運算成本季增約 78%，營收季增 45%。這是新算力開始計費造成的，SpaceX 月費會在 12 月滿載到約 $3.1B（見 5.2）。
+- Q4 起 Broadcom TPU、AWS、Azure 新合約陸續起算，運算成本率可能續升。**Q4 是否守住 50%～60%**，是判斷 AI 營收能否追上算力成本的關鍵。
 
 **口徑限制**：
-1. **「運算成本」定義不明**：2025 年 $7.33B 是 Reuters 寫的「運算與基礎設施」，看起來包含訓練與推論；2026 季度比率是 FT／WSJ 轉述的「computing power」，是否包含訓練、是否和 2025 同口徑都不確定。
-2. **營收用總額法**：47% 的營收經雲端市集，通路費（約 16%）列費用而非扣營收。若改成 OpenAI 的淨額口徑，比率會低約 5–8%。
-3. **2026 數字都是未經審計的投資人簡報**，不是 S-1 正式數字；Q2 比率甚至是季前預測。
-4. **算力承諾和支出時點不同**：$518B 承諾大部分在 2027 年後才開始付款，目前比率反映的是「舊算力 + 新營收」，未來幾年新算力大量上線後，比率可能大幅惡化（WSJ 已提到 2026 下半年到 2027 可能再轉虧）。
-5. **毛利率和指標 A 不同**：The Information 的毛利率（2025 年預測 40%）只扣推論與銷售相關成本，不含訓練，所以和「運算成本率 160%」可以同時成立。
-6. **蒸餾營收（5–7%）在 Q3 被縮減**，影響營收品質與可比性。
+1. **「運算成本」的定義**：S-1 的「運算與基礎設施」涵蓋研究、模型開發、服務客戶、內部使用，也就是**訓練加推論**，所以 2023 到 2026 Q2 是同一口徑 [官方:S-1]。Q3 的 1.70 是 FT 轉述的投資人簡報，口徑未必相同。
+2. **營收用總額法**：48% 的營收經雲端市集，通路費列在「銷售、行銷與合作」，沒有從營收扣除。若改成 OpenAI 的淨額口徑，比率會低約 5%～8%。
+3. **營收品質**：2026 前三季約 5%～7% 營收來自違反使用政策的客戶，之後預期會減少 [官方:S-1]。
+4. **承諾和支出時點不同**：S-1 期後新增承諾約 $417B，大部分在 2027 年後才付款。目前的比率反映的是「舊算力 + 新營收」，新算力大量上線後比率可能惡化。
+5. **毛利率和指標 A 不同**：The Information 的毛利率只扣推論與銷售成本，不含訓練。S-1 沒有毛利率。
 
 ---
 
-## 資料缺口（需等公開 S-1／正式財報）
+## 資料缺口（S-1 已補上的不再列出）
 
-1. **2023 年營收**與 2023–2024 完整損益表。
-2. **銷貨成本與毛利率實際值**（2024、2025、2026 各季）；報導只有 The Information 的預測值。
-3. **推論 vs 訓練成本拆分**：2025 實際值完全查不到；2026 的 $12B／$7B 只有二手來源。
-4. **營業費用細項**：R&D、S&M、G&A、股權報酬（SBC）金額；「調整後營業利益」的確切定義與調整項。
-5. **現金流量表**：2024、2025 的 CFO、CapEx、FCF；2026 Q3「現金流為正」的金額；2026-09-30 現金餘額。
-6. **算力承諾的逐年付款時程**（2026、2027、2028…），以及哪些部分可取消。
-7. **前兩大客戶的身分**（Cursor？GitHub Copilot？還是 Amazon／Google 轉售？）與 2026 年集中度。
-8. **淨收入留存率（NRR）**、>$100K 客戶絕對數、2026 年後的 >$1M 客戶數。
-9. **Claude Code 最新官方 run-rate**（官方最後一次是 2026-02 的 >$2.5B）。
-10. **Google Vertex vs AWS Bedrock 各自的營收**。
-11. **Amazon、Microsoft、NVIDIA 的確切持股比例**；股本結構、IPO 發行價區間與股數。
-12. **Nscale、記憶體廠（Micron／Samsung／SK hynix）合約金額**。
-13. 2024 年營收 $386M vs $400M、Q2 2026 營收 $11.5B vs $11.6B、Microsoft 承諾 $30B vs $31.4B、SpaceX 合約期限等矛盾，需以公開 S-1 定案。
+1. **2026 Q3 官方財報**：營收、運算成本、營業損益、9/30 現金、10/31 run-rate。S-1 留空，等 S-1/A。
+2. **承諾付款逐年時程表**：S-1 表格留空，等 S-1/A。
+3. **毛利率、推論／訓練拆分**：S-1 依費用性質列示，**不揭露**。未來 10-Q 可能也不會揭露，只能靠報導。
+4. **前五大客戶身分**：S-1 未具名（Cursor？GitHub Copilot？）。
+5. **Claude Code 營收金額**：S-1 只有用量倍數，沒有金額。
+6. **Google Vertex vs AWS Bedrock 各自營收**：S-1 只給雲端市集合計 48%。
+7. **持股比例**：Amazon、Google、Microsoft、NVIDIA 的持股百分比在 S-1 留空。已知 Amazon 可轉債轉換上限 12%。
+8. **IPO 股數、價格區間、募資規模**：等 S-1/A。
+9. **記憶體廠合約金額**、Fluidstack 合約金額。
