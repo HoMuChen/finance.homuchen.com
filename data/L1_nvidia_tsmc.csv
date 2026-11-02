@@ -719,7 +719,10 @@ SK hynix,2026Q2,2026Q2,revenue,79.3187,KRW_tn,https://www.storagenewsletter.com/
 SK hynix,2026Q2,2026Q2,operating_profit,60.5426,KRW_tn,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2026-07-29,官方(營益率76%)
 SK hynix,2026Q2,2026Q2,hbm_comment,2Q26 開始 HBM4 量產出貨、下半年放量;HBM4E 完成送樣;已與約10家客戶簽長期協議(LTA);未揭露HBM占DRAM比重,text,https://www.storagenewsletter.com/2026/07/30/sk-hynix-fiscal-2q26-financial-results/,2026-07-29,官方
 SK hynix,2026FY,FY2026,capex_guidance_comment,2026年 CapEx 指引上修至40兆韓元高段,text,https://pulse2.com/sk-hynix-reports-record-q2-2026-revenue-of-79-3-trillion-won-about-55-2-billion/,2026-07-29,報導
-SK hynix,2026Q3,2026Q3,revenue,,KRW_tn,,,待公布(預計2026年10月底)
+SK hynix,2026Q3,2026Q3,revenue,104.6155,KRW_tn,https://www.tradingview.com/news/prnewswire:10159c85e082e:0-sk-hynix-announces-3q26-financial-results/,2026-10-28,官方(初步;QoQ+32% YoY+328%)
+SK hynix,2026Q3,2026Q3,operating_profit,83.3338,KRW_tn,https://www.tradingview.com/news/prnewswire:10159c85e082e:0-sk-hynix-announces-3q26-financial-results/,2026-10-28,官方(初步;營益率80%)
+SK hynix,2026Q3,2026Q3,net_income,39.7756,KRW_tn,https://www.tradingview.com/news/prnewswire:10159c85e082e:0-sk-hynix-announces-3q26-financial-results/,2026-10-28,官方(初步;QoQ-58%)
+SK hynix,2026Q3,2026Q3,memory_price_comment,DRAM ASP季增約20%後段、出貨+10%;NAND ASP季增約20%中段;14家LTA涵蓋2027-28產能>50%;DRAM與HBM實質售罄至2029,text,https://www.trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed/,2026-10-28,報導:法說
 Micron,2025Q3,FY25Q4,revenue,11.32,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2025-09-23,官方(季度截至2025-08底)
 Micron,2026Q2,FY26Q3,revenue,41.46,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2026-06-25,官方(季度約3-5月)
 Micron,2026Q3,FY26Q4,revenue,54.23,USD_bn,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm,2026-09-30,官方(季度截至2026-09-03；約6-8月)
@@ -753,3 +756,14 @@ MediaTek,2026Q4,2026Q4,asic_revenue,2.0,USD_bn,https://www.chinatimes.com/realti
 MediaTek,2026Q4,2026Q4,gross_margin_estimate,44.5,pct,https://www.chinatimes.com/realtimenews/20261029001806-260410,2026-10-29,估計(外資44-45%)
 MediaTek,2027FY,2027FY,datacenter_sam,80,USD_bn,https://udn.com/news/story/7240/9835076,2026-10-23,報導(公司說法;目標市佔15-20%)
 MediaTek,2027FY,2027FY,tpu_v8t_units_recognized,3.0,mn_units,https://www.chinatimes.com/realtimenews/20261029001806-260410,2026-10-29,估計(美系外資;CoWoS約18萬片對應約360萬顆)
+Samsung,2026Q3,2026Q3,memory_revenue,140.7,KRW_tn,https://finance.biggo.com/news/KR_005930.KS_2026-10-29,2026-10-29,報導(YoY+427%)
+Samsung,2026Q3,2026Q3,ds_operating_profit,106.5,KRW_tn,https://finance.biggo.com/news/KR_005930.KS_2026-10-29,2026-10-29,報導(DS部門營收147.1兆;DX部門虧損約0.8兆)
+Micron,2026Q3,FY26Q4,non_gaap_gross_margin,87,pct,https://pulse2.com/micron-reports-record-fiscal-q4-revenue-of-54-23-billion-and-fy2026-revenue-of-133-19-billion/,2026-09-30,官方(新聞稿轉載)
+Micron,2026Q4,FY27Q1,next_q_gross_margin_guidance,86.25,pct,https://pulse2.com/micron-reports-record-fiscal-q4-revenue-of-54-23-billion-and-fy2026-revenue-of-133-19-billion/,2026-09-30,官方(non-GAAP;公司稱FY27低點)
+Sandisk,2026Q3,FY27Q1,revenue,11.03,USD_bn,https://quartr.com/events/sandisk-sndk-q1-2027_F6lVAeGG,2026-10-29,報導(QoQ+23%;官方新聞稿待核對)
+Sandisk,2026Q3,FY27Q1,datacenter_revenue,4.8,USD_bn,https://quartr.com/events/sandisk-sndk-q1-2027_F6lVAeGG,2026-10-29,報導(QoQ+61%)
+Sandisk,2026Q4,FY27Q2,next_q_revenue_guidance,12.2-12.6,USD_bn,https://quartr.com/events/sandisk-sndk-q1-2027_F6lVAeGG,2026-10-29,報導
+Industry,2026Q4,2026Q4,dram_contract_price_forecast_qoq,10-15,pct,https://www.trendforce.com/presscenter/news/20260930-13258.html,2026-09-30,報導:TrendForce(一般DRAM;含HBM約15-20%)
+Industry,2026Q4,2026Q4,nand_contract_price_forecast_qoq,15-20,pct,https://www.trendforce.com/presscenter/news/20260930-13258.html,2026-09-30,報導:TrendForce(企業級SSD漲幅擴大)
+Industry,2026-10,2026-10,ddr4_8gb_contract_price,27.5,USD,https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/,2026-10-30,報導:DRAMeXchange轉述(9月26;MoM+5.8%)
+Industry,2026-10,2026-10,mlc_128gb_nand_contract_price,30.61,USD,https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/,2026-10-30,報導:DRAMeXchange轉述(持平;21個月來首次未漲)
