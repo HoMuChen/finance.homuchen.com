@@ -1,0 +1,13 @@
+stock_id,name,month,revenue,unit,source_url,source_date,quality
+2330,台積電,2026-04,410725118,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_4_0.html,2026-11-02,官方
+2330,台積電,2026-05,416975163,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_5_0.html,2026-11-02,官方
+2330,台積電,2026-06,442679969,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_6_0.html,2026-11-02,官方
+2330,台積電,2026-07,467580548,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html,2026-11-02,官方
+2330,台積電,2026-08,514805337,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html,2026-11-02,官方
+2330,台積電,2026-09,511857399,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_9_0.html,2026-11-02,官方
+2454,聯發科,2026-04,46736664,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_4_0.html,2026-11-02,官方
+2454,聯發科,2026-05,47434191,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_5_0.html,2026-11-02,官方
+2454,聯發科,2026-06,58011756,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_6_0.html,2026-11-02,官方
+2454,聯發科,2026-07,48474930,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html,2026-11-02,官方
+2454,聯發科,2026-08,64183361,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html,2026-11-02,官方
+2454,聯發科,2026-09,55399497,TWD_thousand,https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_9_0.html,2026-11-02,官方

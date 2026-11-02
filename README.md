@@ -36,6 +36,7 @@
 | `tools/r2.py` | 唯讀連線 fire-auto 的台股 R2 資料湖 |
 | `tools/eps_nowcast.py` | 月營收 → 當季 EPS 即時推估（台積電、聯發科） |
 | `data/eps_guidance.json` | `eps_nowcast.py` 的輸入：財測、R2 還沒收錄的已公布季度 |
+| `data/tw_monthly_revenue.csv` | 台積電、聯發科官方月營收（公開資訊觀測站，`eps_nowcast.py` 自動補） |
 | `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
 | `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
 | `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
@@ -102,7 +103,10 @@ uv run -q --with duckdb python tools/eps_nowcast.py --ids 2330
   - 剩下月份的月營收要比已公布月均高或低多少，才達得到財測。
   - 月均外推的對照值。
 - 報告也列出 A 法過去 12 季的誤差（代入實際季營收）。營收大幅跳升、費用率下降的季度（例如聯發科 2026Q4），A 法會低估，要看 B 法。
-- 輸出只有比例、年增率和推估值，不放月營收原始金額。
+- 月營收金額只用公開資訊觀測站「上市公司每月營業收入彙總表」的官方數字，存在 `data/tw_monthly_revenue.csv`（單位千元，標 [官方] 與來源網址）。
+  - 缺的月份會自動從 MOPS 抓，原始頁面快取在 `cache/mops/`；`--offline` 不抓。
+  - 年增、月增和推估仍由 R2 計算，並逐月和官方金額比對，不一致會在報告裡警告。
+  - FinMind 的數字不會出現在報告裡。
 
 ## 供應鏈月營收旁證
 

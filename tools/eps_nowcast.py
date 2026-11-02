@@ -15,22 +15,34 @@
   沒有營益率財測時，用毛利率中值減費用率中值。
 季內營收還沒到齊時，本季營收用財測中值；同時列「已公布月份月均 × 3」的外推做對照。
 
-公開 repo：輸出只放比例、年增率、推估值與財測（官方／法說），不放 FinMind 的月營收原始金額。
+公開 repo：計算用 R2（FinMind），但報告裡的月營收金額只用公開資訊觀測站的官方數字
+（data/tw_monthly_revenue.csv，標 [官方]），不顯示 FinMind 的金額。缺的月份會自動從 MOPS
+「上市公司每月營業收入彙總表」抓（--offline 不抓），並和 R2 比對，不一致會警告。
 """
 
 import argparse
+import csv
 import datetime as dt
 import json
 import pathlib
+import re
+import ssl
 import statistics
 import sys
+import time
+import urllib.request
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from r2 import connect  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 GUIDANCE = ROOT / "data/eps_guidance.json"
+OFFICIAL = ROOT / "data/tw_monthly_revenue.csv"
+OFFICIAL_FIELDS = ["stock_id", "name", "month", "revenue", "unit", "source_url", "source_date", "quality"]
+MOPS_URL = "https://mopsov.twse.com.tw/nas/t21/{market}/t21sc03_{roc}_{month}_0.html"
+MOPS_CACHE = ROOT / "cache/mops"
 BACKTEST_QUARTERS = 12
+SHOW_MONTHS = 6
 
 
 def qkey(year, month):
@@ -64,6 +76,64 @@ def load(con, sid):
         q[{"Revenue": "revenue", "OperatingIncome": "operating_income",
            "EquityAttributableToOwnersOfParent": "net_income", "EPS": "eps"}[t]] = v if t == "EPS" else v / 1e9
     return rev, fin
+
+
+def load_official():
+    """官方月營收：{(stock_id, (y, m)): row}，revenue 單位千元。"""
+    if not OFFICIAL.exists():
+        return {}
+    with open(OFFICIAL, newline="") as f:
+        return {(r["stock_id"], tuple(map(int, r["month"].split("-")))): r for r in csv.DictReader(f)}
+
+
+def fetch_mops(y, m, market="sii"):
+    """公開資訊觀測站月營收彙總表（全部上市或上櫃公司一頁）→ {stock_id: 當月營收千元}。"""
+    url = MOPS_URL.format(market=market, roc=y - 1911, month=m)
+    cache = MOPS_CACHE / f"t21sc03_{market}_{y}_{m:02d}.html"
+    if cache.exists():
+        raw = cache.read_bytes()
+    else:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        # 證交所憑證缺 Subject Key Identifier，Python 3.13 的 VERIFY_X509_STRICT 會擋；
+        # 只關這一項嚴格檢查，憑證鏈與主機名稱照常驗證。
+        ctx = ssl.create_default_context()
+        ctx.verify_flags &= ~ssl.VERIFY_X509_STRICT
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            raw = r.read()
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_bytes(raw)
+        time.sleep(1)
+    text = re.sub(r"<[^>]+>", "|", raw.decode("cp950", errors="replace"))
+    out = {}
+    for sid, rev in re.findall(r"\|(\d{4})\|+[^|]+\|+\s*([\d,]+)\|", text):
+        out.setdefault(sid, int(rev.replace(",", "")))
+    if not out:
+        raise RuntimeError(f"解析不到 MOPS 月營收：{url}")
+    return out, url
+
+
+def ensure_official(official, sid, name, months, market, offline):
+    """把缺的月份從 MOPS 補進 data/tw_monthly_revenue.csv。"""
+    missing = [k for k in months if (sid, k) not in official]
+    if offline or not missing:
+        return []
+    new = []
+    for y, m in missing:
+        vals, url = fetch_mops(y, m, market)
+        if sid in vals:
+            row = {"stock_id": sid, "name": name, "month": f"{y}-{m:02d}", "revenue": vals[sid],
+                   "unit": "TWD_thousand", "source_url": url, "source_date": dt.date.today().isoformat(),
+                   "quality": "官方"}
+            official[(sid, (y, m))] = row
+            new.append(row)
+    if new:
+        exists = OFFICIAL.exists()
+        with open(OFFICIAL, "a", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=OFFICIAL_FIELDS)
+            if not exists:
+                w.writeheader()
+            w.writerows(new)
+    return new
 
 
 def merge_reported(fin, reported):
@@ -163,18 +233,35 @@ def pct(x, sign=True):
     return "–" if x is None else (f"{x:+.1%}" if sign else f"{x:.1%}")
 
 
+def bn(row):
+    return f"{int(row['revenue']) / 1e6:,.1f}" if row else "–"
+
+
 def render(results, asof):
     out = [f"# 月營收 → 當季 EPS 推估（{asof}）", "",
            "由 `tools/eps_nowcast.py` 產生。A＝上季淨利率不變；B＝財測營益率中值 × 上季淨利÷營業利益。",
-           "季內營收未到齊時，本季營收用財測中值；「月均外推」只是對照。不放月營收原始金額。", ""]
-    for sid, name, rows, yoys, slow, bt, sh, sh_q in results:
+           "季內營收未到齊時，本季營收用財測中值；「月均外推」只是對照。",
+           "月營收金額取自公開資訊觀測站「上市公司每月營業收入彙總表」[官方]（`data/tw_monthly_revenue.csv`）；"
+           "年增、月增與推估由 R2 計算，並與官方金額比對。", ""]
+    for sid, name, rows, yoys, slow, bt, sh, sh_q, off, mism in results:
         out += [f"## {name}（{sid}）", ""]
-        out += ["**月營收**", "", "| 月份 | 年增 | 月增 |", "|---|---|---|"]
-        out += [f"| {y}-{m:02d} | {pct(a)} | {pct(b)} |" for (y, m), a, b in yoys]
-        out += ["", f"- 年增率連續 3 個月下滑：{'**是**' if slow else '否'}", ""]
+        out += ["**月營收**", "", "| 月份 | 營收（NT$B，官方） | 年增 | 月增 |", "|---|---|---|---|"]
+        out += [f"| {y}-{m:02d} | {bn(off.get((y, m)))} | {pct(a)} | {pct(b)} |" for (y, m), a, b in yoys]
+        out += ["", f"- 年增率連續 3 個月下滑：{'**是**' if slow else '否'}"]
+        if mism:
+            out += ["- ⚠ 官方金額與 R2 不一致：" + "、".join(f"{y}-{m:02d}" for y, m in mism) + "（以官方為準，檢查 R2）"]
+        elif off:
+            out += [f"- 官方金額與 R2 一致（{len(off)} 個月）"]
+        out += [""]
         for r in rows:
             unit = f"US$ × {r['fx']}" if r["currency"] == "USD" else "NT$"
             out += [f"**{r['q']}**（財測 {unit}；已公布 {r['k']}/3 個月）", ""]
+            qtd = [off.get(k) for k in qmonths(r["q"]) if off.get(k)]
+            if qtd:
+                out += [f"- 季內已公布營收 NT${sum(int(x['revenue']) for x in qtd) / 1e6:,.1f}B（官方）；"
+                        f"財測 NT${r['g_lo']:,.1f}–{r['g_hi']:,.1f}B，中值 {r['g_mid']:,.1f}B"]
+            else:
+                out += [f"- 財測 NT${r['g_lo']:,.1f}–{r['g_hi']:,.1f}B，中值 {r['g_mid']:,.1f}B"]
             if 0 < r["k"] < 3:
                 need = "、".join(f"{lab} {pct(v)}" for lab, v in r["need"].items())
                 out += [f"- 季內進度：財測中值的 {pct(r['progress'], False)}（每月平均要達 1/3 ≈ 33.3%）",
@@ -207,10 +294,12 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ids", nargs="*", help="股票代號（預設 eps_guidance.json 全部）")
     ap.add_argument("--out", help="寫入 markdown 檔")
+    ap.add_argument("--offline", action="store_true", help="不從 MOPS 補官方月營收")
     a = ap.parse_args()
     cfg = json.loads(GUIDANCE.read_text())
     ids = a.ids or [k for k in cfg if not k.startswith("_")]
     con = connect()
+    official = load_official()
     results = []
     for sid in ids:
         c = cfg[sid]
@@ -218,7 +307,15 @@ def main():
         sh, sh_q = shares(fin_r2)
         fin = merge_reported(fin_r2, c.get("reported", {}))
         rows = [nowcast(q, g, rev, fin, sh) for q, g in sorted(c["guidance"].items())]
-        results.append((sid, c["name"], rows, yoy_table(rev), slowing(rev), backtest_a(fin_r2, sh), sh, sh_q))
+        months = sorted(set(sorted(rev)[-SHOW_MONTHS:]) |
+                        {k for q in c["guidance"] for k in qmonths(q) if k in rev})
+        added = ensure_official(official, sid, c["name"], months, c.get("market", "sii"), a.offline)
+        if added:
+            print(f"{c['name']}：從 MOPS 補了 {len(added)} 個月官方月營收 → {OFFICIAL.relative_to(ROOT)}", file=sys.stderr)
+        off = {k: official[(sid, k)] for k in months if (sid, k) in official}
+        mism = [k for k, r in sorted(off.items()) if abs(int(r["revenue"]) / 1e6 / rev[k] - 1) > 1e-6]
+        results.append((sid, c["name"], rows, yoy_table(rev, SHOW_MONTHS), slowing(rev), backtest_a(fin_r2, sh),
+                        sh, sh_q, off, mism))
     text = render(results, dt.date.today().isoformat())
     if a.out:
         pathlib.Path(a.out).write_text(text + "\n")
