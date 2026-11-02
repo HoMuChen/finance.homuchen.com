@@ -1,0 +1,231 @@
+"""月營收 → 當季 EPS 即時推估（台積電、聯發科）。
+
+用法：
+    uv run -q --with duckdb python tools/eps_nowcast.py                          # 輸出到終端
+    uv run -q --with duckdb python tools/eps_nowcast.py --out reports/eps-nowcast-2026-11-10.md
+    uv run -q --with duckdb python tools/eps_nowcast.py --ids 2330
+
+每月 10 日前後月營收公布後跑一次。資料：
+- 月營收、單季財報：fire-auto 的 R2 資料湖（tw.main.revenue／tw.main.fin）。
+- 財測與 R2 還沒收錄的已公布季度：data/eps_guidance.json（每季法說後手動更新）。
+
+兩種推估：
+- A 上季淨利率法：上季 EPS ×（本季營收 ÷ 上季營收），等於假設淨利率跟上季一樣（涂敏峰的做法）。
+- B 財測營益率法：本季營收 × 財測營益率中值 ×（上季淨利 ÷ 上季營業利益）÷ 股數。
+  沒有營益率財測時，用毛利率中值減費用率中值。
+季內營收還沒到齊時，本季營收用財測中值；同時列「已公布月份月均 × 3」的外推做對照。
+
+公開 repo：輸出只放比例、年增率、推估值與財測（官方／法說），不放 FinMind 的月營收原始金額。
+"""
+
+import argparse
+import datetime as dt
+import json
+import pathlib
+import statistics
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from r2 import connect  # noqa: E402
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+GUIDANCE = ROOT / "data/eps_guidance.json"
+BACKTEST_QUARTERS = 12
+
+
+def qkey(year, month):
+    return f"{year}Q{(month - 1) // 3 + 1}"
+
+
+def qprev(q):
+    y, n = int(q[:4]), int(q[-1])
+    return f"{y - 1}Q4" if n == 1 else f"{y}Q{n - 1}"
+
+
+def qmonths(q):
+    y, n = int(q[:4]), int(q[-1])
+    return [(y, 3 * (n - 1) + i) for i in (1, 2, 3)]
+
+
+def mid(r):
+    return (r[0] + r[1]) / 2
+
+
+# ---------- 資料 ----------
+
+def load(con, sid):
+    rev = {(y, m): v / 1e9 for y, m, v in con.execute(
+        "SELECT revenue_year, revenue_month, revenue FROM tw.main.revenue WHERE stock_id = ?", [sid]).fetchall()}
+    fin = {}
+    for d, t, v in con.execute(
+            "SELECT date, type, value FROM tw.main.fin WHERE stock_id = ? AND type IN "
+            "('Revenue', 'OperatingIncome', 'EquityAttributableToOwnersOfParent', 'EPS')", [sid]).fetchall():
+        q = fin.setdefault(qkey(d.year, d.month), {})
+        q[{"Revenue": "revenue", "OperatingIncome": "operating_income",
+           "EquityAttributableToOwnersOfParent": "net_income", "EPS": "eps"}[t]] = v if t == "EPS" else v / 1e9
+    return rev, fin
+
+
+def merge_reported(fin, reported):
+    """R2 沒有的季度才用 json 的 reported；R2 有了以 R2 為準。"""
+    out = {q: dict(v) for q, v in fin.items()}
+    for q, v in reported.items():
+        if q not in out or "eps" not in out[q]:
+            out[q] = {k: v[k] for k in ("revenue", "operating_income", "net_income", "eps") if k in v}
+    return out
+
+
+def shares(fin):
+    """股數（十億股）＝最近一季 R2 財報的母公司淨利 ÷ EPS。"""
+    for q in sorted(fin, reverse=True):
+        f = fin[q]
+        if f.get("eps") and f.get("net_income"):
+            return f["net_income"] / f["eps"], q
+    raise RuntimeError("找不到同時有 EPS 與淨利的季度")
+
+
+# ---------- 計算 ----------
+
+def yoy_table(rev, n=6):
+    rows = []
+    for (y, m) in sorted(rev)[-n:]:
+        cur, last = rev[(y, m)], rev.get((y - 1, m))
+        prev = rev.get((y, m - 1) if m > 1 else (y - 1, 12))
+        rows.append(((y, m), cur / last - 1 if last else None, cur / prev - 1 if prev else None))
+    return rows
+
+
+def slowing(rev):
+    """年增率連續 3 個月下滑（見頂檢查清單第 4 項）。"""
+    ks = sorted(rev)[-4:]
+    yoys = [rev[(y, m)] / rev[(y - 1, m)] - 1 for (y, m) in ks if (y - 1, m) in rev]
+    return len(yoys) == 4 and all(b < a for a, b in zip(yoys, yoys[1:]))
+
+
+def backtest_a(fin, sh):
+    """A 法在歷史上的誤差：用『實際』季營收代入，看上季淨利率不變的假設差多少。"""
+    errs = []
+    qs = sorted(q for q in fin if fin[q].get("revenue") and fin[q].get("net_income"))
+    for q in qs[-BACKTEST_QUARTERS:]:
+        p = fin.get(qprev(q))
+        if not p or not p.get("revenue") or not p.get("net_income"):
+            continue
+        eps_p = p.get("eps") or p["net_income"] / sh
+        eps_q = fin[q].get("eps") or fin[q]["net_income"] / sh
+        est = eps_p * fin[q]["revenue"] / p["revenue"]
+        errs.append((q, est / eps_q - 1))
+    return errs
+
+
+def nowcast(q, g, rev, fin, sh):
+    p = fin.get(qprev(q))
+    if not p:
+        raise RuntimeError(f"{qprev(q)} 沒有財報資料，請在 eps_guidance.json 的 reported 補上")
+    eps_p = p.get("eps") or p["net_income"] / sh
+    fx = g["fx"] if g["currency"] == "USD" else 1.0
+    g_lo, g_hi = g["revenue"][0] * fx, g["revenue"][1] * fx
+    g_mid = (g_lo + g_hi) / 2
+    if "operating_margin" in g:
+        om = [x / 100 for x in g["operating_margin"]]
+    else:
+        om = [(g["gross_margin"][0] - g["opex_ratio"][1]) / 100, (g["gross_margin"][1] - g["opex_ratio"][0]) / 100]
+    ni_oi = p["net_income"] / p["operating_income"]
+    known = [rev[k] for k in qmonths(q) if k in rev]
+    k = len(known)
+    qtd = sum(known)
+    est = qtd if k == 3 else g_mid
+    r = {
+        "q": q, "prev": qprev(q), "k": k, "fx": fx, "currency": g["currency"],
+        "g_mid": g_mid, "g_lo": g_lo, "g_hi": g_hi, "om": om, "ni_oi": ni_oi,
+        "progress": qtd / g_mid if k else 0.0,
+        "need": {lab: (v - qtd) / (3 - k) / (qtd / k) - 1 for lab, v in
+                 (("下緣", g_lo), ("中值", g_mid), ("上緣", g_hi))} if 0 < k < 3 else None,
+        "runrate": qtd / k * 3 if k else None,
+        "est": est,
+        "qoq": est / p["revenue"] - 1,
+        "eps_prev": eps_p,
+        "eps_a": eps_p * est / p["revenue"],
+        "eps_b": est * mid(om) * ni_oi / sh,
+        "eps_b_lo": (est if k == 3 else g_lo) * om[0] * ni_oi / sh,
+        "eps_b_hi": (est if k == 3 else g_hi) * om[1] * ni_oi / sh,
+        "prev_om": p["operating_income"] / p["revenue"],
+        "source": g["source"],
+    }
+    if k:
+        r["eps_a_runrate"] = eps_p * r["runrate"] / p["revenue"]
+        r["eps_b_runrate"] = r["runrate"] * mid(om) * ni_oi / sh
+    return r
+
+
+# ---------- 輸出 ----------
+
+def pct(x, sign=True):
+    return "–" if x is None else (f"{x:+.1%}" if sign else f"{x:.1%}")
+
+
+def render(results, asof):
+    out = [f"# 月營收 → 當季 EPS 推估（{asof}）", "",
+           "由 `tools/eps_nowcast.py` 產生。A＝上季淨利率不變；B＝財測營益率中值 × 上季淨利÷營業利益。",
+           "季內營收未到齊時，本季營收用財測中值；「月均外推」只是對照。不放月營收原始金額。", ""]
+    for sid, name, rows, yoys, slow, bt, sh, sh_q in results:
+        out += [f"## {name}（{sid}）", ""]
+        out += ["**月營收**", "", "| 月份 | 年增 | 月增 |", "|---|---|---|"]
+        out += [f"| {y}-{m:02d} | {pct(a)} | {pct(b)} |" for (y, m), a, b in yoys]
+        out += ["", f"- 年增率連續 3 個月下滑：{'**是**' if slow else '否'}", ""]
+        for r in rows:
+            unit = f"US$ × {r['fx']}" if r["currency"] == "USD" else "NT$"
+            out += [f"**{r['q']}**（財測 {unit}；已公布 {r['k']}/3 個月）", ""]
+            if 0 < r["k"] < 3:
+                need = "、".join(f"{lab} {pct(v)}" for lab, v in r["need"].items())
+                out += [f"- 季內進度：財測中值的 {pct(r['progress'], False)}（每月平均要達 1/3 ≈ 33.3%）",
+                        f"- 剩下月份的月營收要比已公布月均：{need}"]
+            elif r["k"] == 3:
+                out += [f"- 季營收已到齊：為財測中值的 {pct(r['progress'], False)}"]
+            out += [f"- 本季營收{'（實際）' if r['k'] == 3 else '（財測中值）'}季增 {pct(r['qoq'])}；"
+                    f"財測營益率 {r['om'][0]:.1%}–{r['om'][1]:.1%}（上季實際 {r['prev_om']:.1%}），"
+                    f"上季淨利÷營業利益 {r['ni_oi']:.3f}",
+                    "", "| 推估 | EPS（元） | 說明 |", "|---|---|---|",
+                    f"| 上季實際（{r['prev']}） | {r['eps_prev']:.2f} | |",
+                    f"| A 上季淨利率法 | {r['eps_a']:.2f} | 本季營收 ÷ 上季營收 × 上季 EPS |",
+                    f"| B 財測營益率法 | **{r['eps_b']:.2f}** | 區間 {r['eps_b_lo']:.2f}–{r['eps_b_hi']:.2f}"
+                    f"（{'營益率上下緣' if r['k'] == 3 else '營收與營益率同取上下緣'}） |"]
+            if r["k"] and r["k"] < 3:
+                out += [f"| 月均外推（A／B） | {r['eps_a_runrate']:.2f}／{r['eps_b_runrate']:.2f} | "
+                        f"已公布月份月均 × 3，季底月份常較高，偏保守 |"]
+            out += ["", f"財測來源：{r['source']}", ""]
+        if bt:
+            errs = [e for _, e in bt]
+            worst = max(bt, key=lambda x: abs(x[1]))
+            out += [f"**A 法的歷史誤差**（最近 {len(bt)} 季，代入實際季營收）：中位數絕對誤差 "
+                    f"{statistics.median(abs(e) for e in errs):.1%}，平均 {pct(statistics.mean(errs))}，"
+                    f"最大 {worst[0]} {pct(worst[1])}。毛利率或業外變動大的季度，A 法會偏離。", ""]
+        out += [f"股數：{sh:.2f} 十億股（{sh_q} 財報淨利 ÷ EPS）", ""]
+    return "\n".join(out)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--ids", nargs="*", help="股票代號（預設 eps_guidance.json 全部）")
+    ap.add_argument("--out", help="寫入 markdown 檔")
+    a = ap.parse_args()
+    cfg = json.loads(GUIDANCE.read_text())
+    ids = a.ids or [k for k in cfg if not k.startswith("_")]
+    con = connect()
+    results = []
+    for sid in ids:
+        c = cfg[sid]
+        rev, fin_r2 = load(con, sid)
+        sh, sh_q = shares(fin_r2)
+        fin = merge_reported(fin_r2, c.get("reported", {}))
+        rows = [nowcast(q, g, rev, fin, sh) for q, g in sorted(c["guidance"].items())]
+        results.append((sid, c["name"], rows, yoy_table(rev), slowing(rev), backtest_a(fin_r2, sh), sh, sh_q))
+    text = render(results, dt.date.today().isoformat())
+    if a.out:
+        pathlib.Path(a.out).write_text(text + "\n")
+        print(f"已寫入 {a.out}")
+    else:
+        print(text)
+
+
+if __name__ == "__main__":
+    main()

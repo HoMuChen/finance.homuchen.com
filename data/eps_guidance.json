@@ -1,0 +1,46 @@
+{
+  "_說明": "tools/eps_nowcast.py 的輸入。金額單位 NT$B（十億元）；美元指引寫 currency=USD 並給 fx。reported 只放 R2 財報（tw.main.fin）還沒收錄的季度（法定截止日前，法說已公布）；R2 有了就以 R2 為準。每季法說後更新。",
+  "2330": {
+    "name": "台積電",
+    "guidance": {
+      "2026Q4": {
+        "revenue": [52.3, 54.3],
+        "currency": "USD",
+        "fx": 31.8,
+        "gross_margin": [65, 67],
+        "operating_margin": [56.5, 58.5],
+        "source": "台積電 3Q26 法說 2026-10-15 [官方] https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm"
+      }
+    },
+    "reported": {
+      "2026Q3": {
+        "revenue": 1494.24,
+        "operating_income": 876.45,
+        "net_income": 763.06,
+        "source": "台積電 3Q26 法說 2026-10-15 [官方]（同上）"
+      }
+    }
+  },
+  "2454": {
+    "name": "聯發科",
+    "guidance": {
+      "2026Q4": {
+        "revenue": [210.1, 221.8],
+        "currency": "TWD",
+        "fx": 31.7,
+        "gross_margin": [43.5, 46.5],
+        "opex_ratio": [24, 28],
+        "source": "聯發科 2026Q3 法說 2026-10-30 [報導:法說] https://www.storm.mg/article/11177178"
+      }
+    },
+    "reported": {
+      "2026Q3": {
+        "revenue": 168.06,
+        "operating_income": 27.06,
+        "net_income": 28.20,
+        "eps": 17.50,
+        "source": "聯發科 2026Q3 法說 2026-10-30 [報導:法說]；營業利益由營益率 16.1% 換算"
+      }
+    }
+  }
+}

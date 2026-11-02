@@ -34,6 +34,11 @@
 | `tools/margin_signal.py` | 大盤融資維持率低檔加碼輔助訊號 |
 | `reports/margin-<日期>.md` | 融資維持率訊號的輸出 |
 | `tools/r2.py` | 唯讀連線 fire-auto 的台股 R2 資料湖 |
+| `tools/eps_nowcast.py` | 月營收 → 當季 EPS 即時推估（台積電、聯發科） |
+| `data/eps_guidance.json` | `eps_nowcast.py` 的輸入：財測、R2 還沒收錄的已公布季度 |
+| `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
+| `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
+| `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
 
 ## 凱利工具
 
@@ -77,6 +82,41 @@ python3 tools/margin_signal.py --cycle-top                       # 見頂檢查�
 資料用 FinMind 2015 年起的大盤融資維持率、融資餘額、加權指數與報酬指數、台積電還原股價，快取在 `cache/prices/`。輸出包括目前燈號（< 150／145／140 三階）、粗估的觸發位置，以及歷史上每次首次跌破後的 20–250 日報酬。
 
 **維持率只用 FinMind 的 `TaiwanTotalExchangeMarginMaintenance`**，不要和 R2 的 `market.mkt_maint` 混用（原因見下一節）。
+
+## 當季 EPS 即時推估
+
+每月 10 日前後月營收公布後跑一次，看季內營收進度有沒有偏離財測，以及當季 EPS 落在哪裡。
+
+```bash
+uv run -q --with duckdb python tools/eps_nowcast.py                                      # 輸出到終端
+uv run -q --with duckdb python tools/eps_nowcast.py --out reports/eps-nowcast-2026-11-10.md
+uv run -q --with duckdb python tools/eps_nowcast.py --ids 2330
+```
+
+- 月營收與單季財報讀 R2（`tw.revenue`、`tw.fin`）。財測和「法說已公布、R2 還沒收錄」的季度寫在 `data/eps_guidance.json`，每季法說後更新。R2 的財報在法定截止日後才會有（Q1 5/16、Q2 8/15、Q3 11/15、Q4 次年 4/1）。
+- 兩種推估：
+  - **A 上季淨利率法**：上季 EPS ×（本季營收 ÷ 上季營收）。
+  - **B 財測營益率法**：本季營收 × 財測營益率中值 ×（上季淨利 ÷ 上季營業利益）÷ 股數。沒有營益率財測時，用毛利率減費用率。
+- 季內營收還沒到齊時，本季營收用財測中值，同時列出：
+  - 季內進度。
+  - 剩下月份的月營收要比已公布月均高或低多少，才達得到財測。
+  - 月均外推的對照值。
+- 報告也列出 A 法過去 12 季的誤差（代入實際季營收）。營收大幅跳升、費用率下降的季度（例如聯發科 2026Q4），A 法會低估，要看 B 法。
+- 輸出只有比例、年增率和推估值，不放月營收原始金額。
+
+## 供應鏈月營收旁證
+
+```bash
+uv run -q --with duckdb python tools/supply_chain.py                                       # 每月監測
+uv run -q --with duckdb python tools/supply_chain.py --out reports/supply-chain-2026-11-10.md
+uv run -q --with duckdb python tools/supply_chain.py leadlag                               # 領先落後檢驗（全部候選）
+```
+
+- 每月監測只留兩組：
+  - 下游組裝（廣達、緯創、緯穎、鴻海）：雲端 CapEx 的月頻代理。
+  - 弘塑：台積電 CapEx 執行的旁證。
+- `leadlag` 會重跑全部 12 家候選，四大雲季報後可以累積樣本重新檢查。
+- 剔除原因和判斷標準見 `data/L1_nvidia_tsmc.md` 第 11 節。結論是沒有一家領先台積電月營收。
 
 ## R2 台股資料湖（fire-auto）
 
