@@ -33,6 +33,7 @@
 | `tools/kelly.py` | 凱利配置重算工具 |
 | `tools/margin_signal.py` | 大盤融資維持率低檔加碼輔助訊號 |
 | `reports/margin-<日期>.md` | 融資維持率訊號的輸出 |
+| `tools/r2.py` | 唯讀連線 fire-auto 的台股 R2 資料湖 |
 
 ## 凱利工具
 
@@ -74,6 +75,31 @@ python3 tools/margin_signal.py --cycle-top                       # 見頂檢查�
 ```
 
 資料用 FinMind 2015 年起的大盤融資維持率、融資餘額、加權指數與報酬指數、台積電還原股價，快取在 `cache/prices/`。輸出包括目前燈號（< 150／145／140 三階）、粗估的觸發位置，以及歷史上每次首次跌破後的 20–250 日報酬。
+
+**維持率只用 FinMind 的 `TaiwanTotalExchangeMarginMaintenance`**，不要和 R2 的 `market.mkt_maint` 混用（原因見下一節）。
+
+## R2 台股資料湖（fire-auto）
+
+fire-auto 每個交易日 00:30 更新前一個交易日的資料，發布成 DuckDB catalog：`r2://trading-homuchen-com/v1/catalog.duckdb`。資料源是 FinMind，**僅限個人使用**：查出來的原始數字不要寫進這個公開 repo，只寫結論或統計量。
+
+金鑰放 `.env.local`：`R2_ACCOUNT_ID`，加上 `R2_READ_ACCESS_KEY_ID`／`R2_READ_SECRET_ACCESS_KEY`（沒有就讀 `R2_WRITE_*`）。一律唯讀掛載。本機不用另外裝 duckdb：
+
+```bash
+uv run -q --with duckdb python tools/r2.py                     # 列出所有表與說明
+uv run -q --with duckdb python tools/r2.py "DESCRIBE tw.price"
+uv run -q --with duckdb python tools/r2.py "SELECT date, close FROM tw.price WHERE stock_id = '2330' ORDER BY date DESC LIMIT 5"
+```
+
+程式裡用 `from r2 import connect; con = connect()`，再用 `con.sql(...)` 查詢。
+
+主要的表：`tw.universe`（含下市股）、`tw.price`（原始價與還原價 `adj_*`）、`tw.revenue`、`tw.fin`／`bs`／`cf`、`tw.inst`、`tw.margin`、`tw.per`、`tw.holding`、`tw.broker`（只有 1,439 檔）、`tw.orderbook.*`，以及 `tw.market.*`（加權指數、報酬指數、台指期、選擇權、自建台指 VIX、市場寬度 `breadth`、自建維持率 `mkt_maint`）。
+
+注意事項：
+
+- **防前視**：財報和營收用 `avail_date` 對齊，不要用 `date`；股票池要用含下市股的 point-in-time 版本。最近 10 天的日資料和最新 3 季財報會被覆蓋修正。
+- **`tw.revenue` 的 `date` 是公布月份**：`date = 2026-10-01` 是 9 月營收。要看營收月份用 `revenue_month`／`revenue_year`。
+- 查 `broker`、`orderbook` 一定要帶 `date`／`day` 條件，否則會掃過全部 2 千多個檔。
+- **`market.mkt_maint` 是 fire-auto 自建的維持率**：Σ（個股融資張數 × 1000 × 收盤價）÷ 上市融資總金額，包含上市 ETF、存託憑證、特別股，不含融券擔保品與保證金。它和 FinMind 序列的相關係數 0.976，低點日期相同，但差距會隨時間漂移：2015 年 R2 高約 3 點，2023 年後 R2 低 2.5–4 點（2026-10 約低 4 點）。`margin_signal.py` 的門檻是用 FinMind 序列校準的，所以燈號只看 FinMind；要改用 R2，門檻得用 R2 自己的歷史重新回測。
 
 ## 每季更新流程
 
