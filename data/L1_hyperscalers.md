@@ -344,6 +344,56 @@ AMZN 用自己的口徑計算，TTM FCF 2026Q2 為 −$7.6bn，2026Q3 為 −$42
 - **GOOGL**：沒有 AI 專屬 run-rate。Cloud 整體 run-rate 在 2025Q2 超過 $50bn、2025Q4 超過 $70bn；2026Q3 單季 $30.7bn，年化約 $123bn（含 TPU 系統銷售）。第一方模型 API 每分鐘約 320 億 token，一年成長 4 倍以上；Gemini App 使用者 10 億。
 - **META / ORCL**：沒有揭露。
 
+### 8.1 電力限制（2026-11-03 新增）
+
+為什麼要追：電力決定 CapEx 能多快變成上線的算力。CapEx 放緩時要先分辨原因：
+- **供給受限**（電力、供氣、電網設備、晶片交付跟不上）：需求被攤到更多年，週期拉長、高點較低，不是見頂。
+- **需求飽和**（「消化產能」、客戶延後或取消）：才是見頂檢查清單第 1、3 項真正要抓的訊號。
+
+**缺口估計**（各家方法差很多，只看量級）
+
+| 來源 | 估計 | 標記 | 來源網址 |
+|---|---|---|---|
+| Morgan Stanley（2026-11 報導的最新版） | 2028 年前美國資料中心用電需求 97GW（原估 68GW）；未緩解缺口約 70GW；計入自建發電（燃氣輪機、Bloom 燃料電池）與核電共址後，淨缺口約 32–33GW（需求的 34%）；2029 年可能擴大到 68–72GW。供給端：2026–2028 新增燃氣輪機與引擎約 19GW、燃料電池約 6GW | [報導:經 Crypto Briefing、TokenPost] | https://cryptobriefing.com/morgan-stanley-70-gw-data-center-power-shortfall/ ；https://www.tokenpost.com/news/technology/45976 |
+| Morgan Stanley（較早版本） | 淨缺口 32GW、43GW、49GW、57GW 等版本並存 | [報導] | https://fourweekmba.com/ai-morgan-stanleys-net-us-data-center-power-gap-hits-43-gw/ ；https://mgrid.org/2026/03/13/us-data-centers-49-gw-power-shortfall-2028-morgan-stanley/ |
+| 早晨財經速解讀（2026-11-03） | 2026 年需求 97GW 對供給 82GW；2028 年 180GW 對 137GW，缺口 43GW | 找不到原始出處，未採用 | https://www.youtube.com/watch?v=0ekTT_culAY |
+
+**延宕與阻礙**
+
+| 項目 | 內容 | 標記 | 來源網址 |
+|---|---|---|---|
+| 大型案延宕 | FT 統計 2026 年至少 47 個美國大型資料中心案延宕、撤回或被擋 | [報導:FT 轉述] | https://www.utilitydive.com/news/the-data-center-boom-continues-apace-but-projects-face-mounting-obstacles/830496/ |
+| 延宕比例 | Sightline Climate 估 30–50% 的案子至少延到 2027 年，原因是電力、社區反對、電網設備短缺 | [估計:Sightline Climate] | https://www.eenews.net/articles/data-center-construction-delays-grow-report/ |
+| 反向證據 | SemiAnalysis 統計到 300 多個地方暫停令，但它追蹤的開發案中只有 3 個實質延宕 | [報導，出處未逐一核對] | — |
+| 地方暫停令 | Georgia 多個郡、州層級考慮暫停到 2028；New Mexico Grant County 一年期 | [報導] | https://newmarketpitch.com/blogs/news/data-center-states-blocking |
+
+**Oracle Project Jupiter（OpenAI Stargate，New Mexico Doña Ana County，約 2.45–2.5GW）**
+
+| 項目 | 內容 | 標記 | 來源網址 |
+|---|---|---|---|
+| 不可抗力通知 | 2026-09-24 Bloomberg 首報：Oracle 發出不可抗力通知，園區若趕不上 2028 年啟用可延後付款；Oracle 稱不是退出，雙方仍一致 | [報導:Bloomberg] | https://news.bloomberglaw.com/ip-law/oracle-cites-force-majeure-to-shield-itself-on-big-data-center ；https://thenextweb.com/news/oracle-force-majeure-project-jupiter-new-mexico |
+| 原因 | 園區用 Bloom 燃氣燃料電池供電；Energy Transfer 的 17 英里供氣管線兩度被州土地辦公室拒絕路權（2026-03、07-14），管線延後約 6 個月到 **2027-02-01** | [報導] | 同上 |
+| 待決事項 | 州空氣許可在 **2026-11-23** 前決定；Green Chile 管線還要 FERC 核准 | [報導] | 同上 |
+| 市場反應 | 當天 Oracle −4%、Blue Owl −4%、Bloom −6% | [報導] | 同上 |
+
+Jupiter 屬於 Oracle 對 OpenAI 約 $300B／4.5GW 的合約（見 `data/L2_openai_others.md`）。延後的原因是供氣，不是 OpenAI 融資，所以先歸在供給受限。
+
+**每季法說的電力與產能標記**（每季財報後補一列）
+
+標記：供給（電力）／供給（晶片、設備）／供給（未說明）／需求（消化產能、客戶延後）／未提。
+
+| 季度 | MSFT | AMZN | GOOGL | META | ORCL |
+|---|---|---|---|---|---|
+| 2026Q3 | 供給（晶片：第三方 GPU 交付延後） | 供給（未說明；產能短缺延續到 2027） | 供給（未說明；擴大租用第三方算力） | 供給（未說明） | 供給（電力：Jupiter 供氣） |
+
+**判讀（2026-11-03）**
+- 五家目前的延遲都屬於供給受限，沒有一家說「消化產能」。
+- 對台積電是兩面的：短期 CapEx 執行延後（例如 MSFT 下修 CY2026），晶圓需求可能遞延；但需求被攤到更多年，週期拉長。
+- 要注意的轉折有兩個：
+  - 缺口估計開始下修，或延宕案件減少，代表瓶頸解除，CapEx 執行會加速。
+  - 雲端業者開始用「電力」當理由下修 2027 CapEx。這時要對照 RPO 和雲端營收成長，確認是不是在包裝需求放緩。
+- 通膨面：CPI 電價年增（2026-09 為 +4.4%，整體 CPI +3.7%）見 `tools/macro.py` 報告。
+
 ---
 
 ## 9. 關鍵觀察（2026Q3 更新）
