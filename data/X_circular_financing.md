@@ -41,6 +41,7 @@
 | 15 | **Altman → Cerebras**（個人） | Altman 為 Cerebras 投資人 | OpenAI 向 Cerebras 採購 >$10B / 750 MW | 2026-01-14 | [報導:Bloomberg] | https://www.bloomberg.com/news/articles/2026-01-14/openai-forges-10-billion-deal-with-cerebras-for-ai-computing |
 | 16 | **Anthropic → SpaceX/xAI**（競爭者間） | — | Anthropic 付 ~$1.25B/月（年化 ~$15B）至 2029-05 租 Colossus 1/2；90 天可終止 | 2026-05 | [官方:SpaceX S-1；Anthropic 確認月費] | https://letsdatascience.com/news/anthropic-signs-125b-per-month-colossus-compute-deal-c892b829 |
 | 17 | Anthropic → Nscale | — | 報導 $45B 租用 Vera Rubin 算力（Nscale 為 NVIDIA 投資組合公司） | 2026 | [報導] | https://finance.yahoo.com/news/microsoft-nvidia-invest-anthropic-startup-113316065.html |
+| 18 | **NVIDIA、AMD、Broadcom → Meta**（供應商認購客戶新股） | 有意認購 Meta 新股，合計最多 **$5B**；個別金額未揭露，報導稱 NVIDIA $3B、AMD $1B | Meta 是三家的 AI 晶片大客戶（AMD 最高 6GW Instinct 見第 11a 項）；認購屬於 Meta $95B 增資的一部分（見 2.7） | 2026-10-26 | 合計 [官方:Meta 聲明，經 CNBC]；個別金額 [報導:ITmedia 轉述] | https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html ；https://finance.yahoo.com/markets/stocks/articles/meta-selling-95-billion-stock-133027102.html |
 
 ### 1.2 投資 vs 採購比（「每 $1 投資換回多少採購承諾」）
 
@@ -68,8 +69,8 @@
 | 債券 | **$27.3B**、6.581% 優先擔保票據、2049 到期（23.6 年）；S&P A+ | [官方:發行文件，經 IFR] | https://www.ifre.com/ifr-awards/2327933/financing-package-blue-owl-capitalbeignet-investors-us27.3bn-23.6-year-bond |
 | 主要買家 | Pimco ~$18B；BlackRock >$3B | [報導] | 同上；https://www.npr.org/transcripts/nx-s1-5619276 |
 | 規模 | Richland Parish, Louisiana，5 GW，總投資 >$50B | [報導] | https://theedgemalaysia.com/node/819893 （2026-10） |
-| **二級市場** | 交易價 **91 美分**、殖利率最高 7.55%；利差 ~230bp（發行時 185bp，7 月紀錄 255bp） | [報導:Bloomberg via The Edge, 2026-10] | 同上 |
-| Meta CDS | 突破 7 月高點，逼近 100bp | [報導] | 同上 |
+| **二級市場** | 交易價 **91 美分**、殖利率最高 7.55%；利差 ~230bp（發行時 185bp，7 月紀錄 255bp）。2026-11-03 再查：沒有找到更新的已核實報價；另有報導稱基金估值 94.4 美分「創新低」，日期不明，和 91 美分矛盾，未採用 | [報導:Bloomberg via The Edge, 2026-10] | 同上 |
+| Meta CDS | **2026-10-22 創紀錄 114.79bp**（Markit，單日 +7.6bp；ICE 盤中約 119.3bp）。起因是 Q3 FCF 轉負、租賃與合約承諾增至約 $825B（7 月近 $700B；口徑和 10-Q 不可取消承諾 $455B 不同）。10/26 宣布增資、沒有發大額債，之後回落；年初至 10/27 仍 +177%。同期 Amazon CDS 年初至今 +129% | [報導:Markit/ICE 經 shattered.io；CNBC] | https://shattered.io/meta-credit-risk-record-high-ai-spending-cds-2026/ ；https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html |
 | 風險 | S&P 警告建設與營運期「實質信用風險」可能轉回 Meta | [官方:S&P] | 同上 |
 | Meta 帳上暴險（2026-09-30） | Louisiana＋Texas 兩個合資最大損失暴險 **$68.4B**（2025 底 $46.0B）：股權 $4.7B、租賃承諾 $18.5B、未來出資 $3.7B、殘值保證上限 $41.5B；Meta 判斷殘值保證「不太可能」觸發，未認列負債 | [官方:10-Q] | https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm |
 
@@ -79,12 +80,13 @@
 |---|---|---|---|
 | 2025-09 發債 | $18B（當時科技業最大之一） | [官方] | https://www.cnbc.com/2025/12/09/oracles-ai-fueled-debt-load-has-investors-on-edge-ahead-of-earnings.html |
 | 2026-02-02 發債 | **$25B**，8 檔、3–40 年；訂單最高 $155B | [官方/報導:IFR] | https://www.ifre.com/bonds/2379081/oracle-returns-with-another-jumbo-bond-to-fund-ai-expansion |
-| 2026 融資計畫 | $45–50B（債 + 股）：$5B 強制可轉換特別股（6.5%）+ $20B ATM 普通股；稱 2026 不再發債 | [官方] | https://www.ifre.com/equities/2379787/oracle-takes-bottom-up-approach-to-funding-2026-capex |
+| 2026 融資計畫 | $45–50B（債 + 股）：$5B 強制可轉換特別股（6.5%）+ $20B ATM 普通股；稱 2026 不再發債（2026-11 又發 $10B 票據，和這個說法不一致） | [官方] | https://www.ifre.com/equities/2379787/oracle-takes-bottom-up-approach-to-funding-2026-capex |
+| **2026-11-02 增資＋發債** | **$20B**：$10B 普通股 + $10B 優先票據，用途「一般公司用途，可能包括資本支出、償債與未來投資」。前一週 investor day 稱 FY27–FY30 額外資本市場融資以 $20B 為限，預期 2028 下半年 FCF 轉正。當天股價 −8.8%（年初至今 −33%）；2031 到期 4.95% 債殖利率 7.276% | [官方:SEC 申報，經 CNBC] | https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html |
 | ATM 執行 | Q1 FY27 已出售 $20B 普通股 | [官方:Q1 FY27 財報] | https://www.oracle.com/news/announcement/q1fy27-earnings-release-2026-09-10/ |
 | 專案融資 | NM Project Jupiter $18B 銀團貸款（2025-11）；$38B 貸款洽談（2025-11）；Abilene $9.6B 銀行債 + ~$5B 股本 | [報導:Reuters] | https://intuitionlabs.ai/articles/oracle-openai-300b-deal-analysis |
-| 總債務 | ~$111.6B（2025-08，含租賃，FactSet）；~$130B；~$167B（定義未明）——**並列，口徑不一** | [報導] | https://www.cnbc.com/2025/12/09/oracles-ai-fueled-debt-load-has-investors-on-edge-ahead-of-earnings.html ；https://startupmap.iamsterdam.com/news/note/oracle-taps-25b-bond-as-debt-hits-130b-and-rating-slips-to-junk-s-edge |
+| 總債務 | **$125.34B（2026-08-31，主要是優先票據）**；舊報導 ~$111.6B（2025-08，含租賃，FactSet）、~$130B、~$167B（定義未明）——**並列，口徑不一** | [報導:CNBC 2026-11-02；其餘報導] | https://www.cnbc.com/2025/12/09/oracles-ai-fueled-debt-load-has-investors-on-edge-ahead-of-earnings.html ；https://startupmap.iamsterdam.com/news/note/oracle-taps-25b-bond-as-debt-hits-130b-and-rating-slips-to-junk-s-edge |
 | 信評 | S&P 2026-07 降至 **BBB-**（垃圾級上一階）；Moody's Baa2 負向展望 | [官方:S&P/Moody's，經 Reuters] | https://startupfortune.com/sps-downgrade-leaves-oracle-financing-openais-bet-years-before-it-pays-off/ |
-| **5 年期 CDS** | **288bp（2026-10-15，歷史新高）**；一週前 260bp；2026-07-17 198bp；降評後 ~203bp | [報導:S&P Global MI/LSEG 數據] | https://www.securitasglobal.com/risk-perspectives/oracle-cds-record-288-basis-points-ai-debt/ ；https://finance.yahoo.com/markets/stocks/articles/oracles-default-insurance-hits-record-122137367.html |
+| **5 年期 CDS** | **292bp（2026-11-02）**，一年上升 265%，S&P Global MI 稱水準已接近高收益債的高端；上週盤中一度約 300bp。10/15 288bp（當時新高）、一週前 260bp；2026-07-17 198bp；降評後 ~203bp。另有報導 10/21 約 331bp，口徑不明，未採用 | [報導:S&P Global MI 經 CNBC；S&P Global MI/LSEG 數據] | https://www.securitasglobal.com/risk-perspectives/oracle-cds-record-288-basis-points-ai-debt/ ；https://finance.yahoo.com/markets/stocks/articles/oracles-default-insurance-hits-record-122137367.html |
 | RPO | $455B（Q1 FY26）→ $553B（Q3 FY26）→ **$664B（Q1 FY27，2026-08-31）**；約一半 36 個月內轉營收 | [官方] | https://www.oracle.com/news/announcement/q1fy27-earnings-release-2026-09-10/ |
 | Q1 FY27 現金流 | CFO $23.1B、CapEx $28.5B、**FCF -$5B**（另報 -$5.4B） | [官方] | 同上；https://www.tikr.com/blog/oracles-ai-boom-has-664-billion-in-backlog-can-its-cash-flow-catch-up-heres-what-its-numbers-are-saying |
 | FY27 CapEx | 最高 $90–95B（淨現金 CapEx ≤$70B，客戶預付最高 $25B）——並列 $70B 說法 | [官方/報導] | 同上 |
@@ -147,6 +149,17 @@
 
 > 數字因幣別、截止日、是否含 Oracle/SpaceX 而不同，請勿直接相加。
 
+### 2.7 股權融資：缺口開始改由股東分擔（2026-11-03 新增）
+
+| 公司 | 內容 | 時間 | 標記 | 來源 |
+|---|---|---|---|---|
+| Meta | 最高 **$95B**：$35B 承銷（報導明細約 $22.5B 遠期出售普通股 + 約 $12.5B 強制可轉換特別股）+ $60B ATM。2013 年後第一次發新股；用途是 AI 基礎設施與超級智慧；NVIDIA、AMD、Broadcom 有意認購合計最多 $5B（見第 18 項）。宣布當天早盤 −1.6% | 2026-10-26 | 總額 [官方:Meta 聲明，經 CNBC]；明細 [報導] | https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html ；https://siliconangle.com/2026/10/26/meta-to-sell-up-to-95b-in-stock-to-finance-ai-infrastructure-buildout/ |
+| Oracle | $10B 普通股 + $10B 優先票據；FY27Q1 另已透過 ATM 出售約 $20B 普通股（見 2.2） | 2026-11-02 | [官方:SEC 申報，經 CNBC] | https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html |
+| Alphabet | 2026 前三季 ATM 普通股 $42.9B、強制可轉換特別股 $19.1B（股息率 6.25%），停止買回 | 2026Q3 | 見 `data/L1_hyperscalers.md` | 同左 |
+
+- 意涵：CapEx 缺口的資金來源從「營運現金流 → 發債」再擴大到「發新股」。發新股代表 CapEx 已經超過現金流和舉債的舒適區，稀釋由股東承擔，這也是見頂檢查清單第 2 項「CapEx > CFO」的延伸。
+- Meta 選擇增資、不發大額債之後，CDS 從紀錄高點回落。短期內信用市場的壓力移到股東身上，不代表缺口變小。
+
 ---
 
 ## 三、Neocloud
@@ -197,7 +210,8 @@
 
 | 訊號 | 數據 | 意涵 |
 |---|---|---|
-| 信用市場已開始定價 | Oracle CDS 288bp（新高）、S&P BBB-；Meta Hyperion 債 91 美分；Meta CDS 近 100bp；新發讓價 2.25→12bp | 債權人要求更高補償，融資鏈最脆弱環節是 Oracle、CoreWeave、SPV |
+| 信用市場已開始定價 | Oracle CDS 292bp（11/02，接近高收益債高端）、S&P BBB-；Meta CDS 10/22 創紀錄約 115–119bp（年初至今 +177%）；Meta Hyperion 債 91 美分（10 月，之後未再核實）；新發讓價 2.25→12bp | 債權人要求更高補償，融資鏈最脆弱環節是 Oracle、CoreWeave、SPV；Meta 也開始被重新定價 |
+| 融資轉向發新股 | Meta 最高 $95B（2013 年後首次）、Oracle $10B 股 + $10B 債、Alphabet ATM $42.9B + 特別股 $19.1B | 缺口改由股東分擔；供應商（NVIDIA、AMD、Broadcom）認購客戶新股，循環又多一層 |
 | 客戶集中 | CoreWeave 67% 來自 Microsoft；Microsoft RPO 32–45% 來自 OpenAI；Oracle RPO 約 45% 估來自 OpenAI | 單一模型公司失速會同時擊中多家 |
 | 承諾/營收比 | OpenAI 明確合約 ~$682B ÷ 2026E 營收 $36B ≈ 19x | 履約依賴持續融資 |
 | 投資承諾縮水 | NVIDIA $100B → $30B；Stargate $1.4T → $600B（公司目標）；Abilene 擴建取消 | 早期頭條數字不應直接計入需求 |
@@ -213,7 +227,7 @@
 3. **Microsoft 對 OpenAI 實際累計投資**：$13B 為常見報導數字，未見最新官方確認；2026-03 輪 Microsoft 是否參與未揭露。
 4. **Google ↔ Anthropic 5 GW TPU 合約金額**：未揭露。
 5. **私募信貸實際已放款總額**：僅 Morgan Stanley 前瞻估計，無實際存量統計。
-6. **Oracle 總債務**：$111.6B / $130B / $167B 口徑不一，未從 10-Q 直接核實。
+6. **Oracle 總債務**：CNBC 引 2026-08-31 為 $125.34B，舊報導 $111.6B / $130B / $167B 口徑不一，仍未從 10-Q 直接核實。
 7. **CoreWeave 2026 具名客戶占比**：Q1 2026 最大客戶 45% 未具名；Q2 數字查不到；OpenAI 占 backlog 比例未揭露。
 8. **NVIDIA $99B 權益投資明細**：10-Q 未逐一列出 OpenAI、Anthropic、xAI、CoreWeave 等個別帳面值。
 9. **AMD 首 GW 是否已交付 / 權證是否已歸屬**：待 AMD Q3 2026 財報（10 月底）。
