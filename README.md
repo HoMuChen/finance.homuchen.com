@@ -136,7 +136,7 @@ uv run -q --with duckdb python tools/r2.py "SELECT date, close FROM tw.price WHE
 
 程式裡用 `from r2 import connect; con = connect()`，再用 `con.sql(...)` 查詢。
 
-主要的表：`tw.universe`（含下市股）、`tw.price`（原始價與還原價 `adj_*`）、`tw.revenue`、`tw.fin`／`bs`／`cf`、`tw.inst`、`tw.margin`、`tw.per`、`tw.holding`、`tw.broker`（只有 1,439 檔）、`tw.orderbook.*`，以及 `tw.market.*`（加權指數、報酬指數、台指期、選擇權、自建台指 VIX、市場寬度 `breadth`、自建維持率 `mkt_maint`）。
+主要的表：`tw.universe`（含下市股）、`tw.price`（原始價與還原價 `adj_*`）、`tw.revenue`、`tw.fin`／`bs`／`cf`、`tw.inst`、`tw.margin`、`tw.sbl`（借券賣出餘額，單位股）、`tw.per`、`tw.holding`、`tw.broker`（只有 1,439 檔）、`tw.orderbook.*`，以及 `tw.market.*`（加權指數、報酬指數、台指期、選擇權、自建台指 VIX、市場寬度 `breadth`、自建維持率 `mkt_maint`）。
 
 注意事項：
 
