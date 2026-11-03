@@ -8,6 +8,7 @@
 資料：
 - 美債名目與實質殖利率：美國財政部 Daily Treasury Par Yield Curve（公有領域，報告直接列數字）。
 - 失業率（Sahm 規則）：BLS LNS14000000（公有領域）。
+- CPI 電價與整體 CPI：BLS CUUR0000SEHF01、CUUR0000SA0，未季調年增（公有領域）。資料中心推升電價是通膨與 Fed 的一個來源。
 - USD/TWD：FinMind 台銀即期買賣中價，報告列到小數一位與變化幅度。
 - 信用利差代理：Yahoo Finance 的 HYG／IEI、LQD／IEF 還原價，報告只列相對報酬。
 - FOMC 決議、門檻、觸發時的模型動作：data/macro.json（手動維護）。
@@ -36,6 +37,7 @@ TREASURY = ("https://home.treasury.gov/resource-center/data-chart-center/interes
 NOMINAL, REAL = "daily_treasury_yield_curve", "daily_treasury_real_yield_curve"
 BLS = "https://api.bls.gov/publicAPI/v1/timeseries/data/{s}"
 UNRATE = "LNS14000000"  # 失業率，季調
+CPI_ELEC, CPI_ALL = "CUUR0000SEHF01", "CUUR0000SA0"  # CPI 電價、整體 CPI，未季調
 UA = {"User-Agent": "Mozilla/5.0"}
 YEARS = 3
 HORIZONS = (21, 63, 126)  # 交易日：約 1、3、6 個月
@@ -67,10 +69,11 @@ def treasury(kind, col, offline):
     return out
 
 
-def unemployment(offline):
-    raw = json.loads(_text(MCACHE / "bls_unrate.json", BLS.format(s=UNRATE), offline))
+def bls(series, offline):
+    """BLS 月資料 {(年, 月): 值}；未登記 API key 一天限 25 次，所以快取 12 小時。"""
+    raw = json.loads(_text(MCACHE / f"bls_{series}.json", BLS.format(s=series), offline))
     if raw.get("status") != "REQUEST_SUCCEEDED":
-        raise RuntimeError(f"BLS {UNRATE}: {raw.get('message')}")
+        raise RuntimeError(f"BLS {series}: {raw.get('message')}")
     out = {}
     for r in raw["Results"]["series"][0]["data"]:
         if r["period"].startswith("M") and r["period"] != "M13":
@@ -86,6 +89,11 @@ def unemployment(offline):
 def back(ym, n):
     t = ym[0] * 12 + ym[1] - 1 - n
     return t // 12, t % 12 + 1
+
+
+def yoy(series):
+    """未季調月資料的年增率；去年同月缺資料（例如 2025-10 停擺）就跳過。"""
+    return {ym: v / series[back(ym, 12)] - 1 for ym, v in series.items() if back(ym, 12) in series}
 
 
 def sahm(u):
@@ -143,7 +151,8 @@ def build(offline):
 
     y2, y10 = treasury(NOMINAL, "2 Yr", offline), treasury(NOMINAL, "10 Yr", offline)
     r10 = treasury(REAL, "10 YR", offline)
-    u = unemployment(offline)
+    u = bls(UNRATE, offline)
+    elec, cpi = bls(CPI_ELEC, offline), bls(CPI_ALL, offline)
     fx = _finmind("TaiwanExchangeRate", "USD", offline)
     etf = {t: _yahoo(t, offline) for t in ("HYG", "IEI", "LQD", "IEF")}
 
@@ -249,6 +258,16 @@ def build(offline):
               "| " + " | ".join(f"{u[k]:.1f}%" for k in ms) + " |"]
     if missing:
         lines += ["", f"- {'、'.join(missing)} 沒有公布（2025 年政府停擺），Sahm 計算時該窗用其餘月份平均。"]
+
+    # 電價與通膨
+    ye, ya = yoy(elec), yoy(cpi)
+    cm = sorted(set(ye) & set(ya))[-6:]
+    lines += ["", "## CPI 電價與整體 CPI（BLS，未季調年增）", "",
+              "| 項目 | " + " | ".join(f"{y}-{m:02d}" for y, m in cm) + " |", "|---|" + "---|" * len(cm),
+              "| 電價 | " + " | ".join(f"{ye[k]:+.1%}" for k in cm) + " |",
+              "| 整體 CPI | " + " | ".join(f"{ya[k]:+.1%}" for k in cm) + " |", "",
+              "- 背景指標，不設門檻。電價年增持續高於整體 CPI 時，資料中心用電是可能原因之一（也受天然氣價格、電網投資影響），"
+              "會增加 FOMC 再升息的壓力。電力缺口見 `data/L1_hyperscalers.md` 第 8.1 節。"]
 
     lines += ["", "## 怎麼用", "",
               "- 觸發只代表要回頭檢查對應的假設，不會自動改配置。動作寫在 `data/macro.json`，改完 `portfolio/` 設定檔後重跑凱利。",

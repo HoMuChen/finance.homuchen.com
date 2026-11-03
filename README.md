@@ -139,6 +139,7 @@ python3 tools/macro.py --offline                        # 只用快取
 |---|---|---|
 | 美 2 年期、10 年期名目與實質殖利率 | 美國財政部 Daily Treasury Par Yield Curve | 數字（公有領域） |
 | 失業率 → Sahm 規則 | BLS `LNS14000000` | 數字（公有領域） |
+| CPI 電價、整體 CPI（背景，不設門檻） | BLS `CUUR0000SEHF01`、`CUUR0000SA0`，未季調年增 | 數字（公有領域） |
 | USD/TWD | FinMind 台銀即期中價 | 只列四捨五入到 0.1 的水準與變化 |
 | 高收益、投資級信用利差代理 | Yahoo Finance：HYG／IEI、LQD／IEF 還原價 | 只列相對報酬 |
 | FOMC 決議 | `data/macro.json`（手動，來源是 Fed 聲明） | 數字與連結 |
