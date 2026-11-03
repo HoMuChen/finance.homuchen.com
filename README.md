@@ -40,6 +40,9 @@
 | `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
 | `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
 | `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
+| `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則 |
+| `data/macro.json` | `macro.py` 的手動輸入：FOMC 決議、門檻、觸發時的模型動作 |
+| `reports/macro-<日期>.md` | 總經訊號的輸出 |
 
 ## 凱利工具
 
@@ -121,6 +124,29 @@ uv run -q --with duckdb python tools/supply_chain.py leadlag                    
   - 弘塑：台積電 CapEx 執行的旁證。
 - `leadlag` 會重跑全部 12 家候選，四大雲季報後可以累積樣本重新檢查。
 - 剔除原因和判斷標準見 `data/L1_nvidia_tsmc.md` 第 11 節。結論是沒有一家領先台積電月營收。
+
+## 總經訊號
+
+每月美國就業報告公布後（第一個週五之後）跑一次，每次 FOMC 會後也跑一次。只追會改動模型參數的指標，判讀見 `01_總結儀表板.md`「總經訊號」一節。
+
+```bash
+python3 tools/macro.py                                  # 輸出到終端
+python3 tools/macro.py --out reports/macro-2026-11-03.md
+python3 tools/macro.py --offline                        # 只用快取
+```
+
+| 指標 | 資料源 | 報告裡列什麼 |
+|---|---|---|
+| 美 2 年期、10 年期名目與實質殖利率 | 美國財政部 Daily Treasury Par Yield Curve | 數字（公有領域） |
+| 失業率 → Sahm 規則 | BLS `LNS14000000` | 數字（公有領域） |
+| USD/TWD | FinMind 台銀即期中價 | 只列四捨五入到 0.1 的水準與變化 |
+| 高收益、投資級信用利差代理 | Yahoo Finance：HYG／IEI、LQD／IEF 還原價 | 只列相對報酬 |
+| FOMC 決議 | `data/macro.json`（手動，來源是 Fed 聲明） | 數字與連結 |
+
+- 每次 FOMC 會後，在 `data/macro.json` 的 `fomc` 補一筆，並更新 `next_fomc` 和 `market_note`。
+- 門檻（`signals.*.threshold`）和觸發時的模型動作（`signals.*.action`）都在同一個檔案。觸發只代表要回頭檢查對應的假設，不會自動改 `portfolio/` 設定檔。
+- 這台機器連不上 FRED，所以信用利差用 ETF 相對報酬代替 ICE BofA OAS，只能看量級。
+- 快取在 `cache/macro/`（財政部、BLS）與 `cache/prices/`（FinMind、Yahoo）。
 
 ## R2 台股資料湖（fire-auto）
 

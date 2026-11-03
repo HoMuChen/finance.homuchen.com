@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-11-03",
+  "note": "tools/macro.py 的手動輸入。FOMC 決議每次會後補一筆；門檻與觸發時的模型動作可以直接改。",
+  "fomc": [
+    {"date": "2025-09-17", "action": "cut", "low": 4.00, "high": 4.25, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm"},
+    {"date": "2025-10-29", "action": "cut", "low": 3.75, "high": 4.00, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm"},
+    {"date": "2025-12-10", "action": "cut", "low": 3.50, "high": 3.75, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm"},
+    {"date": "2026-01-28", "action": "hold", "low": 3.50, "high": 3.75, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm"},
+    {"date": "2026-03-18", "action": "hold", "low": 3.50, "high": 3.75, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm"},
+    {"date": "2026-04-29", "action": "hold", "low": 3.50, "high": 3.75, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"},
+    {"date": "2026-06-17", "action": "hold", "low": 3.50, "high": 3.75, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"},
+    {"date": "2026-07-29", "action": "hold", "low": 3.50, "high": 3.75, "vote": "9–3（Hammack、Kashkari、Logan 主張升息一碼）", "quality": "官方", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"},
+    {"date": "2026-09-16", "action": "hike", "low": 3.75, "high": 4.00, "vote": "12–0；2023-07 以來首次升息", "quality": "官方", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"},
+    {"date": "2026-10-28", "action": "hold", "low": 3.75, "high": 4.00, "vote": "10–2（Cook、Hammack 主張升息一碼）；聲明：「Inflation remains elevated.」", "quality": "官方", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"}
+  ],
+  "next_fomc": "2026-12-08/09（台灣 12/10 清晨公布，附經濟預測）",
+  "market_note": {
+    "text": "10/28 會後市場定價 12 月升息",
+    "quality": "報導",
+    "source": "https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates",
+    "date": "2026-10-28"
+  },
+  "signals": {
+    "fomc_hikes_6m": {
+      "threshold": 2,
+      "rule": "近 6 個月升息次數 ≥ 2",
+      "action": "BTC 空頭機率 +5–10 個百分點；凱利改用壓力相關 0.4"
+    },
+    "us10y": {
+      "threshold": 5.31,
+      "rule": "美 10 年期殖利率 > 5.31%（2026-10-05 高點，財政部）",
+      "action": "台積電高點本益比區間 18–22 倍下修 1–2 倍，見頂價位分布往下移"
+    },
+    "usdtwd": {
+      "threshold": 31.0,
+      "eps_fx_base": 32.0,
+      "eps_sensitivity": 1.5,
+      "rule": "USD/TWD < 31.0（台幣升值）",
+      "action": "台積電 EPS 情境下修約 5%（相對 EPS 假設匯率 32）"
+    },
+    "hy_excess_3m": {
+      "threshold": -0.03,
+      "rule": "高收益債 ETF（HYG）相對 3–7 年美債 ETF（IEI）3 個月超額報酬 < −3%",
+      "note": "HYG 存續期間約 3 年，−3% 約等於高收益利差擴大 100–120bp（含約 0.7%／季的利差收入）",
+      "action": "檢查清單第 2 項的「信用利差擴大」改為整體市場成立；凱利改用壓力相關 0.4"
+    },
+    "sahm": {
+      "threshold": 0.5,
+      "rule": "Sahm 規則 ≥ 0.5 個百分點（失業率 3 個月均值減前 12 個月的最低 3 個月均值）",
+      "action": "凱利改用壓力相關 0.4；台積電、BTC 空頭機率各 +5 個百分點（廣告營收是 META、GOOGL CapEx 的財源）"
+    }
+  }
+}
