@@ -8,7 +8,7 @@
 資料：
 - 美債名目與實質殖利率：美國財政部 Daily Treasury Par Yield Curve（公有領域，報告直接列數字）。
 - 失業率（Sahm 規則）：BLS LNS14000000（公有領域）。
-- USD/TWD：FinMind 台銀即期買賣中價。這是公開 repo，報告只列四捨五入到 0.1 的水準與變化幅度。
+- USD/TWD：FinMind 台銀即期買賣中價，報告列到小數一位與變化幅度。
 - 信用利差代理：Yahoo Finance 的 HYG／IEI、LQD／IEF 還原價，報告只列相對報酬。
 - FOMC 決議、門檻、觸發時的模型動作：data/macro.json（手動維護）。
 
@@ -253,7 +253,7 @@ def build(offline):
     lines += ["", "## 怎麼用", "",
               "- 觸發只代表要回頭檢查對應的假設，不會自動改配置。動作寫在 `data/macro.json`，改完 `portfolio/` 設定檔後重跑凱利。",
               "- 升息循環中，台積電和 BTC 都像長存續期的風險資產，2022 年兩者同年大跌。FOMC 和 Sahm 兩項是改用壓力相關係數的主要依據。",
-              "- 這是公開 repo：USD/TWD 只列四捨五入值與變化，ETF 只列相對報酬，不放 FinMind 和 Yahoo 的原始序列。", ""]
+              "- Yahoo 的 ETF 序列只列相對報酬，不放原始價格。", ""]
     return "\n".join(lines)
 
 

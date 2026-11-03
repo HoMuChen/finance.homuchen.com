@@ -150,7 +150,7 @@ python3 tools/macro.py --offline                        # 只用快取
 
 ## R2 台股資料湖（fire-auto）
 
-fire-auto 每個交易日 00:30 更新前一個交易日的資料，發布成 DuckDB catalog：`r2://trading-homuchen-com/v1/catalog.duckdb`。資料源是 FinMind，**僅限個人使用**：查出來的原始數字不要寫進這個公開 repo，只寫結論或統計量。
+fire-auto 每個交易日 00:30 更新前一個交易日的資料，發布成 DuckDB catalog：`r2://trading-homuchen-com/v1/catalog.duckdb`。資料源是 FinMind，**僅限個人使用**：報告裡列出 FinMind 的數字沒關係（2026-11-03 決定）。
 
 金鑰放 `.env.local`：`R2_ACCOUNT_ID`，加上 `R2_READ_ACCESS_KEY_ID`／`R2_READ_SECRET_ACCESS_KEY`（沒有就讀 `R2_WRITE_*`）。一律唯讀掛載。本機不用另外裝 duckdb：
 
