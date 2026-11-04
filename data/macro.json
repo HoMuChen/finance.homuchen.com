@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-03",
-  "note": "tools/macro.py 的手動輸入。FOMC 決議每次會後補一筆；門檻與觸發時的模型動作可以直接改。",
+  "note": "tools/macro.py 的手動輸入。FOMC 和台灣央行理監事會決議每次會後補一筆；門檻與觸發時的模型動作可以直接改。",
   "fomc": [
     {"date": "2025-09-17", "action": "cut", "low": 4.00, "high": 4.25, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm"},
     {"date": "2025-10-29", "action": "cut", "low": 3.75, "high": 4.00, "vote": "", "quality": "官方（區間經 FinMind 核對，未逐篇開聲明）", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm"},
@@ -14,6 +14,13 @@
     {"date": "2026-10-28", "action": "hold", "low": 3.75, "high": 4.00, "vote": "10–2（Cook、Hammack 主張升息一碼）；聲明：「Inflation remains elevated.」", "quality": "官方", "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"}
   ],
   "next_fomc": "2026-12-08/09（台灣 12/10 清晨公布，附經濟預測）",
+  "cbc": [
+    {"date": "2024-03-21", "action": "hike", "rate": 2.000, "note": "重貼現率升半碼（12.5bp）到 2.000%；之後到 2026-09 連續 10 次不動", "quality": "報導", "source": "https://uanalyze.com.tw/articles/4333255533"},
+    {"date": "2026-06-18", "action": "hold", "rate": 2.000, "note": "第 2 季理監事會", "quality": "報導", "source": "https://wantrich.chinatimes.com/news/20260618900626-420101"},
+    {"date": "2026-09-17", "action": "hold", "rate": 2.000, "note": "連續第 10 次不動；Fed 前一天升息一碼，楊金龍：「我們走我們的路」；2 位理事主張升息；同場放寬第 2 戶房貸成數 6 成到 7 成", "quality": "報導:中央社", "source": "https://cna.com.tw/news/afe/202609170308.aspx"}
+  ],
+  "next_cbc": "2026 年 12 月（日期未查；2025 年是 12/18，約在 FOMC 後一週的週四）",
+  "fx_flow_note": "背景讀數，不設門檻。台幣貶值對台積電有兩個方向相反的效果：EPS 增加（每 1% 約 +1.5%），但美台利差擴大、外資撤出會壓估值。2022 年 USD/TWD 從 1/17 的 27.6 升到 10/25 的 32.3，外資全年賣超 1.23 兆；台積電高點和低點剛好也是 1/17 和 10/25。",
   "market_note": {
     "text": "10/28 會後市場定價 12 月升息",
     "quality": "報導",

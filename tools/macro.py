@@ -11,7 +11,7 @@
 - CPI 電價與整體 CPI：BLS CUUR0000SEHF01、CUUR0000SA0，未季調年增（公有領域）。資料中心推升電價是通膨與 Fed 的一個來源。
 - USD/TWD：FinMind 台銀即期買賣中價，報告列到小數一位與變化幅度。
 - 信用利差代理：Yahoo Finance 的 HYG／IEI、LQD／IEF 還原價，報告只列相對報酬。
-- FOMC 決議、門檻、觸發時的模型動作：data/macro.json（手動維護）。
+- FOMC 與台灣央行決議、門檻、觸發時的模型動作：data/macro.json（手動維護）。
 
 這台機器連不上 FRED，所以信用利差用 ETF 相對報酬代替 ICE BofA OAS。
 只依賴標準函式庫與 numpy。快取在 cache/macro/ 與 cache/prices/（不進 git）。
@@ -136,6 +136,16 @@ def fomc_state(cfg, today):
 ACTION = {"hike": "升息", "cut": "降息", "hold": "按兵不動"}
 
 
+def policy_at(rows, day):
+    """day 當天有效的決議（rows 依日期排序）。"""
+    past = [r for r in rows if r["date"] <= day.isoformat()]
+    return past[-1] if past else None
+
+
+def fed_mid(r):
+    return (r["low"] + r["high"]) / 2
+
+
 def sp(x):
     return "—" if x is None else f"{x:+.1%}"
 
@@ -240,6 +250,28 @@ def build(offline):
     for r in rows[-8:]:
         lines.append(f"| {r['date']} | {ACTION[r['action']]} | {r['low']:.2f}–{r['high']:.2f}% | "
                      f"{r['vote'] or '—'} | [{r['quality']}]({r['source']}) |")
+
+    # 美台利差與台幣（背景）
+    cbc = sorted(cfg["cbc"], key=lambda r: r["date"])
+    _, fx_3m = at(fx, dfx - dt.timedelta(days=91))
+    cols = [("最新", today, vfx), ("3 個月前", today - dt.timedelta(days=91), fx_3m),
+            ("1 年前", today - dt.timedelta(days=365), fx_1y)]
+    fed_c = [policy_at(rows, d) for _, d, _ in cols]
+    cbc_c = [policy_at(cbc, d) for _, d, _ in cols]
+    rate = lambda r, f: "—" if r is None else f"{f(r):.3f}%"
+    gap_c = ["—" if f is None or c is None else f"{(fed_mid(f) - c['rate']) * 100:+.0f}bp" for f, c in zip(fed_c, cbc_c)]
+    lines += ["", "## 美台利差與台幣（背景讀數，不設門檻）", "",
+              "| 項目 | " + " | ".join(n for n, _, _ in cols) + " |", "|---|---|---|---|",
+              "| Fed 政策利率中值 | " + " | ".join(rate(r, fed_mid) for r in fed_c) + " |",
+              "| 台灣央行重貼現率 | " + " | ".join(rate(r, lambda x: x["rate"]) for r in cbc_c) + " |",
+              "| 政策利差（Fed − 央行） | " + " | ".join(gap_c) + " |",
+              "| USD/TWD | " + " | ".join(f"{v:.1f}" for _, _, v in cols) + " |", ""]
+    for r in cbc[-3:]:
+        lines.append(f"- 央行 {r['date']} {ACTION[r['action']]}，重貼現率 {r['rate']:.3f}%：{r['note']}"
+                     f"（[{r['quality']}]({r['source']})）")
+    lines += [f"- 下次理監事會：{cfg['next_cbc']}。",
+              f"- {cfg['fx_flow_note']}",
+              "- 資金流向看的是市場利差，不只政策利率。美 2 年期殖利率見上方表格；台灣 2 年期公債沒有接資料。"]
 
     # 信用利差代理
     lines += ["", "## 信用利差代理（ETF 相對報酬，Yahoo 還原價）", "",

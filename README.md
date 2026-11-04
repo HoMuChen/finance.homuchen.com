@@ -40,8 +40,8 @@
 | `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
 | `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
 | `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
-| `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則 |
-| `data/macro.json` | `macro.py` 的手動輸入：FOMC 決議、門檻、觸發時的模型動作 |
+| `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則；背景讀數 CPI 電價、美台利差 |
+| `data/macro.json` | `macro.py` 的手動輸入：FOMC 與台灣央行決議、門檻、觸發時的模型動作 |
 | `reports/macro-<日期>.md` | 總經訊號的輸出 |
 
 ## 凱利工具
@@ -143,8 +143,9 @@ python3 tools/macro.py --offline                        # 只用快取
 | USD/TWD | FinMind 台銀即期中價 | 只列四捨五入到 0.1 的水準與變化 |
 | 高收益、投資級信用利差代理 | Yahoo Finance：HYG／IEI、LQD／IEF 還原價 | 只列相對報酬 |
 | FOMC 決議 | `data/macro.json`（手動，來源是 Fed 聲明） | 數字與連結 |
+| 台灣央行重貼現率 | `data/macro.json` 的 `cbc`（手動，來源是報導；央行官網新聞稿可補） | 數字與連結 |
 
-- 每次 FOMC 會後，在 `data/macro.json` 的 `fomc` 補一筆，並更新 `next_fomc` 和 `market_note`。
+- 每次 FOMC 會後，在 `data/macro.json` 的 `fomc` 補一筆，並更新 `next_fomc` 和 `market_note`。台灣央行理監事會（每季）會後在 `cbc` 補一筆，並更新 `next_cbc`。
 - 門檻（`signals.*.threshold`）和觸發時的模型動作（`signals.*.action`）都在同一個檔案。觸發只代表要回頭檢查對應的假設，不會自動改 `portfolio/` 設定檔。
 - 這台機器連不上 FRED，所以信用利差用 ETF 相對報酬代替 ICE BofA OAS，只能看量級。
 - 快取在 `cache/macro/`（財政部、BLS）與 `cache/prices/`（FinMind、Yahoo）。
