@@ -640,16 +640,16 @@ TSMC,2025Q3,2025Q3,wafer_revenue_ntd,860.96,TWD_bn,https://www.sec.gov/Archives/
 TSMC,2025Q4,2025Q4,wafer_revenue_ntd,902.13,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000024/a2025q4consolidatedreport-.htm,2026-02-26,官方/計算(全年3272.55減前三季2370.43)
 TSMC,2026Q1,2026Q1,wafer_revenue_ntd,968.11,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000278/a2026q1consolidatedreport-.htm,2026-05-15,官方
 TSMC,2026Q2,2026Q2,wafer_revenue_ntd,1073.71,TWD_bn,https://www.sec.gov/Archives/edgar/data/1046179/000104617926000541/a2026q2consolidatedreport-.htm,2026-08-14,官方
-AMD,2024Q1,2024Q1,datacenter_revenue,2.337,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-04-30,官方(憑記憶未逐一回查原文)
-AMD,2024Q2,2024Q2,datacenter_revenue,2.834,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-07-30,官方(憑記憶未逐一回查原文)
-AMD,2024Q3,2024Q3,datacenter_revenue,3.549,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2024-10-29,官方(憑記憶未逐一回查原文)
-AMD,2024Q4,2024Q4,datacenter_revenue,3.859,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2025-02-04,官方(憑記憶;與Q4'25 YoY+39%吻合)
-AMD,2024FY,FY2024,instinct_gpu_revenue_comment,2024年 Instinct GPU 營收超過50億美元(Q4'24法說),text,https://ir.amd.com/financial-information/quarterly-results,2025-02-04,官方(憑記憶未回查)
+AMD,2024Q1,2024Q1,datacenter_revenue,2.337,USD_bn,https://www.sec.gov/Archives/edgar/data/2488/000000248824000054/q12024991.htm,2024-04-30,官方(2026-11-04 核對 SEC 8-K)
+AMD,2024Q2,2024Q2,datacenter_revenue,2.834,USD_bn,https://www.sec.gov/Archives/edgar/data/2488/000000248824000121/q22024991.htm,2024-07-30,官方(2026-11-04 核對 SEC 8-K)
+AMD,2024Q3,2024Q3,datacenter_revenue,3.549,USD_bn,https://www.sec.gov/Archives/edgar/data/2488/000000248824000161/q32024991.htm,2024-10-29,官方(2026-11-04 核對 SEC 8-K)
+AMD,2024Q4,2024Q4,datacenter_revenue,3.859,USD_bn,https://www.sec.gov/Archives/edgar/data/2488/000000248825000009/q42024991.htm,2025-02-04,官方(2026-11-04 核對 SEC 8-K)
+AMD,2024FY,FY2024,instinct_gpu_revenue_comment,2024 年 Instinct 加速器營收超過 50 億美元(Q4'24 新聞稿:「more than $5 billion of AMD Instinct accelerator revenue」),text,https://www.sec.gov/Archives/edgar/data/2488/000000248825000009/q42024991.htm,2025-02-04,官方(2026-11-04 核對 SEC 8-K)
 AMD,2025Q1,2025Q1,datacenter_revenue,3.674,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
 AMD,2025Q1,2025Q1,datacenter_operating_income,0.932,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
 AMD,2025Q2,2025Q2,datacenter_revenue,3.240,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
 AMD,2025Q2,2025Q2,datacenter_operating_income,-0.155,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方(含MI308出口管制約8億美元庫存費用)
-AMD,2025Q3,2025Q3,datacenter_revenue,4.341,USD_bn,https://ir.amd.com/financial-information/quarterly-results,2025-11-04,官方(憑記憶;FY25合計16.6吻合)
+AMD,2025Q3,2025Q3,datacenter_revenue,4.341,USD_bn,https://www.sec.gov/Archives/edgar/data/2488/000000248825000163/q32025991.htm,2025-11-04,官方(2026-11-04 核對 SEC 8-K)
 AMD,2025Q4,2025Q4,datacenter_revenue,5.380,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方(新聞稿稱$5.4B YoY+39%)
 AMD,2025Q4,2025Q4,mi308_china_sales,0.39,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方
 AMD,2025FY,FY2025,datacenter_revenue,16.6,USD_bn,https://ir.amd.com/news-events/press-releases/detail/1276/,2026-02-03,官方
@@ -664,6 +664,16 @@ AMD,2026Q3,2026Q3,next_q_revenue_guidance,13.0,USD_bn,https://ir.amd.com/news-ev
 AMD,2025Q4,2025Q4,deal_openai,"2025-10-06 與 OpenAI 簽 6GW 多年期 GPU 協議;首1GW MI450 於2026下半年;OpenAI 獲最多1.6億股AMD認股權證(行使價0.01美元,依部署量與股價目標分批歸屬)",text,https://www.storagenewsletter.com/2025/10/09/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus/,2025-10-06,官方(新聞稿轉載)
 AMD,2026Q1,2026Q1,deal_meta,Meta 與 AMD 計畫部署最多6GW Instinct GPU;首1GW為客製 MI450,text,https://ir.amd.com/news-events/press-releases/detail/1284/,2026-05-05,官方
 AMD,2026Q2,2026Q2,deal_anthropic,與 Anthropic 合作部署最多2GW MI450 系列(Helios 機櫃);Helios 客戶含 Anthropic/Meta/Microsoft/OpenAI/Oracle 等,text,https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results,2026-08-04,官方
+AMD,2026Q3,2026Q3,datacenter_revenue,8.546,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,datacenter_operating_income,2.882,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,total_revenue,13.377,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,datacenter_share_of_revenue,64,pct,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,client_gaming_revenue,3.722,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,free_cash_flow,0.554,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方
+AMD,2026Q3,2026Q3,inventory,11.463,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方(季增約3.0)
+AMD,2026Q3,2026Q3,warrant_fair_value_charge,1.097,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方(非現金;非GAAP排除)
+AMD,2026Q4,2026Q4,next_q_revenue_guidance,17.0,USD_bn,https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,官方(±3%;資料中心季增約50%;Client and Gaming季減>20%;非GAAP毛利率約55%)
+AMD,2027FY,FY2027,outlook_comment,營收成長>80%;伺服器CPU營收翻倍;資料中心>80%營收,text,https://uk.investing.com/news/stock-market-news/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4954263,2026-11-03,官方(法說逐字稿經Investing.com)
 Broadcom,2023Q4,FY24Q1,ai_semiconductor_revenue,2.3,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm,2024-03-07,官方/計算(由FY25Q1 4.1B YoY+77%回推;未取得原文)
 Broadcom,2024Q1,FY24Q2,ai_semiconductor_revenue,3.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm,2024-06-12,官方/計算(憑記憶;與FY24合計12.2B吻合)
 Broadcom,2024Q2,FY24Q3,ai_semiconductor_revenue,3.1,USD_bn,https://www.sec.gov/Archives/edgar/data/1730168/000173016824000095/avgo-08042024x8kxex99.htm,2024-09-05,官方/計算(由FY25Q3 5.2B YoY+63%回推約3.2B;未取得原文)

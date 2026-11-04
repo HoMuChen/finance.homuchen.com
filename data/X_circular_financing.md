@@ -33,8 +33,8 @@
 | 8 | **NVIDIA → CoreWeave** | 持股約 11–12%；2026-01-26 加碼 $2B（$87.20/股） | NVIDIA 反向：**$6.3B 未售容量回購保證**（至 2032-04）；CoreWeave 為 NVIDIA GPU 大買家 | 2023 起；2025-09；2026-01 | [官方] | https://www.computing.co.uk/news/2026/nvidia-invests-2-billion-in-coreweave ；https://sacra.com/c/coreweave/ |
 | 9 | **NVIDIA → Lambda** | 投資人 | NVIDIA 向 Lambda 回租 GPU：$1.3B/4 年（1 萬台伺服器）+ $200M（8 千台）；Lambda 借 $917M 向 NVIDIA 購晶片以履約 | 2025-09 | [報導:The Information/Bloomberg] | https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley |
 | 10 | **NVIDIA 整體生態系** | 權益投資 **$99B**（非上市 $47.9B + 上市 $42.8B + 長期 $5.0B；其中 $36.9B 受短期鎖定）；另 **$25B** 投資承諾（$18B 於 2027 前） | NVIDIA 自身的 AI cloud 協議 $36B、R&D 雲端 $29B（向客戶回買算力） | 截至 2026-07-26 | [官方:NVIDIA 10-Q] | https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm |
-| 11 | **AMD → OpenAI** | 認股權證最高 1.6 億股（約 AMD 10%），行使價 $0.01，依 1→6 GW 部署與股價（至 $600）歸屬 | 6 GW AMD Instinct（MI450 起，首 GW 2026 H2）；截至 2026-06-27 **尚無歸屬** | 2025-10-06 | [官方:AMD 8-K/10-K/10-Q] | https://ir.amd.com/news-events/press-releases/detail/1260/ ；https://www.fool.com/investing/2026/10/05/amd-has-promised-openai-and-meta-up-to-320-million-shares-for-a-penny-each-here-s-what-that-does-to-the-share-count/ |
-| 11a | **AMD → Meta** | 同類認股權證 1.6 億股 | Meta GPU 採購（GW 規模） | 2026 | [官方:AMD 申報，經 Motley Fool] | 同上 |
+| 11 | **AMD → OpenAI** | 認股權證最高 1.6 億股（約 AMD 10%），行使價 $0.01，依 1→6 GW 部署與股價（至 $600）歸屬 | 6 GW AMD Instinct（MI450 起，首 GW 2026 H2）。2026Q3 MI450／Helios 首次出貨認列營收，OpenAI 的第一批 Helios 機櫃已上線；Q3 開始認列權證會計影響（非現金公允價值變動 −$1.10B），但**沒有宣布歸屬**，公司會在 2027 年給歸屬時間指引（2026-11-03 財報） | 2025-10-06 | [官方:AMD 8-K/10-K/10-Q] | https://ir.amd.com/news-events/press-releases/detail/1260/ ；https://www.fool.com/investing/2026/10/05/amd-has-promised-openai-and-meta-up-to-320-million-shares-for-a-penny-each-here-s-what-that-does-to-the-share-count/ |
+| 11a | **AMD → Meta** | 同類認股權證 1.6 億股 | Meta GPU 採購（GW 規模）；Meta 的第一批 Helios 機櫃也已上線（2026Q3） | 2026 | [官方:AMD 申報，經 Motley Fool；Q3 出貨為 AMD 法說] | 同上 ；https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm |
 | 12 | **Oracle ↔ OpenAI** | Oracle 未投資 OpenAI 股權；為 Stargate JV 合作方 | **~$300B / 5 年**、4.5 GW，2027 起；Oracle 為此向 NVIDIA 採購 ~$40B GB200 | 2025-07/09 | [報導:WSJ]；GW [官方] | https://intuitionlabs.ai/articles/oracle-openai-300b-deal-analysis |
 | 13 | **SoftBank → OpenAI** | 2026-03 輪 $30B；累計報導 $64.6B | SoftBank 子公司 SB Energy 為 OpenAI 建 Milam（1.2 GW）及 Ohio 站點並持有硬體；SoftBank 尋求 $40B 貸款支應 | 2025–2026 | [報導:Bloomberg/Dealroom] | https://news.bloomberglaw.com/tech-and-telecom-law/openai-valued-at-852-billion-after-closing-122-billion-round ；https://www.techtimes.com/articles/316807/20260519/openai-cut-stargates-spending-pledge-14-trillion-600-billion-now-renting-what-it-vowed-build.htm |
 | 14 | **OpenAI/SoftBank → SB Energy** | 2026-01 合計投資 $1B | SB Energy 為 OpenAI 建 Milam 1.2 GW | 2026-01 | [報導] | https://epoch.ai/blog/openai-stargate-where-the-us-sites-stand |
@@ -230,7 +230,7 @@
 6. **Oracle 總債務**：CNBC 引 2026-08-31 為 $125.34B，舊報導 $111.6B / $130B / $167B 口徑不一，仍未從 10-Q 直接核實。
 7. **CoreWeave 2026 具名客戶占比**：Q1 2026 最大客戶 45% 未具名；Q2 數字查不到；OpenAI 占 backlog 比例未揭露。
 8. **NVIDIA $99B 權益投資明細**：10-Q 未逐一列出 OpenAI、Anthropic、xAI、CoreWeave 等個別帳面值。
-9. **AMD 首 GW 是否已交付 / 權證是否已歸屬**：待 AMD Q3 2026 財報（10 月底）。
+9. **AMD 權證何時歸屬**：首批 MI450／Helios 已在 2026Q3 出貨，OpenAI、Meta 的機櫃已上線；權證開始認列會計影響，但沒有宣布第一批歸屬，公司說 2027 年才給指引。首 GW 何時部署完成也沒有說（2026-11-03 財報，見 `L1_nvidia_tsmc.md` 第 12 節）。
 10. **SpaceX $40B 新債與 CDS 194bp**：僅單一次級來源。
 11. **Nscale–Anthropic $45B、Lambda backlog $50B**：僅報導，未見官方確認。
 12. **Microsoft–OpenAI 營收分成上限金額**：未揭露。
