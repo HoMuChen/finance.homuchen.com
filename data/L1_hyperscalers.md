@@ -366,6 +366,8 @@ AMZN 用自己的口徑計算，TTM FCF 2026Q2 為 −$7.6bn，2026Q3 為 −$42
 | 延宕比例 | Sightline Climate 估 30–50% 的案子至少延到 2027 年，原因是電力、社區反對、電網設備短缺 | [估計:Sightline Climate] | https://www.eenews.net/articles/data-center-construction-delays-grow-report/ |
 | 反向證據 | SemiAnalysis 統計到 300 多個地方暫停令，但它追蹤的開發案中只有 3 個實質延宕 | [報導，出處未逐一核對] | — |
 | 地方暫停令 | Georgia 多個郡、州層級考慮暫停到 2028；New Mexico Grant County 一年期 | [報導] | https://newmarketpitch.com/blogs/news/data-center-states-blocking |
+| **2026-11-03 期中選舉地方公投**（2026-11-07 新增） | 資料中心相關的地方公投約 41–45 項（各家統計不同），只有一項不是限制或禁止：North Dakota Harwood 否決對工業案（含資料中心）加審。Ohio 占 21 項；其他還有 Illinois、California、Florida、Nevada、New Jersey、Wisconsin 等。CNBC 出口民調：56% 選民說資料中心是投票的「關鍵」或「主要」因素。民主黨同時拿下國會兩院，報導說翻轉了 5 個州長席位 | [報導:Newsweek、Tom's Hardware、CBS；出口民調經 CNBC 轉述] | https://www.newsweek.com/map-shows-how-data-center-measures-fared-across-10-states-12670558 ；https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments ；https://www.cbsnews.com/news/midterm-election-results-data-center-buildout-artificial-intelligence-texas/ |
+| **2026-11-05 市場反應** | 標普 500 −4.36%、Nasdaq −5.52%（單日跌點紀錄，−1,422 點）、NVIDIA −9.26%、Amazon −2.19%；費半據報 −12.3%（未核對原始報價）。報導的原因是擔心資料中心建設放慢、各州對資料中心反彈。11/06 晶片股反彈；台股 11/06 加權 −4.5%、台積電 −4.7% | [報導:StockTitan 引 CNBC；Motley Fool；Kingy AI] | https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026 ；https://www.fool.com/investing/2026/11/05/nasdaq-composite-shattered-single-session-point-loss-record-3-reasons-elevator-down-moves-just-beginning/ ；https://kingy.ai/blog/ai-stock-selloff-november-2026/ |
 
 **Oracle Project Jupiter（OpenAI Stargate，New Mexico Doña Ana County，約 2.45–2.5GW）**
 
@@ -393,6 +395,7 @@ Jupiter 屬於 Oracle 對 OpenAI 約 $300B／4.5GW 的合約（見 `data/L2_open
   - 缺口估計開始下修，或延宕案件減少，代表瓶頸解除，CapEx 執行會加速。
   - 雲端業者開始用「電力」當理由下修 2027 CapEx。這時要對照 RPO 和雲端營收成長，確認是不是在包裝需求放緩。
 - 通膨面：CPI 電價年增（2026-09 為 +4.4%，整體 CPI +3.7%）見 `tools/macro.py` 報告。
+- **2026-11-07 補充：選舉結果歸在供給受限，不是需求飽和。** 地方公投幾乎全數通過限制，阻力從電力、供氣擴大到社區反對和監管。這會讓建設更慢、週期更長，但沒有任何雲端業者或 AI 實驗室說要少買算力。要盯的是 2027 年 1–2 月的 CapEx 指引：如果下修理由寫的是「選址、許可」，同樣要對照 RPO 和雲端營收成長，確認不是在包裝需求放緩。11/05 美股的跌幅（Nasdaq −5.5%）比 11/06 台積電的 −4.7% 大，市場先反映的是估值，不是訂單。
 
 ---
 

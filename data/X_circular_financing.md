@@ -69,8 +69,8 @@
 | 債券 | **$27.3B**、6.581% 優先擔保票據、2049 到期（23.6 年）；S&P A+ | [官方:發行文件，經 IFR] | https://www.ifre.com/ifr-awards/2327933/financing-package-blue-owl-capitalbeignet-investors-us27.3bn-23.6-year-bond |
 | 主要買家 | Pimco ~$18B；BlackRock >$3B | [報導] | 同上；https://www.npr.org/transcripts/nx-s1-5619276 |
 | 規模 | Richland Parish, Louisiana，5 GW，總投資 >$50B | [報導] | https://theedgemalaysia.com/node/819893 （2026-10） |
-| **二級市場** | 交易價 **91 美分**、殖利率最高 7.55%；利差 ~230bp（發行時 185bp，7 月紀錄 255bp）。2026-11-03 再查：沒有找到更新的已核實報價；另有報導稱基金估值 94.4 美分「創新低」，日期不明，和 91 美分矛盾，未採用 | [報導:Bloomberg via The Edge, 2026-10] | 同上 |
-| Meta CDS | **2026-10-22 創紀錄 114.79bp**（Markit，單日 +7.6bp；ICE 盤中約 119.3bp）。起因是 Q3 FCF 轉負、租賃與合約承諾增至約 $825B（7 月近 $700B；口徑和 10-Q 不可取消承諾 $455B 不同）。10/26 宣布增資、沒有發大額債，之後回落；年初至 10/27 仍 +177%。同期 Amazon CDS 年初至今 +129% | [報導:Markit/ICE 經 shattered.io；CNBC] | https://shattered.io/meta-credit-risk-record-high-ai-spending-cds-2026/ ；https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html |
+| **二級市場** | 交易價 **91 美分**、殖利率最高 7.55%；利差 ~230bp（發行時 185bp，7 月紀錄 255bp）。2026-11-03 再查：沒有找到更新的已核實報價；另有報導稱基金估值 94.4 美分「創新低」，日期不明，和 91 美分矛盾，未採用。2026-11-07 再查：日期確認是 **2026-10-07**（TokenPost 當天報導「10 月 7 日跌到接近 91 美分，創新低」，沒有註明原始出處）；仍沒有 11 月報價 | [報導:Bloomberg via The Edge, 2026-10；TokenPost 2026-10-07] | 同上；https://www.tokenpost.com/news/technology/27470 |
+| Meta CDS | **2026-10-22 創紀錄 114.79bp**（Markit，單日 +7.6bp；ICE 盤中約 119.3bp）。起因是 Q3 FCF 轉負、租賃與合約承諾增至約 $825B（7 月近 $700B；口徑和 10-Q 不可取消承諾 $455B 不同）。10/26 宣布增資、沒有發大額債，之後回落；年初至 10/27 仍 +177%。同期 Amazon CDS 年初至今 +129%。2026-11-07 再查：Meta 10/22 之後沒有新高的報導；有一份 AI Weekly 摘要（約 10/31，轉述 WSJ）說 Amazon、Alphabet「處於歷史高點」，但沒有數字，而且 WSJ 原文寫的是五家「2021 年以來最高」，未採用；11/05、11/06 大跌期間找不到報價。空頭升級條件 1 未觸發 | [報導:Markit/ICE 經 shattered.io；CNBC] | https://shattered.io/meta-credit-risk-record-high-ai-spending-cds-2026/ ；https://www.cnbc.com/2026/10/27/ai-debt-hyperscaler-earnings.html |
 | 風險 | S&P 警告建設與營運期「實質信用風險」可能轉回 Meta | [官方:S&P] | 同上 |
 | Meta 帳上暴險（2026-09-30） | Louisiana＋Texas 兩個合資最大損失暴險 **$68.4B**（2025 底 $46.0B）：股權 $4.7B、租賃承諾 $18.5B、未來出資 $3.7B、殘值保證上限 $41.5B；Meta 判斷殘值保證「不太可能」觸發，未認列負債 | [官方:10-Q] | https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm |
 
@@ -210,7 +210,7 @@
 
 | 訊號 | 數據 | 意涵 |
 |---|---|---|
-| 信用市場已開始定價 | Oracle CDS 292bp（11/02，接近高收益債高端）、S&P BBB-；Meta CDS 10/22 創紀錄約 115–119bp（年初至今 +177%）；Meta Hyperion 債 91 美分（10 月，之後未再核實）；新發讓價 2.25→12bp | 債權人要求更高補償，融資鏈最脆弱環節是 Oracle、CoreWeave、SPV；Meta 也開始被重新定價 |
+| 信用市場已開始定價 | Oracle CDS 292bp（11/02，接近高收益債高端）、S&P BBB-；Meta CDS 10/22 創紀錄約 115–119bp（年初至今 +177%）；Meta Hyperion 債 91 美分（10/07，之後沒有新報價）；新發讓價 2.25→12bp | 債權人要求更高補償，融資鏈最脆弱環節是 Oracle、CoreWeave、SPV；Meta 也開始被重新定價 |
 | 融資轉向發新股 | Meta 最高 $95B（2013 年後首次）、Oracle $10B 股 + $10B 債、Alphabet ATM $42.9B + 特別股 $19.1B | 缺口改由股東分擔；供應商（NVIDIA、AMD、Broadcom）認購客戶新股，循環又多一層 |
 | 客戶集中 | CoreWeave 67% 來自 Microsoft；Microsoft RPO 32–45% 來自 OpenAI；Oracle RPO 約 45% 估來自 OpenAI | 單一模型公司失速會同時擊中多家 |
 | 承諾/營收比 | OpenAI 明確合約 ~$682B ÷ 2026E 營收 $36B ≈ 19x | 履約依賴持續融資 |
