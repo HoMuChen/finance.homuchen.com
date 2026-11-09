@@ -8,6 +8,7 @@
 資料：
 - 美債名目與實質殖利率：美國財政部 Daily Treasury Par Yield Curve（公有領域，報告直接列數字）。
 - 失業率（Sahm 規則）：BLS LNS14000000（公有領域）。
+- 非農就業：BLS CES0000000001，季調，背景讀數（公有領域）。
 - CPI 電價與整體 CPI：BLS CUUR0000SEHF01、CUUR0000SA0，未季調年增（公有領域）。資料中心推升電價是通膨與 Fed 的一個來源。
 - USD/TWD：FinMind 台銀即期買賣中價，報告列到小數一位與變化幅度。
 - 信用利差代理：Yahoo Finance 的 HYG／IEI、LQD／IEF 還原價，報告只列相對報酬。
@@ -37,6 +38,7 @@ TREASURY = ("https://home.treasury.gov/resource-center/data-chart-center/interes
 NOMINAL, REAL = "daily_treasury_yield_curve", "daily_treasury_real_yield_curve"
 BLS = "https://api.bls.gov/publicAPI/v1/timeseries/data/{s}"
 UNRATE = "LNS14000000"  # 失業率，季調
+PAYROLL = "CES0000000001"  # 非農就業人數（千人），季調
 CPI_ELEC, CPI_ALL = "CUUR0000SEHF01", "CUUR0000SA0"  # CPI 電價、整體 CPI，未季調
 UA = {"User-Agent": "Mozilla/5.0"}
 YEARS = 3
@@ -69,18 +71,24 @@ def treasury(kind, col, offline):
     return out
 
 
-def bls(series, offline):
-    """BLS 月資料 {(年, 月): 值}；未登記 API key 一天限 25 次，所以快取 12 小時。"""
+def bls(series, offline, prelim=None):
+    """BLS 月資料 {(年, 月): 值}；未登記 API key 一天限 25 次，所以快取 12 小時。
+
+    prelim 是 set 時，把標成 preliminary（初值，之後會修正）的月份加進去。
+    """
     raw = json.loads(_text(MCACHE / f"bls_{series}.json", BLS.format(s=series), offline))
     if raw.get("status") != "REQUEST_SUCCEEDED":
         raise RuntimeError(f"BLS {series}: {raw.get('message')}")
     out = {}
     for r in raw["Results"]["series"][0]["data"]:
         if r["period"].startswith("M") and r["period"] != "M13":
+            ym = (int(r["year"]), int(r["period"][1:]))
             try:
-                out[(int(r["year"]), int(r["period"][1:]))] = float(r["value"])
+                out[ym] = float(r["value"])
             except ValueError:
-                pass  # 2025-10 因政府停擺沒有公布
+                continue  # 2025-10 因政府停擺沒有公布
+            if prelim is not None and any(f.get("code") == "P" for f in r.get("footnotes") or []):
+                prelim.add(ym)
     return out
 
 
@@ -162,6 +170,8 @@ def build(offline):
     y2, y10 = treasury(NOMINAL, "2 Yr", offline), treasury(NOMINAL, "10 Yr", offline)
     r10 = treasury(REAL, "10 YR", offline)
     u = bls(UNRATE, offline)
+    nfp_p = set()
+    nfp = bls(PAYROLL, offline, nfp_p)
     elec, cpi = bls(CPI_ELEC, offline), bls(CPI_ALL, offline)
     fx = _finmind("TaiwanExchangeRate", "USD", offline)
     etf = {t: _yahoo(t, offline) for t in ("HYG", "IEI", "LQD", "IEF")}
@@ -290,6 +300,19 @@ def build(offline):
               "| " + " | ".join(f"{u[k]:.1f}%" for k in ms) + " |"]
     if missing:
         lines += ["", f"- {'、'.join(missing)} 沒有公布（2025 年政府停擺），Sahm 計算時該窗用其餘月份平均。"]
+
+    # 非農就業
+    adds = {k: nfp[k] - nfp[back(k, 1)] for k in nfp if back(k, 1) in nfp}
+    am = sorted(adds)[-6:]
+    avg3 = sum(adds[k] for k in am[-3:]) / 3
+    avg_prev = [adds[k] for k in sorted(adds)[-15:-3]]
+    lines += ["", "## 非農就業（BLS，季調，月增千人）", "",
+              "| " + " | ".join(f"{y}-{m:02d}" + ("（初值）" if k in nfp_p else "") for k in am for y, m in [k]) + " |",
+              "|" + "---|" * len(am),
+              "| " + " | ".join(f"{adds[k]:+.0f}" for k in am) + " |", "",
+              f"- 近 3 個月平均 {avg3:+.0f}k；再往前 12 個月平均 {sum(avg_prev) / len(avg_prev):+.0f}k。"
+              "初值之後兩個月會修正，年初還有基準修正。",
+              "- 背景讀數，不設門檻。就業強會讓 FOMC 更有理由再升息（FOMC 項）；連續負成長代表就業轉弱，和 Sahm 規則一起看。"]
 
     # 電價與通膨
     ye, ya = yoy(elec), yoy(cpi)

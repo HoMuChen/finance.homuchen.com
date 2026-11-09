@@ -40,7 +40,7 @@
 | `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
 | `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
 | `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
-| `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則；背景讀數 CPI 電價、美台利差 |
+| `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則；背景讀數非農就業、CPI 電價、美台利差 |
 | `data/macro.json` | `macro.py` 的手動輸入：FOMC 與台灣央行決議、門檻、觸發時的模型動作 |
 | `reports/macro-<日期>.md` | 總經訊號的輸出 |
 
