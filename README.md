@@ -40,6 +40,8 @@
 | `reports/eps-nowcast-<日期>.md` | 當季 EPS 推估的輸出 |
 | `tools/supply_chain.py` | 台灣 AI 供應鏈月營收旁證：每月監測與領先落後檢驗 |
 | `reports/supply-chain-<日期>.md`、`reports/supply-chain-leadlag-<日期>.md` | 供應鏈監測與檢驗的輸出 |
+| `tools/inventory_cycle.py` | 台灣電子業存貨周轉天數年增（見頂檢查清單第 5 項的台灣旁證） |
+| `reports/inventory-<日期>.md` | 庫存循環的輸出 |
 | `tools/macro.py` | 總經訊號：FOMC、美債殖利率、USD/TWD、高收益利差代理、Sahm 規則；背景讀數非農就業、CPI 電價、美台利差 |
 | `data/macro.json` | `macro.py` 的手動輸入：FOMC 與台灣央行決議、門檻、觸發時的模型動作 |
 | `reports/macro-<日期>.md` | 總經訊號的輸出 |
@@ -149,6 +151,22 @@ python3 tools/macro.py --offline                        # 只用快取
 - 門檻（`signals.*.threshold`）和觸發時的模型動作（`signals.*.action`）都在同一個檔案。觸發只代表要回頭檢查對應的假設，不會自動改 `portfolio/` 設定檔。
 - 這台機器連不上 FRED，所以信用利差用 ETF 相對報酬代替 ICE BofA OAS，只能看量級。
 - 快取在 `cache/macro/`（財政部、BLS）與 `cache/prices/`（FinMind、Yahoo）。
+
+## 庫存循環
+
+每季財報截止日（5/16、8/15、11/15、次年 4/1）之後跑一次。
+
+```bash
+uv run -q --with duckdb python tools/inventory_cycle.py                                   # 輸出到終端
+uv run -q --with duckdb python tools/inventory_cycle.py --out reports/inventory-2026-11-10.md
+uv run -q --with duckdb python tools/inventory_cycle.py --threshold 10                    # 改門檻看敏感度
+```
+
+- 存貨周轉天數 = 平均存貨（期初＋期末）÷ 單季營業成本 × 91，讀 R2 的 `tw.bs`、`tw.fin`，時間點用 `avail_date`。
+- 組別：半導體 ex-台積電（燈號）、非半導體電子業、台積電（對照）。合計只加總當季與去年同季都有資料的公司，和去年同季比。
+- 燈號：半導體 ex-台積電天數年增 > +6 天。某季公司數不到前 4 季最多的 90%，標「未到齊」，不算燈號。
+- 報告另列訊號開始後的加權指數表現、存貨增加最多的公司，和觀察名單（記憶體模組廠、ASIC 廠、PC 品牌）。不放存貨原始金額。
+- 判讀與限制見 `01_總結儀表板.md` 見頂檢查清單第 5 項補充。
 
 ## R2 台股資料湖（fire-auto）
 
