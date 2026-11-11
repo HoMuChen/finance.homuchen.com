@@ -99,7 +99,7 @@ uv run -q --with duckdb python tools/eps_nowcast.py --out reports/eps-nowcast-20
 uv run -q --with duckdb python tools/eps_nowcast.py --ids 2330
 ```
 
-- 月營收與單季財報讀 R2（`tw.revenue`、`tw.fin`）。財測和「法說已公布、R2 還沒收錄」的季度寫在 `data/eps_guidance.json`，每季法說後更新。R2 的財報在法定截止日後才會有（Q1 5/16、Q2 8/15、Q3 11/15、Q4 次年 4/1）。
+- 月營收與單季財報讀 R2（`tw.revenue`、`tw.fin`）。R2 常常整批月營收進來了，個別公司卻晚幾天才有（例如 2026-10 的台積電、聯發科）；這時最新月份會改用 MOPS 官方金額計算，報告會註明。財測和「法說已公布、R2 還沒收錄」的季度寫在 `data/eps_guidance.json`，每季法說後更新。R2 的財報在法定截止日後才會有（Q1 5/16、Q2 8/15、Q3 11/15、Q4 次年 4/1）。
 - 兩種推估：
   - **A 上季淨利率法**：上季 EPS ×（本季營收 ÷ 上季營收）。
   - **B 財測營益率法**：本季營收 × 財測營益率中值 ×（上季淨利 ÷ 上季營業利益）÷ 股數。沒有營益率財測時，用毛利率減費用率。
@@ -124,6 +124,7 @@ uv run -q --with duckdb python tools/supply_chain.py leadlag                    
 - 每月監測只留兩組：
   - 下游組裝（廣達、緯創、緯穎、鴻海）：雲端 CapEx 的月頻代理。
   - 弘塑：台積電 CapEx 執行的旁證。
+- R2 缺個別公司的最新月份時，同樣用 MOPS 月營收彙總表補（上市、上櫃分開抓），報告底下會註明；`--offline` 只用本機快取。
 - `leadlag` 會重跑全部 12 家候選，四大雲季報後可以累積樣本重新檢查。
 - 剔除原因和判斷標準見 `data/L1_nvidia_tsmc.md` 第 11 節。結論是沒有一家領先台積電月營收。
 

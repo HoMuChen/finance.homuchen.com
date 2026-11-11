@@ -29,6 +29,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from r2 import connect  # noqa: E402
+from eps_nowcast import MOPS_CACHE, fetch_mops  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CANDIDATES = {
@@ -47,6 +48,7 @@ HYPERSCALERS = ("MSFT", "GOOGL", "AMZN", "META", "ORCL")
 MAX_LAG_M, MAX_LAG_Q = 12, 4
 MIN_CORR = 0.5
 SINCE_RECENT = (2020, 1)
+OTC = {"3131", "6187", "6223", "6515", "3374"}  # 上櫃公司，MOPS 彙總表在 otc 頁
 
 
 # ---------- 資料 ----------
@@ -137,10 +139,31 @@ def diff(series, k, shift):
 
 # ---------- 監測 ----------
 
-def monitor(con):
+def fill_latest(rev, last, offline=False):
+    """R2 已有最新月份、但個別公司還沒收錄時，用 MOPS 官方月營收補（只補最新一個月）。"""
+    filled, cache = [], {}
+    for sid, series in rev.items():
+        market = "otc" if sid in OTC else "sii"
+        cached = (MOPS_CACHE / f"t21sc03_{market}_{last[0]}_{last[1]:02d}.html").exists()
+        if last in series or (offline and not cached):  # 離線時只用本機快取
+            continue
+        if market not in cache:
+            try:
+                cache[market] = fetch_mops(*last, market)[0]
+            except Exception as e:
+                print(f"MOPS {market} {last[0]}-{last[1]:02d} 抓不到（{e}）", file=sys.stderr)
+                cache[market] = {}
+        if sid in cache[market]:
+            series[last] = cache[market][sid] * 1000.0  # 千元 → 元，和 R2 同單位
+            filled.append(sid)
+    return filled
+
+
+def monitor(con, offline=False):
     ids = [s for g in MONITOR.values() for s in g] + [TSMC]
     rev = load_revenue(con, ids)
     last = max(max(v) for v in rev.values())
+    filled = fill_latest(rev, last, offline)
     months = [mshift(last, -i) for i in range(5, -1, -1)]
     lines = [f"# 台灣 AI 供應鏈月營收旁證（資料至 {last[0]}-{last[1]:02d}）", "",
              "由 `tools/supply_chain.py` 產生。數字為近 3 個月營收合計的年增率（3M 年增）；"
@@ -168,6 +191,10 @@ def monitor(con):
         for s, n in members.items():
             if s in rev:
                 lines.append(row(f"　{n} {s}", [rev[s]]))
+    if filled:
+        names = {s: n for g in MONITOR.values() for s, n in g.items()} | {TSMC: "台積電"}
+        lines += ["", f"- {last[0]}-{last[1]:02d} R2 還沒收錄：" + "、".join(f"{names[s]} {s}" for s in filled) +
+                  "，改用公開資訊觀測站月營收彙總表的官方金額計算。"]
     return "\n".join(lines)
 
 
@@ -253,9 +280,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("mode", nargs="?", default="monitor", choices=["monitor", "leadlag"])
     ap.add_argument("--out", help="寫入 markdown 檔")
+    ap.add_argument("--offline", action="store_true", help="R2 缺最新月份時只用本機 MOPS 快取，不連網")
     a = ap.parse_args()
     con = connect()
-    text = monitor(con) if a.mode == "monitor" else leadlag(con)
+    text = monitor(con, a.offline) if a.mode == "monitor" else leadlag(con)
     if a.out:
         pathlib.Path(a.out).write_text(text + "\n")
         print(f"已寫入 {a.out}")

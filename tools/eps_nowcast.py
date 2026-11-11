@@ -100,8 +100,6 @@ def fetch_mops(y, m, market="sii"):
         ctx.verify_flags &= ~ssl.VERIFY_X509_STRICT
         with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
             raw = r.read()
-        cache.parent.mkdir(parents=True, exist_ok=True)
-        cache.write_bytes(raw)
         time.sleep(1)
     text = re.sub(r"<[^>]+>", "|", raw.decode("cp950", errors="replace"))
     out = {}
@@ -109,6 +107,9 @@ def fetch_mops(y, m, market="sii"):
         out.setdefault(sid, int(rev.replace(",", "")))
     if not out:
         raise RuntimeError(f"解析不到 MOPS 月營收：{url}")
+    if not cache.exists():  # 解析成功才快取，還沒公布的空頁面不留下來
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_bytes(raw)
     return out, url
 
 
@@ -152,6 +153,32 @@ def shares(fin):
         if f.get("eps") and f.get("net_income"):
             return f["net_income"] / f["eps"], q
     raise RuntimeError("找不到同時有 EPS 與淨利的季度")
+
+
+def fill_from_official(rev, official, sid, name, market, offline, today):
+    """R2 還沒收錄、但 MOPS 已公布的月份：用官方金額補進計算（千元 → 十億元）。
+
+    R2 有時整批月營收進來了，個別公司卻晚幾天才有（例如 2026-10 的台積電、聯發科）。
+    只往 R2 最新月份之後補，補到上個月為止；抓不到就停。
+    """
+    filled = []
+    y, m = max(rev)
+    while True:
+        y, m = (y, m + 1) if m < 12 else (y + 1, 1)
+        if (y, m) >= (today.year, today.month):
+            break
+        if (sid, (y, m)) not in official and not offline:
+            try:
+                ensure_official(official, sid, name, [(y, m)], market, offline)
+            except Exception as e:  # 還沒公布或網路問題：只用 R2 的月份
+                print(f"{name}：MOPS {y}-{m:02d} 抓不到（{e}），只用 R2 的月份", file=sys.stderr)
+                break
+        row = official.get((sid, (y, m)))
+        if not row:
+            break
+        rev[(y, m)] = int(row["revenue"]) / 1e6
+        filled.append((y, m))
+    return filled
 
 
 # ---------- 計算 ----------
@@ -243,15 +270,18 @@ def render(results, asof):
            "季內營收未到齊時，本季營收用財測中值；「月均外推」只是對照。",
            "月營收金額取自公開資訊觀測站「上市公司每月營業收入彙總表」[官方]（`data/tw_monthly_revenue.csv`）；"
            "年增、月增與推估由 R2 計算，並與官方金額比對。", ""]
-    for sid, name, rows, yoys, slow, bt, sh, sh_q, off, mism in results:
+    for sid, name, rows, yoys, slow, bt, sh, sh_q, off, mism, filled in results:
         out += [f"## {name}（{sid}）", ""]
         out += ["**月營收**", "", "| 月份 | 營收（NT$B，官方） | 年增 | 月增 |", "|---|---|---|---|"]
         out += [f"| {y}-{m:02d} | {bn(off.get((y, m)))} | {pct(a)} | {pct(b)} |" for (y, m), a, b in yoys]
         out += ["", f"- 年增率連續 3 個月下滑：{'**是**' if slow else '否'}"]
         if mism:
             out += ["- ⚠ 官方金額與 R2 不一致：" + "、".join(f"{y}-{m:02d}" for y, m in mism) + "（以官方為準，檢查 R2）"]
-        elif off:
-            out += [f"- 官方金額與 R2 一致（{len(off)} 個月）"]
+        elif len(off) > len(filled):
+            out += [f"- 官方金額與 R2 一致（{len(off) - len(filled)} 個月）"]
+        if filled:
+            out += ["- " + "、".join(f"{y}-{m:02d}" for y, m in filled) +
+                    " R2 還沒收錄，年增、月增與推估改用官方金額計算"]
         out += [""]
         for r in rows:
             unit = f"US$ × {r['fx']}" if r["currency"] == "USD" else "NT$"
@@ -304,6 +334,11 @@ def main():
     for sid in ids:
         c = cfg[sid]
         rev, fin_r2 = load(con, sid)
+        filled = fill_from_official(rev, official, sid, c["name"], c.get("market", "sii"), a.offline,
+                                    dt.date.today())
+        if filled:
+            print(f"{c['name']}：R2 沒有 " + "、".join(f"{y}-{m:02d}" for y, m in filled) +
+                  "，改用 MOPS 官方月營收", file=sys.stderr)
         sh, sh_q = shares(fin_r2)
         fin = merge_reported(fin_r2, c.get("reported", {}))
         rows = [nowcast(q, g, rev, fin, sh) for q, g in sorted(c["guidance"].items())]
@@ -313,9 +348,10 @@ def main():
         if added:
             print(f"{c['name']}：從 MOPS 補了 {len(added)} 個月官方月營收 → {OFFICIAL.relative_to(ROOT)}", file=sys.stderr)
         off = {k: official[(sid, k)] for k in months if (sid, k) in official}
-        mism = [k for k, r in sorted(off.items()) if abs(int(r["revenue"]) / 1e6 / rev[k] - 1) > 1e-6]
+        mism = [k for k, r in sorted(off.items())
+                if k not in filled and abs(int(r["revenue"]) / 1e6 / rev[k] - 1) > 1e-6]
         results.append((sid, c["name"], rows, yoy_table(rev, SHOW_MONTHS), slowing(rev), backtest_a(fin_r2, sh),
-                        sh, sh_q, off, mism))
+                        sh, sh_q, off, mism, filled))
     text = render(results, dt.date.today().isoformat())
     if a.out:
         pathlib.Path(a.out).write_text(text + "\n")
