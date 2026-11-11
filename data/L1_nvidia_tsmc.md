@@ -476,6 +476,7 @@ DRAM（含 HBM）是主要指標，NAND 是輔助：AI 伺服器主要用 HBM �
 | 2026-10 月合約價 | DDR4 8Gb（PC）US$26 → 27.50，月增 5.8% | 128Gb MLC 持平於 US$30.61，**21 個月來第一次沒漲** | https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/ |
 
 - TrendForce 原文：「NAND Flash 市場出現 AI 需求加速與消費需求疲弱的分歧」；手機方面，「成本上升與低價庫存耗盡持續壓抑智慧型手機生產」。
+- 2026-11 的月合約價還沒公布（2026-11-11 查）。TrendForce 11/10 說手機 DRAM 合約價持續上漲，手機品牌開始改用翻修記憶體（[GuruFocus 轉述](https://www.gurufocus.com/news/9187983/rising-demand-for-reworked-memory-in-smartphones-amid-dram-price-increases)）。現貨偏弱：11/02 DDR4 16Gb 均價 US$82.719（−0.09%）、DDR5 16Gb 持平 US$61.50，買方觀望（[TrendForce 2026-11-04](https://www.trendforce.com/news/2026/11/04/insights-memory-spot-price-update-mainstream-ddr4-prices-dip-0-09-as-spot-premium-keeps-buyers-on-sidelines/)）[報導]。
 - 10 月 NAND 持平要保守看：128Gb MLC 是舊規格，不是 AI 伺服器用的 TLC／QLC，單月持平也可能只是模組廠在消化庫存。
 
 ### 10.4 判讀（2026-11-02）

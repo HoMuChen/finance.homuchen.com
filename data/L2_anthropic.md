@@ -39,7 +39,7 @@
 
 ### 1.3 Run-rate／ARR 演進（年化快照，**不是營收**）
 
-**S-1 官方定義** [官方:S-1]：Run-Rate Revenue ＝ 最近 28 天的用量計費 ×13 ＋ 當下月訂閱費 ×12。S-1 寫 10/31 的 run-rate 但金額留空，並提醒 run-rate 包含之後被判定違反使用政策、不會再續的客戶營收（見 2.3）。過去的通俗說法是「最近一個月 ×12」（[Simon Willison 2026-05-29](https://simonwillison.net/2026/May/29/anthropic/)）。Anthropic 對雲端市集銷售採總額認列，OpenAI 據報採淨額，**兩家的 run-rate 不能直接比**（[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/)；[Forbes 2026-03-25](https://www.forbes.com/sites/josipamajic/2026/03/25/openai-and-anthropic-count-revenue-differently-and-investors-are-looking-into-it/)）。據 FT，Anthropic 在 2026-10 的投資人溝通中已不再強調 run-rate（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。
+**S-1 官方定義** [官方:S-1]：Run-Rate Revenue ＝ 最近 28 天的用量計費 ×13 ＋ 當下月訂閱費 ×12。S-1 寫 10/31 的 run-rate 但金額留空（11/10 第 2 次 S-1/A 補上，見下表 2026-10 底），並提醒 run-rate 包含之後被判定違反使用政策、不會再續的客戶營收（見 2.3）。過去的通俗說法是「最近一個月 ×12」（[Simon Willison 2026-05-29](https://simonwillison.net/2026/May/29/anthropic/)）。Anthropic 對雲端市集銷售採總額認列，OpenAI 據報採淨額，**兩家的 run-rate 不能直接比**（[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/)；[Forbes 2026-03-25](https://www.forbes.com/sites/josipamajic/2026/03/25/openai-and-anthropic-count-revenue-differently-and-investors-are-looking-into-it/)）。據 FT，Anthropic 在 2026-10 的投資人溝通中已不再強調 run-rate（[Simon Willison 2026-10-15](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)）。
 
 | 時點 | Run-rate | 標記 | 來源 / 日期 |
 |---|---|---|---|
@@ -52,6 +52,8 @@
 | 2026-04-06 | >$30B | [官方] | [Anthropic 2026-04-06](https://www.anthropic.com/news/google-broadcom-partnership-compute) |
 | 2026-05 上旬 | >$47B | [官方] | [Anthropic Series H 公告 2026-05-28](https://www.anthropic.com/news/series-h) |
 | 2026-07 底 | >$65B | [報導:Bloomberg、Reuters、CNBC] | [CNBC 2026-08-17](https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html)；[Axios 2026-08-17](https://www.axios.com/2026/08/17/anthropic-revenue-run-rate-ipo-openai) |
+| 2026-09 底 | 約 $71B | [報導:Fortune] | [Fortune 2026-11-10](https://fortune.com/2026/11/10/anthropic-ipo-price-range-ai-stock-sell-off/) |
+| **2026-10 底** | **約 $81B** | [官方:S-1/A 第 2 次，全文檢索確認有「$81 billion」；時點與口徑引 Fortune] | 同上；[EDGAR](https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/0001628280-26-072484-index.htm) |
 | 2026-10 | 約 $74B | [估計:SemiAnalysis，經 FT] | [PYMNTS 2026-10-15](https://www.pymnts.com/news/investment-tracker/ipo/2026/anthropic-quarterly-revenue-jumps-45-before-planned-ipo/) |
 | 2026 年底（預期） | $100B～$120B；WSJ 稱投資人預期約 $110B | [估計:投資人／WSJ] | 同上；[decodethefuture](https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/) | 
 
@@ -261,7 +263,9 @@ S-1 的損益表是**依費用性質**列示（運算、人事、行銷、其他
 | 股權結構 | Class A（公開發行）、Class F（共同創辦人高投票權）、Class N（無投票權，策略投資人可轉債轉換用）、Class T、Class E（員工） | [官方:S-1] | 持股比例表的百分比欄留空 |
 | Google 同步私募選擇權 | Google 可用 IPO 價格同步私募 Class N 股；若行使，Google NPA 額度最多減少 $10B | [官方:S-1] | 見 4.4 |
 | **S-1/A** | **2026-11-02**；補 Q3 財報；發行價區間、股數、募資額、run-rate 金額**仍空白**；增列承銷商，部分股數可能透過平台配售給散戶 | [官方:S-1/A]；散戶配售為 [報導:filinginsights] | [EDGAR](https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/0001628280-26-068676-index.htm) |
-| 時程 | 最快 11/9 那週開始正式路演，感恩節（11/26）前在 Nasdaq 掛牌；Bloomberg 稱日期仍不確定；有報導指 11/24 定價 | [報導:Bloomberg、Reuters、Yahoo] | [TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo)；[valueaddvc](https://valueaddvc.com/blog/anthropic-2-trillion-ipo-october-2026-largest-ever-spacex) |
+| **S-1/A（第 2 次）** | **2026-11-10**；每股 **$70.00–$78.00**，發行 **825,000,000 股** Class A，承銷商超額配售 123,750,000 股（15%）；Google、NVIDIA 等 7 家策略夥伴另以 IPO 價認購 **$26.0B** 無投票權股；公司估淨募資 **$84.6B**（含夥伴認購，以中值 $74 計） | [官方:S-1/A，EDGAR 全文檢索逐一確認數字字串]；夥伴家數與名稱為 [報導:Fortune] | [EDGAR](https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/0001628280-26-072484-index.htm)；[Fortune 2026-11-10](https://fortune.com/2026/11/10/anthropic-ipo-price-range-ai-stock-sell-off/) |
+| 估值（區間） | 上緣 $78 的完全稀釋估值約 **$1.4T**；公開發行部分最多約 $64.4B（825M × $78）。比 10 月傳的 $1.5T～$2T 低，Fortune 說是受 AI 股賣壓影響 | [報導:Fortune]；$64.4B 為 [估計:加總] | 同上 |
+| 時程 | 11/10 開始路演。掛牌日各家報導不同：最快下週三或週四（11/18–11/19），也有 11/16、11/19 的說法，都未經公司確認。原本預期：最快 11/9 那週開始正式路演，感恩節（11/26）前在 Nasdaq 掛牌；Bloomberg 稱日期仍不確定；有報導指 11/24 定價 | [報導:Bloomberg、Reuters、Yahoo] | [TNW 2026-10-15](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo)；[valueaddvc](https://valueaddvc.com/blog/anthropic-2-trillion-ipo-october-2026-largest-ever-spacex) |
 | 估值傳聞 | $1.5T～$2T 以上；部分潛在投資人認為合理價值 $1.8T～$2T | [報導:Reuters、FT] | [The Decoder](https://the-decoder.com/anthropics-ipo-filing-shows-soaring-revenue-mounting-costs-and-existential-risks/)；[FinanceFeeds（$1.5T 說）](https://financefeeds.com/anthropic-ipo-valuation-1-5-trillion-not-2-trillion/) |
 | 募資規模 | 最高約 $100B | [報導] | [SiliconANGLE](https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/) |
 | NVIDIA 擔任基石投資人 | 傳聞約 $10B，未證實 | [報導] | 同上；[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/anthropic-1-518-billion-commitment-165731037.html) |
@@ -404,12 +408,12 @@ $895.4B 由五塊組成（加總核對相符）：
 
 ## 資料缺口（S-1 已補上的不再列出）
 
-1. **Run-rate 金額**：S-1/A 仍留空（Q3 財報、9/30 現金已由 S-1/A 補上）。
+1. **Run-rate 金額**：11/10 的 S-1/A 已補上，10 月底約 $81B（見 1.3）。
 2. **非固定金額的承諾**：約 $150–175B 依交付容量計價，沒有逐年時程（承諾表的逐年時程已由 S-1/A 補上，見 5.1a）。
 3. **毛利率、推論／訓練拆分**：S-1 依費用性質列示，**不揭露**。未來 10-Q 可能也不會揭露，只能靠報導。
 4. **前五大客戶身分**：S-1 未具名（Cursor？GitHub Copilot？）。
 5. **Claude Code 營收金額**：S-1 只有用量倍數，沒有金額。
 6. **Google Vertex vs AWS Bedrock 各自營收**：S-1 只給雲端市集合計 48%。
 7. **持股比例**：Amazon、Google、Microsoft、NVIDIA 的持股百分比在 S-1 留空。已知 Amazon 可轉債轉換上限 12%。
-8. **IPO 股數、價格區間、募資規模**：S-1/A 仍空白，等下一次修正。
+8. **IPO 股數、價格區間、募資規模**：11/10 的 S-1/A 已補上（見 4.3）；最終發行價與持股比例等定價後的 424B4。
 9. **記憶體廠合約金額**、Fluidstack 合約金額。

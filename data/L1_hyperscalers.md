@@ -375,7 +375,8 @@ AMZN 用自己的口徑計算，TTM FCF 2026Q2 為 −$7.6bn，2026Q3 為 −$42
 |---|---|---|---|
 | 不可抗力通知 | 2026-09-24 Bloomberg 首報：Oracle 發出不可抗力通知，園區若趕不上 2028 年啟用可延後付款；Oracle 稱不是退出，雙方仍一致 | [報導:Bloomberg] | https://news.bloomberglaw.com/ip-law/oracle-cites-force-majeure-to-shield-itself-on-big-data-center ；https://thenextweb.com/news/oracle-force-majeure-project-jupiter-new-mexico |
 | 原因 | 園區用 Bloom 燃氣燃料電池供電；Energy Transfer 的 17 英里供氣管線兩度被州土地辦公室拒絕路權（2026-03、07-14），管線延後約 6 個月到 **2027-02-01** | [報導] | 同上 |
-| 待決事項 | 州空氣許可在 **2026-11-23** 前決定；Green Chile 管線還要 FERC 核准 | [報導] | 同上 |
+| 待決事項 | 原本州空氣許可要在 2026-11-23 前決定；Green Chile 管線還要 FERC 核准 | [報導] | 同上 |
+| **空氣許可延期**（2026-11-11 新增） | 11/03 申請人 Yucca Growth Infrastructure 和州環境部空品局聯合聲請取消 12/7 公聽會，空品局說需要更多時間審 10 月的修正；**申請人明確放棄 11/23 決定期限**。11/06 聽證官 James Browning 准許取消，要等空品局交出修正建議才重排，沒有新期限；空品局每週更新卷宗，11/19 起約每兩週開狀態會議；同時駁回環團再次聲請駁回申請。**許可沒有核准也沒有否決**，下一個可查的里程碑是空品局的修正建議。歸類不變：供給受限 | [報導:Organ Mountain News 2026-11-05、Microgrid Media 2026-11-08] | https://www.organmountainnews.com/project-jupiter-air-permit-deadline-waived-hearing-delay-2026/ ；https://microgridmedia.com/project-jupiter-air-permit-hearing-delayed/ |
 | 市場反應 | 當天 Oracle −4%、Blue Owl −4%、Bloom −6% | [報導] | 同上 |
 
 Jupiter 屬於 Oracle 對 OpenAI 約 $300B／4.5GW 的合約（見 `data/L2_openai_others.md`）。延後的原因是供氣，不是 OpenAI 融資，所以先歸在供給受限。
