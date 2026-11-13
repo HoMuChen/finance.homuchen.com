@@ -1,6 +1,6 @@
 # 第一層：NVIDIA 與台積電（含 AMD / Broadcom / SK hynix 交叉驗證）
 
-> 更新日期：2026-11-02（第 10 節記憶體價格）
+> 更新日期：2026-11-13（第 10.3 節記憶體合約價）
 > 原始資料：`data/L1_nvidia_tsmc.csv`（長格式，共 754 筆，每筆都附來源 URL、日期與品質標記）
 > 涵蓋期間：NVIDIA FY25Q1–FY27Q2（日曆 2024Q1–2026Q2）；台積電 2024Q1–2026Q3，另含 2026 年 1–9 月月營收
 > 品質標記：[官方] 財報、SEC 申報或法說 ｜ [報導] 媒體報導 ｜ [估計] 分析師或研究機構估算 ｜ 「/計算」表示由官方數字推導
@@ -474,9 +474,14 @@ DRAM（含 HBM）是主要指標，NAND 是輔助：AI 伺服器主要用 HBM �
 | 3Q26 預估（7 月） | 伺服器 DRAM 季增 13–18%（長約壓抑漲幅） | — | https://www.trendforce.com/presscenter/news/20260709-13140.html |
 | 4Q26 預估（9/30） | 一般 DRAM 季增 10–15%，「漲幅放緩」；含 HBM 約 15–20% | 整體季增 15–20%；企業級 SSD 是唯一漲幅擴大的品類（媒體轉述 23–28%）；消費端 SSD 漲幅受壓 | https://www.trendforce.com/presscenter/news/20260930-13258.html |
 | 2026-10 月合約價 | DDR4 8Gb（PC）US$26 → 27.50，月增 5.8% | 128Gb MLC 持平於 US$30.61，**21 個月來第一次沒漲** | https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/ |
+| 4Q26 PC 預估（11/11） | PC DRAM 季增 13–18%（3Q26 18–23%），漲幅縮小；PC 品牌成品庫存偏高 | 消費端 SSD 季增 < 5% | https://www.trendforce.com/presscenter/news/20261111-13303.html |
 
 - TrendForce 原文：「NAND Flash 市場出現 AI 需求加速與消費需求疲弱的分歧」；手機方面，「成本上升與低價庫存耗盡持續壓抑智慧型手機生產」。
-- 2026-11 的月合約價還沒公布（2026-11-11 查）。TrendForce 11/10 說手機 DRAM 合約價持續上漲，手機品牌開始改用翻修記憶體（[GuruFocus 轉述](https://www.gurufocus.com/news/9187983/rising-demand-for-reworked-memory-in-smartphones-amid-dram-price-increases)）。現貨偏弱：11/02 DDR4 16Gb 均價 US$82.719（−0.09%）、DDR5 16Gb 持平 US$61.50，買方觀望（[TrendForce 2026-11-04](https://www.trendforce.com/news/2026/11/04/insights-memory-spot-price-update-mainstream-ddr4-prices-dip-0-09-as-spot-premium-keeps-buyers-on-sidelines/)）[報導]。
+- 2026-11-13 再查：11 月合約價還沒公布，TrendForce 的 DRAM 合約價頁面還停在 9 月下半月。新的讀數是 TrendForce 11/11 的 PC 報告（[新聞稿](https://www.trendforce.com/presscenter/news/20261111-13303.html)）[報導:TrendForce]：
+  - 4Q26 PC DRAM 合約價預估季增 13–18%，3Q26 是 18–23%，漲幅繼續縮小；消費端 SSD 季增不到 5%。
+  - 3Q26 筆電出貨季減 15.8%，部分 PC 品牌的成品庫存變高，開始調整 2027 年的記憶體採購計畫；DRAM 庫存週數 3Q26 起一路增加，4Q26 還會再增加。
+  - 對應到台灣庫存循環（儀表板見頂檢查清單第 5 項補充）：技嘉、華碩的存貨天數已接近 2022Q1，模組廠囤貨最多。PC 品牌開始減少採購，代表消費端的記憶體需求先鬆動。這還不是合約價月減，所以不算第 1 項旁證。
+- 2026-11-11 查：11 月合約價還沒公布。TrendForce 11/10 說手機 DRAM 合約價持續上漲，手機品牌開始改用翻修記憶體（[GuruFocus 轉述](https://www.gurufocus.com/news/9187983/rising-demand-for-reworked-memory-in-smartphones-amid-dram-price-increases)）。現貨偏弱：11/02 DDR4 16Gb 均價 US$82.719（−0.09%）、DDR5 16Gb 持平 US$61.50，買方觀望（[TrendForce 2026-11-04](https://www.trendforce.com/news/2026/11/04/insights-memory-spot-price-update-mainstream-ddr4-prices-dip-0-09-as-spot-premium-keeps-buyers-on-sidelines/)）[報導]。
 - 10 月 NAND 持平要保守看：128Gb MLC 是舊規格，不是 AI 伺服器用的 TLC／QLC，單月持平也可能只是模組廠在消化庫存。
 
 ### 10.4 判讀（2026-11-02）
