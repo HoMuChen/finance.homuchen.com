@@ -777,3 +777,30 @@ Industry,2026Q4,2026Q4,dram_contract_price_forecast_qoq,10-15,pct,https://www.tr
 Industry,2026Q4,2026Q4,nand_contract_price_forecast_qoq,15-20,pct,https://www.trendforce.com/presscenter/news/20260930-13258.html,2026-09-30,報導:TrendForce(企業級SSD漲幅擴大)
 Industry,2026-10,2026-10,ddr4_8gb_contract_price,27.5,USD,https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/,2026-10-30,報導:DRAMeXchange轉述(9月26;MoM+5.8%)
 Industry,2026-10,2026-10,mlc_128gb_nand_contract_price,30.61,USD,https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/,2026-10-30,報導:DRAMeXchange轉述(持平;21個月來首次未漲)
+NVIDIA,2026Q3,FY27Q3,revenue_total,115.844,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,dc_revenue,107.6,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,dc_hyperscale_revenue,60.1,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,dc_acie_revenue,47.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,gross_margin_gaap,74.8,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,gross_margin_nongaap,74.9,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,operating_income_gaap,77.5,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,cfo,48.253,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,fcf,43.777,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,inventory,39.724,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,accounts_receivable,81.033,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,dso,64,days,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,dso_note,公司說明 DSO 由 60 升到 64 天是 Rubin 出貨集中在季末、以及給部分投資等級客戶的多季大型合約延長付款條件,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,supply_purchase_obligations,390,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,supply_obligations_note,279 → 390，主要是多年期記憶體採購；2028 財年到期 203,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,multiyear_cloud_service_agreements,28,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,commitments_dc_leases_not_commenced,74,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,commitments_equity_investments,20,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,commitments_capex,6,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,commitments_total,518,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,additional_ai_cloud_agreements,32,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,guarantees_max_exposure_total,118,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,guarantee_sb_energy_openai,105,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,guarantee_note,OpenAI SB Energy 擔保上限 105 不變，第一棟預計 FY2029 生效；neocloud 土地電力擔保 3.5、電力與系統 9.5；尚未付款,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,next_q_revenue_guidance,130.0,USD_bn,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,next_q_gm_guidance_gaap,71.0-72.0,pct,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
+NVIDIA,2026Q3,FY27Q3,china_note,Q3 出貨中國 Hopper 2.4B；Q4 指引不含中國資料中心運算營收;Q4 含多一週（14 週）,text,https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf,2026-11-17,官方
